@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="byheydey/favison" href="./images/icon/favicon.png">
+    <title>BYHEYDEY</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/fontello.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/respond.css">
+</head>
+
+<body>
+    <!-- 1. header -->
+    <header>
+        <div class="header-inner">
+            <div class="header-left">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./images/icon/header-Logo.png" alt="BYHEYDEY logo">
+                    </a>
+                </h1>
+                <nav aria-label="메인 메뉴">
+                    <div class="m-header">
+                        <div>
+                            <p><a href="#">
+                                    <img src="./images/icon/header-Logo.png" alt="BYHEYDEY logo">
+                                </a>
+                            </p>
+                            <button type="button" class="hamClose" aria-label="메뉴 닫기">
+                                <img src="./images/icon/close.png" alt="메뉴 닫기 아이콘">
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="main-menu">
+                        <li>
+                            <a href="#" aria-haspopup="true" aria-expanded="false">PRODUCT</a>
+                            <ul class="sub-list" aria-label="PRODUCT 서브 메뉴">
+                                <li><a href="#">BEST</a></li>
+                                <li><a href="#">House</a>
+                                    <ul class="depth">
+                                        <li><a href="#">All</a></li>
+                                        <li><a href="#">Sofa</a></li>
+                                        <li><a href="#">Table</a></li>
+                                        <li><a href="#">Storage</a></li>
+                                        <li><a href="#">Homedeco</a></li>
+                                        <li><a href="#">Care</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Office</a>
+                                    <ul class="depth">
+                                        <li><a href="#">All</a></li>
+                                        <li><a href="#">Desk</a></li>
+                                        <li><a href="#">Storage</a></li>
+                                        <li><a href="#">Seating</a></li>
+                                        <li><a href="#">Worktool</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">PROJECT</a>
+                        </li>
+                        <li>
+                            <a href="#" aria-haspopup="true" aria-expanded="false">BRANDS</a>
+                            <ul class="sub-list" aria-label="BRANDS 서브 메뉴">
+                                <li><a href="#">About</a></li>
+                                <li>
+                                    <a href="#">Showroom</a>
+                                    <ul class="depth">
+                                        <li><a href="#">Flagship store</a></li>
+                                        <li><a href="#">Movement lab</a></li>
+                                        <li><a href="#">Department</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" aria-haspopup="true" aria-expanded="false">MEMBERSHIP</a>
+                            <ul class="sub-list" aria-label="MEMBERSHIP 서브 메뉴">
+                                <li><a href="#">Club movement</a></li>
+                                <li>
+                                    <a href="#">Membership</a>
+                                    <ul class="depth">
+                                        <li><a href="#">Business</a></li>
+                                        <li><a href="#">Private Order</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" aria-haspopup="true" aria-expanded="false">SUPPORT</a>
+                            <ul class="sub-list" aria-label="SUPPORT 서브 메뉴">
+                                <li><a href="#">Notice</a></li>
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">Q&A</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <ul class="gnb-list">
+                <li><a href="#"><img src="./images/icon/search.png" alt="검색 아이콘"></a></li>
+                <li>
+                    <a href="#" aria-haspopup="true" aria-expanded="false"><img src="./images/icon/user.png"
+                            alt="마이페이지"></a>
+                    <ul class="user-list" aria-label="사용자 메뉴">
+                        <li><a href="#">Log in</a></li>
+                        <li><a href="#">Join</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><img src="./images/icon/cart.png" alt="장바구니 아이콘">
+                        <span class="cart-count">3</span>
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="ham" aria-label="메뉴 열기">
+                <img src="./images/icon/ham.png" alt="메뉴 열기 아이콘">
+            </button>
+        </div>
+    </header>
+    <!-- 2. main -->
+    <main>
+        <section class="main-slider-wrap">
+            <div class="main-slider swiper">
+                <ul class="main-slider-list swiper-wrapper">
+                    <li class="swiper-slide">
+                        <div class="main-slider-img-box">
+                            <img src="./images/header/header-main-slider2.png" alt="메인 베너 슬라이드 이미지">
+                        </div>
+                        <div class="main-slider-text-box">
+                            <div class="height">
+                                <span>club membership benefit</span>
+                                <p><strong>MULTI SOFA</strong></p>
+                            </div>
+                            <div class="low">
+                                <span>PROMOTION 20% OFF</span>
+                                <p>06 .22 - 07.20</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="main-slider-img-box">
+                            <img src="./images/header/header-main-slider3.png" alt="메인 베너 슬라이드 이미지">
+                        </div>
+                        <div class="main-slider-text-box">
+                            <div class="height">
+                                <span>club membership benefit</span>
+                                <p><strong>MULTI SOFA</strong></p>
+                            </div>
+                            <div class="low">
+                                <span>PROMOTION 20% OFF</span>
+                                <p>06 .22 - 07.20</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="main-slider-img-box">
+                            <img src="./images/header/header-main-slider5.png" alt="메인 베너 슬라이드 이미지">
+                        </div>
+                        <div class="main-slider-text-box">
+                            <div class="height">
+                                <span>club membership benefit</span>
+                                <p><strong>MULTI SOFA</strong></p>
+                            </div>
+                            <div class="low">
+                                <span>PROMOTION 20% OFF</span>
+                                <p>06 .22 - 07.20</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="main-slider-img-box">
+                            <img src="./images/header/header-main-slider4.png" alt="메인 베너 슬라이드 이미지">
+                        </div>
+                        <div class="main-slider-text-box">
+                            <div class="height">
+                                <span>club membership benefit</span>
+                                <p><strong>MULTI SOFA</strong></p>
+                            </div>
+                            <div class="low">
+                                <span>PROMOTION 20% OFF</span>
+                                <p>06 .22 - 07.20</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="main-slider-img-box">
+                            <img src="./images/header/header-main-slider1.png" alt="메인 베너 슬라이드 이미지">
+                        </div>
+                        <div class="main-slider-text-box">
+                            <div class="height">
+                                <span>club membership benefit</span>
+                                <p><strong>MULTI SOFA</strong></p>
+                            </div>
+                            <div class="low">
+                                <span>PROMOTION 20% OFF</span>
+                                <p>06 .22 - 07.20</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- best-wrap -->
+        <section class="best-wrap">
+            <div class="inner">
+                <div class="title-box">
+                    <h2 class="section-tilte">BEST</h2>
+                    <p class="sub-title">지금 가장 인기있는 아이템을 만나보세요</p>
+                </div>
+                <div class="best swiper">
+                    <ul class="best-list swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="img-box"><a href="#"><img src="./images/01.MAIN-SECTION/best/best_3.png"
+                                        alt=""><img class="hover-img" src="./images/01.MAIN-SECTION/best/best__3.png"
+                                        alt=""></a>
+                            </div>
+                            <div class="text-box">
+                                <a href="#">
+                                    <p class="item-name">Linear Sofa | Fabric</p>
+                                    <p class="price">3,040,000원</p>
+                                    <div class="item-color">
+                                        <span class="black"></span>
+                                        <span class="gray"></span>
+                                        <span class="brown"></span>
+                                        <span class="ivory"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-box"><a href="#"><img src="./images/01.MAIN-SECTION/best/best_2.png"
+                                        alt=""><img class="hover-img" src="./images/01.MAIN-SECTION/best/best__2.png"
+                                        alt=""></a>
+                            </div>
+                            <div class="text-box">
+                                <a href="#">
+                                    <p class="item-name">Multi Sofa | Leather</p>
+                                    <p class="price">2,960,000원</p>
+                                    <div class="item-color">
+                                        <span class="black"></span>
+                                        <span class="brown"></span>
+                                        <span class="ivory"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-box"><a href="#"><img src="./images/01.MAIN-SECTION/best/best_1.png"
+                                        alt=""><img src="./images/01.MAIN-SECTION/best/best__1.png" alt=""
+                                        class="hover-img"></a>
+                            </div>
+                            <div class="text-box">
+                                <a href="#">
+                                    <p class="item-name">Piloti Sofa table</p>
+                                    <p class="price">1,100,000원</p>
+                                    <div class="item-color">
+                                        <span class="black"></span>
+                                        <span class="white"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-box"><a href="#"><img src="./images/01.MAIN-SECTION/best/best_4.png"
+                                        alt=""><img src="./images/01.MAIN-SECTION/best/best__4.png" alt=""
+                                        class="hover-img"></a>
+                            </div>
+                            <div class="text-box">
+                                <a href="#">
+                                    <p class="item-name">Recto Lounge Chair</p>
+                                    <p class="price">850,000원</p>
+                                    <div class="item-color">
+                                        <span class="black"></span>
+                                        <span class="gray"></span>
+                                        <span class="brown"></span>
+                                        <span class="ivory"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-box"><a href="#"><img src="./images/01.MAIN-SECTION/best/best_5.png"
+                                        alt=""><img src="./images/01.MAIN-SECTION/best/best__5.png" alt=""
+                                        class="hover-img"></a>
+                            </div>
+                            <div class="text-box">
+                                <a href="#">
+                                    <p class="item-name">Linear Sofa | Leather</p>
+                                    <p class="price">3,070,000원</p>
+                                    <div class="item-color">
+                                        <span class="black"></span>
+                                        <span class="ivory"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-box"><a href="#"><img src="./images/01.MAIN-SECTION/best/best_5.png"
+                                        alt=""><img src="./images/01.MAIN-SECTION/best/best__5.png" alt=""
+                                        class="hover-img"></a>
+                            </div>
+                            <div class="text-box">
+                                <a href="#">
+                                    <p class="item-name">Linear Sofa | Leather</p>
+                                    <p class="pr ice">3,070,000원</p>
+                                    <div class="item-color">
+                                        <span class="black"></span>
+                                        <span class="ivory"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-box"><a href="#"><img src="./images/01.MAIN-SECTION/best/best_5.png"
+                                        alt=""><img src="./images/01.MAIN-SECTION/best/best__5.png" alt=""
+                                        class="hover-img"></a>
+                            </div>
+                            <div class="text-box">
+                                <a href="#">
+                                    <p class="item-name">Linear Sofa | Leather</p>
+                                    <p class="price">3,070,000원</p>
+                                    <div class="item-color">
+                                        <span class="black"></span>
+                                        <span class="ivory"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-box"><a href="#"><img src="./images/01.MAIN-SECTION/best/best_5.png"
+                                        alt=""><img src="./images/01.MAIN-SECTION/best/best__5.png" alt=""
+                                        class="hover-img"></a>
+                            </div>
+                            <div class="text-box">
+                                <a href="#">
+                                    <p class="item-name">Linear Sofa | Leather</p>
+                                    <p class="price">3,070,000원</p>
+                                    <div class="item-color">
+                                        <span class="black"></span>
+                                        <span class="ivory"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="scroll-slide">
+                    <span>scrollbar</span>
+                </div> -->
+            </div>
+        </section>
+        <section class="office-collection-wrap">
+            <div class="office-inner">
+                <div class="office-left">
+                    <div class="office-main-img-box">
+                        <img src="./images/01.MAIN-SECTION/office-collection/office-collection_11.png"
+                            alt="Office Collection 대표 이미지">
+                    </div>
+                </div>
+
+                <div class="office-right">
+                    <div class="office-title-area">
+                        <h2 class="section-title">Office Collection</h2>
+                        <p class="sub-title">Less Elements For Functionalism</p>
+                        <p class="detail">
+                            높은 기준과 완벽을 추구하는 크리에이터를 위한 공간입니다.<br>
+                            치밀한 질서와 깊은 몰입이 되는 전용 오피스 공간을 제시합니다.
+                        </p>
+                        <div class="btn-box">
+                            <a href="#" class="btn-more">Collection</a>
+                        </div>
+                    </div>
+
+                    <div class="product-grid-container">
+                        <ul class="product-list">
+                            <li class="product-item">
+                                <a href="#" class="product-link">
+                                    <div class="img-box">
+                                        <img src="./images/01.MAIN-SECTION/office-collection/office-collection_5.jpg"
+                                            alt="LEEF D01">
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="product-title">LEEF D01</p>
+                                        <p class="price">235,000</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="product-link">
+                                    <div class="img-box">
+                                        <img src="./images/01.MAIN-SECTION/office-collection/office-collection_8.jpg"
+                                            alt="LEEF D02/03">
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="product-title">LEEF D02/03</p>
+                                        <p class="price">382,000/432,000</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="product-link">
+                                    <div class="img-box">
+                                        <img src="./images/01.MAIN-SECTION/office-collection/office-collection_1.jpg"
+                                            alt="LEEF M02/03">
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="product-title">LEEF M02/03</p>
+                                        <p class="price">B2B 전용</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="product-link">
+                                    <div class="img-box">
+                                        <img src="./images/01.MAIN-SECTION/office-collection/office-collection_7.jpg"
+                                            alt="LEEF P01">
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="product-title">LEEF P01</p>
+                                        <p class="price">132,000</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="product-link">
+                                    <div class="img-box">
+                                        <img src="./images/01.MAIN-SECTION/office-collection/office-collection_10.jpg"
+                                            alt="LEEF DW01">
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="product-title">LEEF DW01</p>
+                                        <p class="price">214,000</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="product-link">
+                                    <div class="img-box">
+                                        <img src="./images/01.MAIN-SECTION/office-collection/office-collection_4.jpg"
+                                            alt="LEEF DW03">
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="product-title">LEEF DW03</p>
+                                        <p class="price">B2B 전용</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="product-link">
+                                    <div class="img-box">
+                                        <img src="./images/01.MAIN-SECTION/office-collection/office-collection_9.jpg"
+                                            alt="LEEF TC01">
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="product-title">LEEF TC01</p>
+                                        <p class="price">446,000</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="product-link">
+                                    <div class="img-box">
+                                        <img src="./images/01.MAIN-SECTION/office-collection/office-collection_6.jpg"
+                                            alt="LEEF LC01/02">
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="product-title">LEEF LC01/02</p>
+                                        <p class="price">B2B 전용/800,000</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="product-link">
+                                    <div class="img-box">
+                                        <img src="./images/01.MAIN-SECTION/office-collection/office-collection_3.jpg"
+                                            alt="LEEF H01">
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="product-title">LEEF H01</p>
+                                        <p class="price">170,000</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="product-link">
+                                    <div class="img-box">
+                                        <img src="./images/01.MAIN-SECTION/office-collection/office-collection_2.jpg"
+                                            alt="LEEF S01">
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="product-title">LEEF S01</p>
+                                        <p class="price">Sold out</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="care-wrap">
+            <div class="care-inner">
+                <div class="care-title-box title-box">
+                    <h2 class="section-title">CARE</h2>
+                    <p class="sub-title">가구의 수명을 늘리는 사후 케어의 맞춤 솔루션</p>
+                    <p class="detail">사후 케어는 단순한 클리닝이 아닌, 소파의 상태와 환경, <br> 다양한 소재를 고려한 맞춤형 케어를 제공합니다.</p>
+                    <p class="btn"><a href="#">Let's Clean</a></p>
+                </div>
+                <div class="care-video-box">
+                    <iframe
+                        src="https://player.vimeo.com/video/454280294?muted=1&autoplay=1&loop=1&title=0&autopause=0&background=1"
+                        frameborder="0" title="가구 케어 비디오"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="project-wrap">
+            <div class="inner">
+                <div class="project-list-left">
+                    <a href="#">
+                        <div class="img-box-left">
+                            <img src="./images/01.MAIN-SECTION/project/project_1.png" alt="라운지">
+                            <div class="img-bg"></div>
+                        </div>
+                        <div class="text-box-left">
+                            <p class="space"><strong>LOUNGE</strong></p>
+                            <p class="location">SEONGSU YUL, 2026</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-list-right">
+                    <div class="title-box">
+                        <h2 class="section-title">PROJECT</h2>
+                        <p class="sub-title">가구 제안부터 공간 컨설팅까지 토탈 솔루션</p>
+                        <p class="detail">
+                            고민은 줄이고 변화는 확실하게.<br>
+                            저희가 완성한 브랜드 리뉴얼 포트폴리오를 둘러보시고,<br>
+                            지금 미팅을 신청해 보세요</p>
+                        <p class="btn"><a href="#">프로젝트 더보기</a></p>
+                    </div>
+                    <div class="project-img">
+                        <!-- ul>li*3>div.img-box+div.text-box>strong.space+p.location -->
+                        <ul>
+                            <li><a href="#">
+                                    <div class="img-box">
+                                        <img src="./images/01.MAIN-SECTION/project/project_2.png" alt="라운지">
+                                        <div class="img-bg"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p><strong class="space">OFFICE</strong></p>
+                                        <p class="location">SEONGSU SPACE</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <div class="img-box">
+                                        <img src="./images/01.MAIN-SECTION/project/project_3.png" alt="오피스">
+                                        <div class="img-bg"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p><strong class="space">STAY </strong></p>
+                                        <p class="location">STABILITY HOTEL </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <div class="img-box">
+                                        <img src="./images/01.MAIN-SECTION/project/project_4.png" alt="에프앤비">
+                                        <div class="img-bg"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p><strong class="space">F&B</strong></p>
+                                        <p class="location">SEONGSU CAFE</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clubmovement-wrap">
+            <div class="inner">
+                <div class="title-box">
+                    <h2 class="section-title">CLUB MOVEMENT</h2>
+                    <p class="sub-title">공간의 가치를 깊이 있게 다루는 이들을 위한 특권</p>
+                    <p class="detail">클럽무브먼트는 무브먼트랩의 멤버십 프로그램으로 무브먼트랩의 서비스와 상품들을<br>
+                        합리적인 가격에 만나보실 수 있으며, 회원분들만을 위한 특별한 혜택과 이벤트가 제공됩니다. </p>
+                    <p class="btn"><a href="">멤버십 가입하기</a></p>
+                </div>
+                <div class="clubmovement-list-wrap swiper">
+                    <ul class="clubmovement-list swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="img-box"><img src="./images/01.MAIN-SECTION/membership/mem-card_1.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <strong>한도 없는 할인 혜택으로<br>
+                                    완성하는 공간의 로망</strong>
+                                <p>프리미엄 가구 및 조명, 소품 등<br>
+                                    최대 30% 할인</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-box"><img src="./images/01.MAIN-SECTION/membership/mem-card_2.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <strong>프리미엄 수입 조명<br>
+                                    멤버십 전용가로 구매하기</strong>
+                                <p>풍성한 세트 할인 혜택과 함께</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-box"><img src="./images/01.MAIN-SECTION/membership/mem-card_3.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <strong>영감이 되는 카페에 다이닝<br>
+                                    공간들을 더 자주 부담 없이</strong>
+                                <p>200+ 제휴처 무제한 할인 혜택</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-box"><img src="./images/01.MAIN-SECTION/membership/mem-card_4.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <strong>나만 알고싶은 스테이,<br>
+                                    가구까지 온전하게 경험하기</strong>
+                                <p>스테이 최대 48% 할인 및<br>
+                                    가구/소품 추가 할인 쿠폰 제공</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-box"><img src="./images/01.MAIN-SECTION/membership/mem-card_5.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <strong>취향의 변화까지 책임지는<br>
+                                    세컨드마켓 중고 거래 솔루션</strong>
+                                <p>리퍼브 및 중고 구매 할인과 판매 리워드</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-box"><img src="./images/01.MAIN-SECTION/membership/mem-card_6.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <strong>이사 입주 전<br>
+                                    나만의 공간, 미리 그려보기</strong>
+                                <p>3D 스타일링 등 공간 제안 프로그램</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 2. footer -->
+    <footer>
+        <div class="footer-inner inner">
+            <div class="address-left">
+                <p class="footer-logo">
+                    <a href="#"><img src="./images/icon/footer-Logo.png" alt="BYHEYDEY logo"></a>
+                </p>
+                <address>
+                    <p><span>바이헤이데이</span> <span>대표자 조형석</span> <span>대표번호 1588-7193</span></p>
+                    <p><span>통신판매업 2021-서울마포-2699</span> <span>사업자등록번호 220-85-46645</span></p>
+                    <p><span>E-mail byheydeydey@gmail.com</span> <span>국민은행 069101-04-263160 바이헤이데이</span></p>
+                    <p><span>[03988] 서울 마포구 성미산로22길 18 (연남동504-50) 프로젝트 에이 A동 2~3층</span></p>
+                </address>
+            </div>
+            <div class="address-right">
+                <ul class="footer-menu">
+                    <li>
+                        <strong>PRODUCT</strong>
+                        <ul class="footer-Product-list sub-link-list">
+                            <li><a href="#">Best</a></li>
+                            <li><a href="#">House</a></li>
+                            <li><a href="#">Office</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>PROJECT</strong></li>
+                    <li>
+                        <strong>BRANDS</strong>
+                        <ul class="footer-Brands-list sub-link-list">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Showroom</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>MEMBERSHIP</strong>
+                        <ul class="footer-Membership-list sub-link-list">
+                            <li><a href="#">Clubmovement</a></li>
+                            <li><a href="#">Membership</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>SUPPORT</strong>
+                        <ul class="footer-Support-list sub-link-list">
+                            <li><a href="#">Notice</a></li>
+                            <li><a href="#">Review</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <script>
+        var mainswiper = new Swiper('.main-slider', {
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        var swiper = new Swiper('.best', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+
+            slidesPerView: 2,
+            spaceBetween: 12,
+            centeredSlides: false,
+
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 18,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 24,
+                },
+                1400: {
+                    slidesPerView: 5,
+                    spaceBetween: 36,
+                },
+            },
+        });
+
+        var swiper = new Swiper('.clubmovement-list-wrap', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            centeredSlides: false,
+            loop: true,
+            breakpoints: {
+                1279: {
+                    slidesPerView: 5,
+                    spaceBetween: 35,
+                    centeredSlides: false,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    centeredSlides: false,
+                },
+                0: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    centeredSlides: false,
+                },
+            },
+        });
+
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     const header = document.querySelector('header');
+
+        //     function checkScroll() {
+        //         const sliderHeight = window.innerHeight - 80;
+
+        //         if (window.scrollY > sliderHeight) {
+        //             header.classList.add('is-scrolled');
+        //         } else {
+        //             header.classList.remove('is-scrolled');
+        //         }
+        //     }
+
+        //     window.addEventListener('scroll', checkScroll);
+        // });
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            const threshold = 100;
+
+            if (window.scrollY > threshold) {
+                header.classList.add('is-scrolled');
+            } else {
+                header.classList.remove('is-scrolled');
+            }
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,421 @@
+/* 아이패드 */
+@media screen and (max-width:1279px) {
+    body {
+        font-size: 14px;
+    }
+
+    header:has(.sub-list:hover)::after,
+    header:has(.main-menu > li:hover .sub-list)::after {
+        opacity: 0;
+    }
+
+    /* 보이기 */
+    .m-header,
+    .ham {
+        display: block;
+    }
+
+
+    .gnb-list {
+        display: none;
+    }
+
+    .m-header {
+        display: block;
+        /* padding: 1em; */
+    }
+
+    .m-header>div {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+        padding: 23.5px;
+        position: relative;
+    }
+
+    .m-header>div button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1.5em;
+        /* 햄버거 배경 */
+    }
+
+    .m-header>div button.close {
+        /* close 배경 */
+    }
+
+    .m-header>div p {
+        text-align: center;
+    }
+
+
+    .m-header>div p img {
+        width: 185px;
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;
+        right: 0%;
+        top: 0;
+        background: #111;
+        height: 100vh;
+        /* display: none; */
+    }
+
+    .main-menu {
+        flex-direction: column;
+        gap: 0;
+
+    }
+
+    .main-menu>li>a {
+        line-height: 1.5;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 1em 3em;
+        /* 화살표 */
+        font-size: 16px;
+        border-bottom: 1px solid #999;
+        padding: 1.5em 2em;
+        /* 화살표 */
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.25em;
+        font-weight: 700;
+    }
+
+    .main-menu>li>a::after {
+        content: "\e800";
+        font-family: "fontello";
+        font-size: 1em;
+    }
+
+    .main-menu>li:hover>a::after {
+        content: "\e801";
+        font-family: "fontello";
+        font-size: 1em;
+    }
+
+    .main-menu>.active>a {
+        /* 반대화살표 */
+    }
+    .sub-list {
+        display: none;
+        position: static;
+        opacity: 0;
+        visibility: visible;
+        /* display: none; */
+        background: #1D1D1D;
+        /* justify-content: center; */
+        padding: 42px 0 52px 140px;
+        gap: 180px;
+    }
+
+    .main-menu>li:hover .sub-list {
+        display: flex;
+        opacity: 1;
+    }
+
+    .sub-list .depth {
+        padding-top: 20px;
+    }
+    .sub-list>li>a{
+        margin-bottom: 0;
+    }
+
+    .sub-list>li>a {
+        font-size: 1.15em;
+        font-weight: 600;
+    }
+
+    /* .main-menu>li:hover .sub-list{
+        display: block; */
+    .depth {
+        margin-top: 1.4em;
+    }
+
+    .depth>li>a {
+        line-height: 1.4em;
+        font-size: 1.15em;
+        font-weight: 500;
+    }
+
+
+
+
+    /*--------office--------  */
+    .office-collection-wrap {
+        /* height: 720px; */
+        height: 70vw;
+        max-height: 960px;
+        min-height: 600px;
+    }
+
+    .office-left {
+        width: 45%;
+        height: 100%;
+    }
+
+    .office-left .office-main-img-box,
+    .offcie-left .office-main-img-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .office-right {
+        width: 55%;
+        height: 100%;
+        padding: 7vw 5vw 5vw;
+    }
+
+    .office-right .office-title-area {
+        margin-bottom: 40px;
+    }
+
+    .office-right .section-title {
+        font-size: clamp(32px, 3.2vw, 44px);
+    }
+
+    .offcie-right .sub-title {
+        font-size: clamp(16px, 1.5vw, 20px);
+    }
+
+    .office-right .detail {
+        font-size: clamp(13px, 1.2vw, 16px);
+    }
+
+    .office-right .btn-more {
+        padding: 9px 28px;
+        font-size: 14px;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 25px;
+        row-gap: 30px;
+    }
+
+    .product-item .img-box {
+        max-width: 100%;
+    }
+
+    .product-item .text-box .product-title,
+    .product-item .text-box .price {
+        font-size: 13px;
+    }
+
+    /* ---------care--------- */
+    .care-inner {
+        height: auto;
+        padding: 60px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .care-title-box {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .care-video-box {
+        position: relative;
+        top: 0;
+        right: 0;
+        transform: none;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    /* --------project-------- */
+    .project-wrap .inner {
+        padding: 60px 30px;
+        gap: 32px;
+    }
+
+    .project-wrap .project-list-left,
+    .project-wrap .project-list-right {
+        min-width: 0;
+    }
+
+    .project-wrap .project-list-right .project-img>ul {
+        gap: 20px;
+        margin-top: 72px;
+    }
+
+
+    .project-wrap .project-list-right .project-img .text-box {
+        top: 16px;
+        transform: translateX(65px);
+    }
+
+    .project-wrap .project-list-left .img-box-left:hover>img,
+    .project-wrap .project-list-right .project-img .img-box:hover>img,
+    .best-list>li:hover .img-box .hover-img {
+        transform: none;
+    }
+
+    .project-wrap .project-list-right .btn a:hover {
+        background: var(--bg-color);
+        color: #414040;
+    }
+
+
+    .clubmovement-wrap .title-box {
+        padding-left: 30px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+
+}
+
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+    body {
+        font-size: 12px;
+    }
+
+    .main-menu>li>a {
+        font-size: 1.33em;
+        font-weight: 700;
+    }
+
+    .header-inner {
+        padding: 0 1.5em;
+        height: 50px;
+    }
+
+    .sub-list {
+        /* flex-direction: column;
+        gap: 1em; */
+        display: none;
+        padding: 0;
+    }
+
+
+    .main-menu>li:hover .sub-list {
+        display: block;
+        opacity: 1;
+    }
+
+    .sub-list>li>a {
+        padding: 1em 4em;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        /* 화살표배경 */
+    }
+
+    .sub-list>.active>a {
+        /* 반대화살표 */
+    }
+    .depth {
+        display: none;
+        background: #292929;
+        padding: 1em 6em 2em;
+        gap: 1.5em;
+    }
+
+    .main-menu>li .sub-list>li:hover .depth {
+        display: flex;
+        opacity: 1;
+    }
+
+
+    /* ------office------*/
+    .office-collection-wrap {
+        height: 100vh;
+    }
+
+    .office-left {
+        display: none;
+    }
+
+    .office-right {
+        width: 100%;
+    }
+
+    /* ------care------- */
+    .care-inner {
+        padding: 40px 20px;
+    }
+
+    .care-title-box {
+        margin-bottom: 20px;
+    }
+
+    /* ------project------*/
+    .project-wrap .inner {
+        display: flex;
+        padding: 56px 20px 64px;
+        flex-direction: column-reverse;
+    }
+
+    .project-wrap .project-list-left .img-box-left {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .project-wrap .project-list-left .img-box-left>img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .project-wrap .project-list-left .img-box-left .img-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+
+    .project-wrap .project-list-left .text-box-left,
+    .project-wrap .project-list-right .project-img .text-box {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+        transform: none;
+        color: #111;
+    }
+
+    .project-wrap .project-list-left .text-box-left {
+        font-size: 1em;
+    }
+
+    .project-wrap .project-list-right .project-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+    footer {
+        padding: 40px 0;
+    }
+
+    .footer-inner .address-right {
+        display: none;
+    }
+
+    .footer-inner address span {
+        display: block;
+    }
+
+    .footer-inner address span+span::before {
+        display: none;
+    }
+
+}
