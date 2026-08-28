@@ -264,14 +264,14 @@ header:has(.main-menu > li:hover .sub-list)::after {
 
 /* ==================================== main ==================================== */
 .mine-vanner {
-    padding: 178px 0 87px;
+    padding: 11.13em 0 5.44em;
 }
 
 .Product-list-wrap>ul {
     display: flex;
-    padding: 15px 0;
-    gap: 30px;
-    font-size: 20px;
+    padding: 1em 0;
+    gap: 1.88em;
+    font-size: 1.25em;
     color: rgba(0, 0, 0, 0.40);
 }
 
@@ -281,28 +281,28 @@ header:has(.main-menu > li:hover .sub-list)::after {
 }
 
 .Product-goods-list {
-    padding-top: 37px;
+    padding-top: 2.31em;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.88em;
 }
 
 .Product-goods-list img{
-    width: 797px;
+    width: 49.81em;
 }
 
 .Product-goods-list ul {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 1.88em;
 }
 
 .Product-goods-list .goods-left {
-    padding: 30px 20px 0;
+    padding: 1.88em 1.25em 0;
 }
 
 .Product-goods-list .goods-left>.goods-name{
-    font-size: 20px;
+    font-size: 1.25em;
 }
 .Product-goods-list .goods-left>div>.goods-right{
     font-weight: 700;
@@ -312,7 +312,7 @@ header:has(.main-menu > li:hover .sub-list)::after {
     display: flex;
     justify-content: space-between;
     font-weight: 300;
-    padding-top: 5px;
+    padding-top: 0.31em;
 }
 
 .Product-goods-list .goods-left .goods-price {
@@ -320,7 +320,7 @@ header:has(.main-menu > li:hover .sub-list)::after {
 }
 
 .sale{
-    padding-left: 7px;
+    padding-left: 0.44em;
     text-decoration: line-through;
     color: #A7A7A7;
 }
@@ -329,9 +329,9 @@ header:has(.main-menu > li:hover .sub-list)::after {
 .page-list {
     display: flex;
     justify-content: center;
-    gap: 37px;
-    padding: 110px 0;
-    font-size: 24px;
+    gap: 2.31em;
+    padding: 6.88em 0;
+    font-size: 1.5em;
     font-weight: 600;
 }
 

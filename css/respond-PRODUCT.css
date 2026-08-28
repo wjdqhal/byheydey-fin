@@ -198,6 +198,10 @@
         opacity: 1;
     }
 
+    .Product-goods-list ul>li{
+        flex: 0 0 calc((100% - 1.88em) / 2);
+    }
+
 
 }
 
