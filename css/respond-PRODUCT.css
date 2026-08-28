@@ -59,7 +59,7 @@
         top: 0;
         background: #111;
         height: 100vh;
-        /* display: none; */
+        display: none;
     }
 
     .main-menu {
