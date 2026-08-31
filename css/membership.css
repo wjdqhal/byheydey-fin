@@ -273,13 +273,11 @@ h2 {
 
 /* -------------------------------intro---------------------------------- */
 .intro-wrap .club-title-box {
-    text-align: center;
     padding-top: 16em;
 }
 
 .intro-wrap .club-title-box>p {
     margin-top: 24px;
-    line-height: 2;
 }
 
 .intro-wrap .club-img {
@@ -293,14 +291,19 @@ h2 {
 
 /* -------------------------------grade---------------------------------- */
 .grade-wrap .inner {
-    padding: 60px 200px;
+    padding: 12em 12.5em;
+    background: var(--secondary-color);
 }
 
 .grade-wrap .club-title-box {
-    text-align: center;
-    margin-bottom: 56px;
+    margin-bottom: 3.5em;
 }
 
+.grade-wrap .club-title-box p {
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 2;
+}
 
 /* grade-wrap top */
 
@@ -364,6 +367,7 @@ h2 {
 .grade-wrap .grade-top>ul {
     display: flex;
     gap: 2.5em;
+    justify-content: center;
 }
 
 
@@ -375,7 +379,7 @@ h2 {
     border-radius: 10px;
     width: 380px;
     height: 235px;
-    margin-bottom: 47px;
+    margin-bottom: 5em;
 }
 
 
@@ -396,17 +400,17 @@ h2 {
 .grade-wrap .grade-bottom>ul {
     display: flex;
     gap: 24px;
+    justify-content: center;
 }
 
 
-
-.grade-wrap .grade-bottom .card .grade-title-box{
+.grade-wrap .grade-bottom .card .grade-title-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid;
-    width: 350px;
-    height: auto;
+    width: 380px;
+    height: 600px;
     padding: 4.25em 2.69em;
 }
 
@@ -414,28 +418,146 @@ h2 {
     text-align: center;
 }
 
-
-.grade-wrap .grade-bottom .card .grade-title-box .detail{
-    margin-bottom: 42px 0;
+.grade-wrap .grade-bottom .card:hover {
+    transform: scale(1.15);
+    margin: 3em;
 }
 
-.grade-wrap .grade-bottom .card .btn{
+.grade-wrap .grade-bottom .card .grade-title-box .detail {
+    margin: 2.625em 0 2.625em;
+}
+
+
+.grade-wrap .grade-bottom .card .grade-title-box .sub-detail>span {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin: 1em;
+    line-height: 1.8;
+}
+
+.grade-wrap .grade-bottom .card .btn {
     flex-direction: column;
     margin-top: 24px;
     border: 1px solid;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    padding: 0.5em 2em;
+}
+
+.grade-wrap .grade-bottom .card .btn:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color)
+}
+
+.grade-wrap .grade-bottom .card .br {
+    width: 250px;
 }
 
 /* -------------------------------partner------------------------------- */
+.partner-wrap {
+    width: 100%;
+    padding: 130px 0 95px;
+}
+
+.partner-wrap .inner>h2 {
+    text-align: center;
+    margin-bottom: 1.2em;
+}
+
+.partner-wrap .tab-list>ul {
+    display: flex;
+    gap: 12px;
+    font-size: 1.5em;
+    margin-bottom: 42px;
+}
+
+.partner-wrap .tab-list>ul>li {
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.partner-wrap .tab-list .active {
+    background: #111;
+    color: #fff;
+}
+
+.partner-wrap .tab-wrap>div {
+    display: none
+}
+
+.partner-wrap .tab-wrap>div.active {
+    display: block;
+}
+
+.partner-wrap .tab-wrap>div>ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3em;
+    font-size: 1.5em;
+}
+
+.partner-wrap img {
+    width: 100%;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.partner-wrap .trip-tab img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.partner-wrap .fashion-tab img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+
 
 /* -------------------------------app----------------------------------- */
+.app-wrap .inner {
+    padding: 8em 0 12.6em;
+}
+
+.app-wrap h2 {
+    margin-bottom: 1.8em;
+}
+
+.app-wrap ul {
+    display: flex;
+    gap: 3.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-wrap ul li {
+    border-radius: 26px;
+    position: relative;
+    overflow: hidden;
+}
+
+.app-wrap img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
 
 
-
-
-
-
-
-
+.app-wrap ul li::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 7px solid rgba(0, 0, 0, 0.6);
+    border-radius: inherit;
+    box-sizing: border-box;
+    pointer-events: none;
+}
 
 
 
