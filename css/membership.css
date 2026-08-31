@@ -269,6 +269,7 @@ h2 {
     font-size: 3em;
     font-weight: 700;
     margin-bottom: 24px;
+    text-align: center;
 }
 
 /* -------------------------------intro---------------------------------- */
@@ -278,6 +279,8 @@ h2 {
 
 .intro-wrap .club-title-box>p {
     margin-top: 24px;
+    text-align: center;
+    line-height: 2;
 }
 
 .intro-wrap .club-img {
@@ -412,6 +415,7 @@ h2 {
     width: 380px;
     height: 600px;
     padding: 4.25em 2.69em;
+    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.15);
 }
 
 .grade-wrap .grade-bottom .card {
