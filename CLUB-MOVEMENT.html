@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/fontello.css">
     <link rel="stylesheet" href="./css/CLUB-MOVEMENT.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./css/respond.css">
 </head>
 
@@ -130,13 +129,15 @@
             <div class="inner">
                 <div class="title-box">
                     <h2 class="section-title">MOVEMENT LAB</h2>
-                    <p class="detail">무브먼트랩(Movement Lab)은 국내외 프리미엄 리빙·가구 브랜드를 큐레이션하여 소개하고 판매하는 라이프스타일 플랫폼으로<br>
-                        단순히 가구를 판매하는 쇼핑몰이 아니라, 여러 브랜드를 한 공간에서 직접 체험하고 비교할 수 있도록 만든 리빙 편집숍(Select Shop) 입니다.</p>
+                    <p class="detail"><span>무브먼트랩(Movement Lab)은 국내외 프리미엄 리빙·가구 브랜드를 큐레이션하여 소개하고 판매하는 라이프스타일
+                            플랫폼으로</span>
+                        <span>단순히 가구를 판매하는 쇼핑몰이 아니라, 여러 브랜드를 한 공간에서 직접 체험하고 비교할 수 있도록 만든 리빙 편집숍(Select Shop) 입니다.</span>
+                    </p>
                 </div>
 
                 <div class="lab-store-row" aria-hidden="true">
                     <div class="img-box">
-                        <img src="./images/05.CLUB_MOVEMENT/main.png" alt="">
+                        <img src="./images/05.CLUB_MOVEMENT/intro.png" alt="">
                     </div>
                 </div>
             </div>
@@ -146,8 +147,10 @@
             <div class="inner">
                 <div class="title-box">
                     <h2 class="section-title">CLUB MOVEMENT</h2>
-                    <p class="detail">화이트·블루·브라운 등급에 따라 다양한 혜택을 드립니다.<br>
-                        무브먼트랩에서 찾으시는 멤버십을 확인해보세요.</p>
+                    <p class="detail">
+                        <span>화이트·블루·브라운 등급에 따라 다양한 혜택을 드립니다.</span>
+                        <span>무브먼트랩에서 찾으시는 멤버십을 확인해보세요.</span>
+                    </p>
                 </div>
 
                 <ul class="tier-price-list">
@@ -627,6 +630,24 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // [수정] 메인 메뉴 및 서브메뉴 클릭 시 포커스 해제 (텍스트/메뉴가 남아있는 문제 해결)
+            const allNavLinks = document.querySelectorAll('.main-menu a, .sub-menu a, .header-wrap a');
+            // ※ 만약 네비게이션 선택자명이 다르다면 상단 헤더 영역 전체의 a 태그를 지정하는 'header a' 등으로 변경하셔도 됩니다.
+
+            allNavLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    // 아직 링크(href) 연결을 안 했거나 '#'일 경우 페이지 최상단으로 튕기는 현상 방지
+                    const href = link.getAttribute('href');
+                    if (!href || href === '#' || href === '') {
+                        e.preventDefault();
+                    }
+
+                    // 클릭 직후 포커스(Focus) 상태를 즉시 해제하여 잔상이 남지 않게 함
+                    link.blur();
+                });
+            });
+
+            // 파트너 탭/슬라이더 로직
             const partnerTabButtons = document.querySelectorAll('.partner-tab button');
             const partnerTabLists = document.querySelectorAll('.partner-wrap .partner-slider-track > ul');
 
@@ -718,7 +739,7 @@
             window.addEventListener('resize', initPartnerSlider);
         });
 
-
+        // 앱 슬라이더 로직
         const appTrack = document.getElementById('appTrack');
         let appInterval = null;
         let appIndex = 0;
@@ -748,11 +769,9 @@
             appInterval = setInterval(autoSlideApp, 2000);
         }
 
-        initPartnerSlider();
         initAppSlider();
 
         window.addEventListener('resize', () => {
-            initPartnerSlider();
             initAppSlider();
         });
     </script>
