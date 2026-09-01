@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/fontello.css">
     <link rel="stylesheet" href="./css/CLUB-MOVEMENT.css">
-    <link rel="stylesheet" href="./css/respond.css">
+    <link rel="stylesheet" href="./css/style_header_footer.css">
 </head>
 
 <body>
@@ -774,6 +774,19 @@
         window.addEventListener('resize', () => {
             initAppSlider();
         });
+
+        let bgHam = document.querySelector(".ham");
+        let menu = document.querySelector("nav");
+        bgHam.addEventListener("click", () => {
+            menu.classList.add("active");
+        })
+
+        let closeBtn = document.querySelector(".hamClose");
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        })
+
+
     </script>
 </body>
 
