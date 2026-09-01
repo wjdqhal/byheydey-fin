@@ -55,7 +55,7 @@
     nav {
         position: fixed;
         width: 100%;
-        right: 0%;
+        right: -100%;
         top: 0;
         background: #111;
         height: 100vh;
@@ -129,9 +129,9 @@
 
     /* .main-menu>li:hover .sub-list{
         display: block; */
-    .depth {
+    /* .depth {
         margin-top: 1.4em;
-    }
+    } */
 
     .depth>li>a {
         line-height: 1.4em;
@@ -310,7 +310,7 @@
     }
 
     .sub-list>li>a {
-        padding: 1em 4em;
+        padding: 1.75em 4em;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         /* 화살표배경 */
     }
@@ -323,6 +323,7 @@
         background: #292929;
         padding: 1em 6em 2em;
         gap: 1.5em;
+        margin-top: 0;
     }
 
     .main-menu>li .sub-list>li:hover .depth {
