@@ -97,7 +97,6 @@ header {
     background-color: #111;
 }
 
-
 .header-inner {
     max-width: 1920px;
     height: 80px;
@@ -367,20 +366,20 @@ header:has(.main-menu > li:hover .sub-list)::after {
 
 .tier-price-list .badge.gray,
 .tier-price-list .white .badge {
-    background: linear-gradient(to right, #EFEFEF 0%, #D6D6D6 25%, rgba(174, 174, 174, 0.8) 100%) !important;
+    background: linear-gradient(135deg, #eeeeee, #bcbcbc) !important;
     color: #111 !important;
 }
 
 .tier-price-list .badge.blue,
 .tier-price-list .blue .badge {
-    background: linear-gradient(to right, #DFF1FF 0%, rgba(105, 158, 255, 0.8) 54%, rgba(46, 112, 233, 0.8) 100%)!important;
+    background: linear-gradient(135deg, #8eb4ff, #4a82f6) !important;
     color: #111 !important;
 }
 
 .tier-price-list .badge.brown,
 .tier-price-list .brown .badge {
-    background: linear-gradient(to right, #CDA253 0%, #C17E00 17%, #724A00 100%) !important;
-    color: #fff !important;
+    background: linear-gradient(135deg, #c9a35c, #a3752c) !important;
+    color: #ffffff !important;
 }
 
 .tier-price-list .tier-title {
@@ -624,6 +623,9 @@ header:has(.main-menu > li:hover .sub-list)::after {
     width: 100%;
     max-width: 1440px;
     padding: 0 20px;
+    margin: 0 auto;
+    /* 중앙 정렬 유지 */
+    box-sizing: border-box;
 }
 
 .phone-card {
@@ -778,26 +780,6 @@ footer {
         padding: 24px 16px;
     }
 
-    /* .tier-price-list .tier-title {
-        font-size: 20px;
-    }
-
-    .tier-price-list .price {
-        font-size: 14px;
-    }
-
-    .tier-price-list .desc {
-        font-size: 12px;
-    }
-
-    .tier-benefit {
-        padding: 30px 16px 24px;
-    }
-
-    .tier-benefit ul li {
-        font-size: 12px;
-    } */
-
     .partner-wrap {
         padding-top: 60px;
         height: 550px;
@@ -938,11 +920,11 @@ footer {
         max-width: 100%;
         margin: 0 auto;
         overflow: hidden;
+        justify-content: center;
     }
 
     .app-screen-grid .phone-card {
         flex: 0 0 calc(50% - 8px) !important;
         max-width: calc(50% - 8px) !important;
     }
-
 }
