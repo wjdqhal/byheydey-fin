@@ -1,13 +1,5 @@
-
-
-    padding: 0 24px;
-    box-sizing: border-box;
-    width: 100%;
-}
-
 .lab-wrap {
-    padding-top: 40px;
-    padding-bottom: 80px;
+    padding: 16em 0 5em;
     width: 100%;
     box-sizing: border-box;
 }
@@ -20,7 +12,6 @@
     justify-content: center;
     width: 100%;
     max-width: 100%;
-    box-sizing: border-box;
     padding: 0 10px;
 }
 
@@ -313,7 +304,7 @@ header:has(.main-menu > li:hover .sub-list)::after {
 
 /* -----------------------------------------Section 2----------------------------------------------------------- */
 .club-wrap {
-    padding-top: 16em;
+    padding: 6.25em 0 6.25em;
     background-color: #fff;
 }
 
@@ -376,19 +367,19 @@ header:has(.main-menu > li:hover .sub-list)::after {
 
 .tier-price-list .badge.gray,
 .tier-price-list .white .badge {
-    background-color: #bcbcbc !important;
-    color: #fff !important;
+    background: linear-gradient(to right, #EFEFEF 0%, #D6D6D6 25%, rgba(174, 174, 174, 0.8) 100%) !important;
+    color: #111 !important;
 }
 
 .tier-price-list .badge.blue,
 .tier-price-list .blue .badge {
-    background-color: #4a82f6 !important;
-    color: #fff !important;
+    background: linear-gradient(to right, #DFF1FF 0%, rgba(105, 158, 255, 0.8) 54%, rgba(46, 112, 233, 0.8) 100%)!important;
+    color: #111 !important;
 }
 
 .tier-price-list .badge.brown,
 .tier-price-list .brown .badge {
-    background-color: #a3752c !important;
+    background: linear-gradient(to right, #CDA253 0%, #C17E00 17%, #724A00 100%) !important;
     color: #fff !important;
 }
 
@@ -787,7 +778,7 @@ footer {
         padding: 24px 16px;
     }
 
-    .tier-price-list .tier-title {
+    /* .tier-price-list .tier-title {
         font-size: 20px;
     }
 
@@ -805,7 +796,7 @@ footer {
 
     .tier-benefit ul li {
         font-size: 12px;
-    }
+    } */
 
     .partner-wrap {
         padding-top: 60px;
@@ -871,6 +862,7 @@ footer {
         object-fit: cover;
     }
 }
+
 /* --------------------------------------------767-------------------------------------------------- */
 @media screen and (max-width: 767px) {
     body {
@@ -943,12 +935,14 @@ footer {
     }
 
     .app-screen-grid {
-        max-width: 240px;
+        max-width: 100%;
         margin: 0 auto;
+        overflow: hidden;
     }
 
     .app-screen-grid .phone-card {
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
+        flex: 0 0 calc(50% - 8px) !important;
+        max-width: calc(50% - 8px) !important;
     }
+
 }
