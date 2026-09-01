@@ -264,7 +264,10 @@ header:has(.main-menu > li:hover .sub-list)::after {
 
 /* ==================================== main ==================================== */
 .mine-vanner {
-    padding: 11.13em 0 5.44em;
+    padding: 5em 0 5.44em;
+}
+.mine-vanner>.img-box>img{
+    width: 100%;
 }
 
 .Product-list-wrap>ul {

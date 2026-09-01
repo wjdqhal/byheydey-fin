@@ -263,6 +263,210 @@ header:has(.main-menu > li:hover .sub-list)::after {
 }
 
 /* ==================================== main ==================================== */
+.BUY-main-top {
+    display: flex;
+    padding-top: 165px;
+}
+
+.BUY-main-right {
+    padding: 50px 126.5px;
+    background: #fff;
+}
+
+.BUY-main-right>.Product {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.BUY-main-right>.Product>.goods-name {
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.BUY-main-right>.Product>.goods-name>img {
+    width: 24px;
+    height: 24px;
+}
+
+.BUY-main-right>.Product>.goods-price {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.BUY-main-right>.Product>.goods-color {
+    display: flex;
+    gap: 11px;
+}
+
+.BUY-main-right>.Product>.goods-color>div {
+    width: 23px;
+    height: 23px;
+    border-radius: 23px;
+}
+
+.BUY-main-right>.Product>.goods-color>.goods-color1 {
+    background: #D4C6BA;
+}
+
+.BUY-main-right>.Product>.goods-color>.goods-color2 {
+    background: #88582C;
+}
+
+.BUY-main-right>.Product>.goods-color>.goods-color3 {
+    background: #262220;
+}
+
+.BUY-main-right>.Product>.goods-Description {
+    font-weight: 500;
+    line-height: 30px;
+    height: 90px;
+}
+
+.BUY-main-right>.goods-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 420px;
+    background: #fff;
+    border: 1px solid #111;
+    padding: 14px 35px;
+    height: 50px;
+    font-weight: 600;
+}
+
+.BUY-main-right>.goods-list>img {
+    width: 24px;
+    height: 24px;
+}
+
+.BUY-main-right>.counter {
+    display: flex;
+    gap: 17px;
+    font-size: 20px;
+}
+
+.BUY-main-right>.counter>img {
+    width: 24px;
+    height: 24px;
+}
+
+.BUY-main-right>.all-goods-price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 30px 0;
+    align-items: center;
+}
+
+.BUY-main-right>.all-goods-price>.price {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.BUY-main-right>.buy-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.BUY-main-right>.buy-btn>button {
+    width: 283.5px;
+    height: 76px;
+    border: 1px solid #111;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.BUY-main-right>.buy-btn>.cart {
+    background: #111;
+    color: #fff;
+}
+
+.review-score>.sub-menu {
+    display: flex;
+    padding: 110px 0 80px;
+}
+
+.review-score>.sub-menu>button {
+    width: calc(100% / 4);
+    padding: 30px 0;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.review-score>.sub-menu>.review-btn {
+    font-weight: 700;
+    background: #fff;
+    border-color: #111;
+}
+
+.review-score>.review-score-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    padding: 0 35px ;
+}
+
+.review-score>.review-score-title>p {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.review-score>.review-score-title>span {
+    font-size: 24px;
+    font-weight: 500;
+}
+.review-score-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 167px;
+}
+.review-score-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.review-score-left>.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 96px;
+    font-weight: 700;
+    width: 430px;
+}
+.review-score-left>.score>img{
+    width: 100px;
+    height: 100px;
+}
+.review-score-left>.score-count{
+        font-size: 32px;
+        color: rgba(0, 0, 0, 0.4);
+}
+.review-score-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.review-score-right>.how-much-like{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+.review-score-right>.how-much-like>span{
+    width: 85px;
+}
+.review-score-right>.how-much-like>div{
+    width: 500px;
+    height: 20px;
+    background: #E3E3E3;
+    border-radius: 20px;
+}
 
 /* ==================================== footer ==================================== */
 footer {
