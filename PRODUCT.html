@@ -22,7 +22,7 @@
         <div class="header-inner">
             <div class="header-left">
                 <h1 class="logo">
-                    <a href="#">
+                    <a href="./index.html">
                         <img src="./images/icon/header-Logo.png" alt="BYHEYDEY logo">
                     </a>
                 </h1>
@@ -42,7 +42,7 @@
                         <li>
                             <a href="#" aria-haspopup="true" aria-expanded="false">PRODUCT</a>
                             <ul class="sub-list" aria-label="PRODUCT 서브 메뉴">
-                                <li><a href="#">BEST</a></li>
+                                <li><a href="./PRODUCT.html">BEST</a></li>
                                 <li><a href="#">House</a>
                                     <ul class="depth">
                                         <li><a href="#">All</a></li>
@@ -71,7 +71,7 @@
                         <li>
                             <a href="#" aria-haspopup="true" aria-expanded="false">BRANDS</a>
                             <ul class="sub-list" aria-label="BRANDS 서브 메뉴">
-                                <li><a href="#">About</a></li>
+                                <li><a href="./byheyday_about_brand.html">About</a></li>
                                 <li>
                                     <a href="#">Showroom</a>
                                     <ul class="depth">
@@ -85,7 +85,7 @@
                         <li>
                             <a href="#" aria-haspopup="true" aria-expanded="false">MEMBERSHIP</a>
                             <ul class="sub-list" aria-label="MEMBERSHIP 서브 메뉴">
-                                <li><a href="#">Club movement</a></li>
+                                <li><a href="./CLUB-MOVEMENT.html">Club movement</a></li>
                                 <li>
                                     <a href="#">Membership</a>
                                     <ul class="depth">
@@ -391,7 +391,21 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
 
     <script>
+        const allNavLinks = document.querySelectorAll('.main-menu a, .sub-menu a, .header-wrap a');
+        // ※ 만약 네비게이션 선택자명이 다르다면 상단 헤더 영역 전체의 a 태그를 지정하는 'header a' 등으로 변경하셔도 됩니다.
 
+        allNavLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                // 아직 링크(href) 연결을 안 했거나 '#'일 경우 페이지 최상단으로 튕기는 현상 방지
+                const href = link.getAttribute('href');
+                if (!href || href === '#' || href === '') {
+                    e.preventDefault();
+                }
+
+                // 클릭 직후 포커스(Focus) 상태를 즉시 해제하여 잔상이 남지 않게 함
+                link.blur();
+            });
+        });
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
