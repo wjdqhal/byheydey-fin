@@ -55,11 +55,16 @@
     nav {
         position: fixed;
         width: 100%;
-        right: 0%;
+        right: -100%;
         top: 0;
         background: #111;
         height: 100vh;
         /* display: none; */
+    }
+
+    nav.active {
+        right: 0;
+        transition: right 0.3s ease;
     }
 
     .main-menu {
@@ -98,6 +103,7 @@
     .main-menu>.active>a {
         /* 반대화살표 */
     }
+
     .sub-list {
         display: none;
         position: static;
@@ -118,7 +124,8 @@
     .sub-list .depth {
         padding-top: 20px;
     }
-    .sub-list>li>a{
+
+    .sub-list>li>a {
         margin-bottom: 0;
     }
 
@@ -132,6 +139,11 @@
     .depth {
         /* margin-top: 1.4em; */
     }
+
+    /* .depth {
+        margin-top: 1.4em;
+    }  */
+
 
     .depth>li>a {
         line-height: 1.4em;
@@ -318,11 +330,13 @@
     .sub-list>.active>a {
         /* 반대화살표 */
     }
+
     .depth {
         display: none;
         background: #292929;
         padding: 1em 6em 2em;
         gap: 1.5em;
+        margin-top: 0;
     }
 
     .main-menu>li .sub-list>li:hover .depth {
