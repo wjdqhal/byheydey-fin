@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2026 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="down-open" unicode="&#xe800;" d="M63 570l370-356 372 356q22 26 48 0 26-22 0-48l-396-392q-22-22-48 0l-396 392q-26 26 0 48 24 24 50 0z" horiz-adv-x="866" />
+
+<glyph glyph-name="up-open" unicode="&#xe801;" d="M804 130l-372 358-370-358q-26-22-50 0-24 24 0 50l396 390q26 26 48 0l396-390q24-26 0-50-26-22-48 0z" horiz-adv-x="864" />
+
+<glyph glyph-name="close" unicode="&#xe802;" d="M60 850c-15 0-31-5-43-16-23-23-23-62 0-85l370-370-370-369c-23-23-23-62 0-85 23-23 62-23 85 0l369 370 370-370c23-23 61-23 84 0 23 23 23 62 0 85l-369 369 369 370c23 23 23 62 0 85-11 11-27 16-42 16-15 0-31-5-42-16l-370-370-369 370c-12 11-27 16-42 16z" horiz-adv-x="1000" />
+
+<glyph glyph-name="hamburger" unicode="&#xe803;" d="M0 794c0 15 6 29 16 40 11 10 25 16 40 16h1000c14 0 28-6 39-16 10-11 16-25 16-40 0-14-6-28-16-39-11-10-25-16-39-16h-1000c-15 0-29 6-40 16-10 11-16 25-16 39z m56-500h1000c14 0 28 6 39 17 10 10 16 24 16 39 0 15-6 29-16 39-11 11-25 17-39 17h-1000c-15 0-29-6-40-17-10-10-16-24-16-39 0-15 6-29 16-39 11-11 25-17 40-17z m0-444h1000c14 0 28 6 39 16 10 11 16 25 16 40 0 14-6 28-16 39-11 10-25 16-39 16h-1000c-15 0-29-6-40-16-10-11-16-25-16-39 0-15 6-29 16-40 11-10 25-16 40-16z" horiz-adv-x="1111" />
+</font>
+</defs>
+</svg>

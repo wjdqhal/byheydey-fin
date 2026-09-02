@@ -1,0 +1,123 @@
+
+/* ==================================== main ==================================== */
+.mine-vanner {
+    padding: 5em 0 5.44em;
+}
+.mine-vanner>.img-box>img{
+    width: 100%;
+}
+
+.Product-list-wrap>ul {
+    display: flex;
+    padding: 1em 0;
+    gap: 1.88em;
+    font-size: 1.25em;
+    color: rgba(0, 0, 0, 0.40);
+}
+
+.Product-list-wrap>ul>li:first-child {
+    font-weight: 700;
+    color: #000000;
+}
+
+.Product-goods-list {
+    padding-top: 2.31em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.88em;
+}
+
+.Product-goods-list img{
+    width: 49.81em;
+}
+
+.Product-goods-list ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.88em;
+}
+
+.Product-goods-list .goods-left {
+    padding: 1.88em 1.25em 0;
+}
+
+.Product-goods-list .goods-left>.goods-name{
+    font-size: 1.25em;
+}
+.Product-goods-list .goods-left>div>.goods-right{
+    font-weight: 700;
+    color: #FF5252;
+}
+.Product-goods-list .goods-left>div {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    padding-top: 0.31em;
+}
+
+.Product-goods-list .goods-left .goods-price {
+    display: flex;
+}
+
+.sale{
+    padding-left: 0.44em;
+    text-decoration: line-through;
+    color: #A7A7A7;
+}
+
+
+.page-list {
+    display: flex;
+    justify-content: center;
+    gap: 2.31em;
+    padding: 6.88em 0;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.page-list>p:nth-child(2),
+.page-list>p:nth-child(3) {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+
+
+/* 아이패드 */
+@media screen and (max-width:1279px) {}
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+    .mine-vanner {
+        padding-top: 0;
+    }
+
+
+    .mine-vanner>.img-box {
+        height: 60vh;
+        display: flex;
+        position: relative;
+        left: -45%;
+        /* justify-content: center; */
+        /* overflow: hidden; */
+    }
+
+    .mine-vanner>.img-box>img {
+        max-width: 1920px;
+        width: 1920px;
+        height: 100%;
+    }
+
+    .Product-goods-list ul>li {
+        flex: 0 0 calc((100% - 3.75em) / 2);
+        overflow: hidden;
+    }
+
+    .Product-goods-list {
+        padding-left: 1.88em;
+    }
+
+    .Product-list-wrap {
+        padding-left: 1.88em;
+    }
+}

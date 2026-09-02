@@ -92,7 +92,7 @@ header.is-scrolled:hover {
 
 .header-inner {
     max-width: 1920px;
-    height: 80px;
+    height: 5em;
     margin: 0 auto;
     padding: 0 3.75em;
     display: flex;
@@ -342,7 +342,7 @@ header:has(.main-menu > li:hover .sub-list)::after {
 
 .main-slider-text-box .height span {
     display: block;
-    font-size: 32px;
+    font-size: 1em;
     font-weight: 400;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -353,7 +353,7 @@ header:has(.main-menu > li:hover .sub-list)::after {
 }
 
 .main-slider-text-box .height p strong {
-    font-size: 44px;
+    font-size: 2.75em;
     font-weight: 600;
     line-height: 1.1;
     letter-spacing: -0.5px;
@@ -363,7 +363,7 @@ header:has(.main-menu > li:hover .sub-list)::after {
 
 .main-slider-text-box .low span {
     display: block;
-    font-size: 32px;
+    font-size: 1em;
     font-weight: 500;
     letter-spacing: 1px;
     color: #ffffff;
@@ -373,7 +373,7 @@ header:has(.main-menu > li:hover .sub-list)::after {
 }
 
 .main-slider-text-box .low p {
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 400;
     color: #fff;
     text-shadow: -2px 4px 0 rgba(0, 0, 0, 0.25);
