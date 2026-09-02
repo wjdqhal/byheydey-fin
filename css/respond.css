@@ -94,16 +94,14 @@
         font-size: 1em;
     }
 
-    /* .main-menu>li:hover>a::after {
+    .main-menu>li:hover>a::after {
         content: "\e801";
         font-family: "fontello";
         font-size: 1em;
-    } */
+    }
 
     .main-menu>.active>a {
         /* 반대화살표 */
-        font-family: "fontello";
-        font-size: 1em;
     }
 
     .sub-list {

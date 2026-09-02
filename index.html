@@ -818,15 +818,7 @@
             menu.classList.remove("active");
         })
 
-        menu.forEach((m) => {
-            m.addEventListener("click", () => {
-                let sub = m.nextElementSibling;
-                if (sub) {
-                    sub.classList.toggle("active");
-                    m.classList.toggle("active");
-                }
-            })
-        })
+
 
     </script>
 
