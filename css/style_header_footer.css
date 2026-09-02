@@ -19,10 +19,7 @@ body {
     color: var(--primary-color);
     background-color: var(--bg-color);
 }
-footer .inner {
-    max-width: 1640px;
-    margin: 0 auto;
-}
+
 .m-header,
 .ham{
     display: none;
@@ -40,7 +37,7 @@ header {
 
 .header-inner {
     max-width: 1920px;
-    height: 80px;
+    height: 5em;
     margin: 0 auto;
     padding: 0 3.75em;
     display: flex;
@@ -259,6 +256,8 @@ footer {
     align-items: flex-start;
     width: 100%;
     padding: 0 1em;
+    margin: 0 auto;
+    max-width: 1640px;
 }
 
 .footer-inner .address-left {

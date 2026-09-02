@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/fontello.css">
     <link rel="stylesheet" href="./css/style-PRODUCT.css">
-    <link rel="stylesheet" href="./css/respond-PRODUCT.css">
+    <link rel="stylesheet" href="./css/style_header_footer.css">
     <script defer src="./js/script.js"></script>
 </head>
 
@@ -33,9 +33,9 @@
                                     <img src="./images/icon/header-Logo.png" alt="BYHEYDEY logo">
                                 </a>
                             </p>
-                            <!-- <button type="button" class="hamClose" aria-label="메뉴 닫기">
+                            <button type="button" class="hamClose" aria-label="메뉴 닫기">
                                 <img src="./images/icon/close.png" alt="메뉴 닫기 아이콘">
-                            </button> -->
+                            </button>
                         </div>
                     </div>
                     <ul class="main-menu">
@@ -406,6 +406,18 @@
                 link.blur();
             });
         });
+
+        let bgHam = document.querySelector(".ham");
+        let menu = document.querySelector("nav");
+        bgHam.addEventListener("click", () => {
+            menu.classList.add("active");
+        })
+
+        let closeBtn = document.querySelector(".hamClose");
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        })
+
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
