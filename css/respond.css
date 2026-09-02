@@ -134,9 +134,10 @@
         font-weight: 600;
     }
 
-
-    .main-menu>li:hover .sub-list{
-        display: block; 
+    /* .main-menu>li:hover .sub-list{
+        display: block; */
+    .depth {
+        /* margin-top: 1.4em; */
     }
 
     /* .depth {
