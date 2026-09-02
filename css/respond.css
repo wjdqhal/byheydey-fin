@@ -62,6 +62,11 @@
         /* display: none; */
     }
 
+    nav.active {
+        right: 0;
+        transition: right 0.3s ease;
+    }
+
     .main-menu {
         flex-direction: column;
         gap: 0;
@@ -98,6 +103,7 @@
     .main-menu>.active>a {
         /* 반대화살표 */
     }
+
     .sub-list {
         display: none;
         position: static;
@@ -118,7 +124,8 @@
     .sub-list .depth {
         padding-top: 20px;
     }
-    .sub-list>li>a{
+
+    .sub-list>li>a {
         margin-bottom: 0;
     }
 
@@ -129,9 +136,14 @@
 
     /* .main-menu>li:hover .sub-list{
         display: block; */
+    .depth {
+        /* margin-top: 1.4em; */
+    }
+
     /* .depth {
         margin-top: 1.4em;
-    } */
+    }  */
+
 
     .depth>li>a {
         line-height: 1.4em;
@@ -318,6 +330,7 @@
     .sub-list>.active>a {
         /* 반대화살표 */
     }
+
     .depth {
         display: none;
         background: #292929;

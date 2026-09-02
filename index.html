@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="BYHEYDEY" />
+    <meta property="og:description" content="여기를 눌러 링크를 확인하세요." />
+    <meta property="og:image" content="https://wjdqhal.github.io/images/icon/thumbnail.png" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="400" />
     <link rel="icon" type="byheydey/favison" href="./images/icon/favicon.png">
     <title>BYHEYDEY</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -28,7 +33,7 @@
                 <nav aria-label="메인 메뉴">
                     <div class="m-header">
                         <div>
-                            <p><a href="#">
+                            <p><a href="./index.html">
                                     <img src="./images/icon/header-Logo.png" alt="BYHEYDEY logo">
                                 </a>
                             </p>
@@ -41,7 +46,7 @@
                         <li>
                             <a href="#" aria-haspopup="true" aria-expanded="false">PRODUCT</a>
                             <ul class="sub-list" aria-label="PRODUCT 서브 메뉴">
-                                <li><a href="#">BEST</a></li>
+                                <li><a href="./PRODUCT.html">BEST</a></li>
                                 <li><a href="#">House</a>
                                     <ul class="depth">
                                         <li><a href="#">All</a></li>
@@ -714,6 +719,22 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
 
     <script>
+        const allNavLinks = document.querySelectorAll('.main-menu a, .sub-menu a, .header-wrap a');
+        // ※ 만약 네비게이션 선택자명이 다르다면 상단 헤더 영역 전체의 a 태그를 지정하는 'header a' 등으로 변경하셔도 됩니다.
+
+        allNavLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                // 아직 링크(href) 연결을 안 했거나 '#'일 경우 페이지 최상단으로 튕기는 현상 방지
+                const href = link.getAttribute('href');
+                if (!href || href === '#' || href === '') {
+                    e.preventDefault();
+                }
+
+                // 클릭 직후 포커스(Focus) 상태를 즉시 해제하여 잔상이 남지 않게 함
+                link.blur();
+            });
+        });
+
         //main-slider 
         var mainswiper = new Swiper('.main-slider', {
             loop: true,
@@ -790,6 +811,20 @@
                 header.classList.remove('is-scrolled');
             }
         });
+
+        let bgHam = document.querySelector(".ham");
+        let menu = document.querySelector("nav");
+        bgHam.addEventListener("click", () => {
+            menu.classList.add("active");
+        })
+
+        let closeBtn = document.querySelector(".hamClose");
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        })
+
+
+
     </script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
