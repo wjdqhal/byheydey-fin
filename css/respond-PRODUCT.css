@@ -15,28 +15,31 @@
         display: block;
     }
 
+    .ham {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 2em;
+    }
 
     .gnb-list {
         display: none;
     }
 
-    .m-header {
-        display: block;
-        /* padding: 1em; */
-    }
-
-    .m-header>div {
-        border-bottom: 2px solid rgba(255, 255, 255, 0.15);
-        padding: 23.5px;
+    .header-inner {
         position: relative;
     }
 
-    .m-header>div button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 1.5em;
-        /* 햄버거 배경 */
+    .m-header {
+        display: block;
+    }
+
+    .m-header>div{
+        border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+        height: 5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .m-header>div button.close {
@@ -55,11 +58,11 @@
     nav {
         position: fixed;
         width: 100%;
-        right: 0%;
+        right: -100%;
         top: 0;
         background: #111;
         height: 100vh;
-        display: none;
+        /* display: none; */
     }
 
     .main-menu {
@@ -161,10 +164,10 @@
         font-weight: 700;
     }
 
-    .header-inner {
+    /* .header-inner {
         padding: 0 1.5em;
         height: 50px;
-    }
+    } */
 
     .sub-list {
         /* flex-direction: column;
@@ -238,7 +241,7 @@
 
 @media screen and (max-width:480px) {
 
-    body{
+    body {
         font-size: 10px;
     }
 

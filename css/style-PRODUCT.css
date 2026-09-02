@@ -59,7 +59,7 @@ header.is-scrolled:hover {
 
 .header-inner {
     max-width: 1920px;
-    height: 80px;
+    height: 5em;
     margin: 0 auto;
     padding: 0 3.75em;
     display: flex;
