@@ -333,7 +333,7 @@ main{
     flex: 1;
     height: 52px;
     font-family: "Pretendard", sans-serif;
-    font-size: 1.50em;
+    font-size: 1em;
     border-radius:6px;
 }
 
@@ -553,7 +553,7 @@ main{
     border-radius:4px;
     background: transparent;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: "Pretendard", sans-serif;
     cursor:pointer;
     /* padding: 15px 40px; */
@@ -709,7 +709,7 @@ main{
 .review-user {
     width: 280px;
     padding: 25px;
-    font-size:1.25em;
+    /* font-size:1.25em; */
     background: #f7f7f7;
 }
 
@@ -723,7 +723,7 @@ main{
 }
 
 .user-name span {
-    font-size: 1.25em;
+    /* font-size: 1.25em; */
     color: #999;
 }
 
@@ -740,16 +740,17 @@ main{
     display: flex;
     gap: 10px;
 
-    font-size: 10px;
+    font-size: 16px;
 }
 
 .user-info span {
     width: 55px;
+    font-size:0.88em;
     color: #999;
 }
 
 .user-info b {
-    font-size:1.25em;
+    font-size:0.88em;
     font-weight: 400;
 }
 
@@ -762,7 +763,7 @@ main{
     display: flex;
     gap: 10px;
 
-    font-size: 10px;
+    /* font-size: 10px; */
 }
 
 .purchase-product > span {
@@ -809,7 +810,7 @@ main{
 .review-text {
     margin-top: 8px;
 
-    font-size: 1.50em;
+    font-size: 1.25em;
     line-height: 1.6;
 }
 
