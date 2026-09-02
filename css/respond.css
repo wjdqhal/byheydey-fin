@@ -17,7 +17,7 @@
 
 
     .gnb-list {
-        display: none;
+        /* display: none; */
     }
 
     .m-header {
@@ -59,7 +59,7 @@
         top: 0;
         background: #111;
         height: 100vh;
-        /* display: none; */
+        display: none;
     }
 
     nav.active {
@@ -413,6 +413,20 @@
     .project-wrap .project-list-right .project-img {
         display: none;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media screen and (max-width:480px) {
