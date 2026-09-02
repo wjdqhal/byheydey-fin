@@ -449,34 +449,50 @@
     <script>
         var swiper = new Swiper('.work-space', {
             loop: true,
-            slidesPerView: 3,
-            spaceBetween: 24,
-            centeredSlides: true,
+            slidesPerView: 1,
+            spaceBetween: 16,
+            centeredSlides: false,
             breakpoints: {
-                // 640: {
-                //     slidesPerView: 2,
-                //     spaceBetween: 20,
-                // },
-                768: {
-                    // slidesPerView: 2.4,
+                640: {
+                    slidesPerView: 1,
                     spaceBetween: 16,
+                    centeredSlides: false,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
                     centeredSlides: true,
                 },
                 1024: {
-                    // slidesPerView: 2.4,
+                    slidesPerView: 2.4,
                     spaceBetween: 24,
                     centeredSlides: true,
                 },
             },
         });
-        const loungeSwiper = new Swiper('.lounge-right ', {
-            slidesPerView: 'auto',
+
+        
+        const loungeSwiper = new Swiper('.lounge-right', {
             spaceBetween: 20,
             grabCursor: true,
             loop: false,
             freeMode: true,
+
+            slidesPerView: 2,
+
+            breakpoints: {
+                768: {
+                    slidesPerView: 3.5, 
+                    spaceBetween: 16,  
+                },
+                1024: {
+                    slidesPerView: 3.8,
+                    spaceBetween: 24,
+                }
+            }
         });
-                window.addEventListener('scroll', () => {
+        
+        window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             const threshold = 100;
 

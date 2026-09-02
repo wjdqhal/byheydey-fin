@@ -1,13 +1,12 @@
 .stay-wrap {
-  background-color: #ebf1f6; /* 배경 연푸른색 */
+  background-color: #ebf1f6; 
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 20px;
 }
 
-/* 메인 카드 컨테이너 */
 .card-container {
   display: flex;
   width: 100%;
@@ -19,13 +18,10 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* ==========================================
-   좌측: 인테리어 룸 영역
-   ========================================== */
+
 .room-section {
   flex: 1;
   position: relative;
-  /* 배경 이미지를 실제 이미지 경로로 변경해 사용하세요 */
   background: url('../images/03.PROJECT/stay.png') no-repeat center center / cover;
   display: flex;
   flex-direction: column;
@@ -33,7 +29,6 @@
   padding: 24px;
 }
 
-/* 좌상단 STAY 브랜드 로고/태그 */
 .brand-tag {
   font-weight: 700;
   font-size: 18px;
@@ -42,7 +37,6 @@
   float: right;
 }
 
-/* 핫스팟 (+) 아이콘 버튼 */
 .hotspot {
   position: absolute;
   width: 24px;
@@ -64,7 +58,6 @@
   background-color: #fff;
 }
 
-/* + 모양 그리기 */
 .hotspot::before {
   width: 10px;
   height: 2px;
@@ -89,9 +82,7 @@
   color: #333;
 }
 
-/* ==========================================
-   우측: 상품 영역
-   ========================================== */
+
 .product-section {
   flex: 1;
   display: flex;
@@ -102,7 +93,6 @@
   background-color: #ffffff;
 }
 
-/* 타이틀 */
 .section-title {
   font-size: 16px;
   font-weight: 600;
@@ -110,7 +100,6 @@
   margin-top: 10px;
 }
 
-/* 슬라이더 구조 */
 .product-slider {
   display: flex;
   align-items: center;
@@ -148,7 +137,6 @@
   opacity: 0.6;
 }
 
-/* 상품 정보 */
 .product-info {
   text-align: center;
   margin-bottom: 20px;
@@ -167,9 +155,7 @@
   color: #111;
 }
 
-/* ==========================================
-   반응형 (모바일 화면 대응)
-   ========================================== */
+/* ---- -모바일 ------*/
 @media (max-width: 768px) {
   .card-container {
     flex-direction: column;
@@ -182,5 +168,8 @@
 
   .product-section {
     padding: 30px 20px;
+  }
+  .stay-wrap{
+    align-items: stretch
   }
 }
