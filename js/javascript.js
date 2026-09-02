@@ -50,15 +50,36 @@ thumbnails.forEach((thumbnail, index) => {
 const minusBtn = document.querySelector(".minus-btn");
 const plusBtn = document.querySelector(".plus-btn");
 const quantityNumber = document.querySelector(".quantity-number");
-
+const totalPrice = document.querySelector(".total-price strong");
+const price = 850000;
 let quantity = Number(quantityNumber.textContent);
 
-// 수량 증가
 
+// 가격 업데이트 함수
+function updatePrice() {
+    const total = price * quantity;
+
+    quantityNumber.textContent = quantity;
+    totalPrice.textContent = total.toLocaleString() + "원";
+}
+// + 버튼
 plusBtn.addEventListener("click", () => {
     quantity++;
-    quantityNumber.textContent = quantity;
+    updatePrice();
 });
+// - 버튼
+minusBtn.addEventListener("click", () => {
+    if (quantity > 0) {
+        quantity--;
+        updatePrice();
+    }
+});
+// 수량 증가
+
+// plusBtn.addEventListener("click", () => {
+//     quantity++;
+//     quantityNumber.textContent = quantity;
+// });
 
 
 // 수량 감소
