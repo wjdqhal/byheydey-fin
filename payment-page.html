@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="byheydey/favison" href="./images/icon/favicon.png">
     <title>Document</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/fontello.css">
     <link rel="stylesheet" href="./css/style1.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/respond.css">
     <link rel="stylesheet" href="./css/respond1.css">
     
+    <link rel="stylesheet" href="./css/style_header_footer.css">
+
+
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
 
 
@@ -23,14 +28,14 @@
         <div class="header-inner">
             <div class="header-left">
                 <h1 class="logo">
-                    <a href="#">
+                    <a href="./index.html">
                         <img src="./images/icon/header-Logo.png" alt="BYHEYDEY logo">
                     </a>
                 </h1>
                 <nav aria-label="메인 메뉴">
                     <div class="m-header">
                         <div>
-                            <p><a href="#">
+                            <p><a href="./index.html">
                                     <img src="./images/icon/header-Logo.png" alt="BYHEYDEY logo">
                                 </a>
                             </p>
@@ -43,7 +48,7 @@
                         <li>
                             <a href="#" aria-haspopup="true" aria-expanded="false">PRODUCT</a>
                             <ul class="sub-list" aria-label="PRODUCT 서브 메뉴">
-                                <li><a href="#">BEST</a></li>
+                                <li><a href="./PRODUCT.html">BEST</a></li>
                                 <li><a href="#">House</a>
                                     <ul class="depth">
                                         <li><a href="#">All</a></li>
@@ -67,7 +72,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">PROJECT</a>
+                            <a href="./byheyday_project.html">PROJECT</a>
                         </li>
                         <li>
                             <a href="#" aria-haspopup="true" aria-expanded="false">BRANDS</a>
@@ -86,7 +91,7 @@
                         <li>
                             <a href="#" aria-haspopup="true" aria-expanded="false">MEMBERSHIP</a>
                             <ul class="sub-list" aria-label="MEMBERSHIP 서브 메뉴">
-                                <li><a href="#">Club movement</a></li>
+                                <li><a href="./CLUB-MOVEMENT.html">Club movement</a></li>
                                 <li>
                                     <a href="#">Membership</a>
                                     <ul class="depth">
@@ -113,7 +118,7 @@
                     <a href="#" aria-haspopup="true" aria-expanded="false"><img src="./images/icon/user.png"
                             alt="마이페이지"></a>
                     <ul class="user-list" aria-label="사용자 메뉴">
-                        <li><a href="#">Log in</a></li>
+                        <li><a href="./log_in.html">Log in</a></li>
                         <li><a href="#">Join</a></li>
                     </ul>
                 </li>
@@ -142,9 +147,9 @@
                 <!-- 왼쪽 상품 이미지 -->
                 <div class="payment-left">
                     <!-- <img src="./images/payment-page/item1.png" alt=""> -->
-                     <div class="main-image">
+                    <div class="main-image">
                         <img src="./images/payment-page/item1.png" alt="Recto Lounge Chair">
-                     </div>
+                    </div>
                     <!-- 썸네일 -->
                     <div class="thumbnail-list">
 
@@ -178,8 +183,8 @@
                     </div>
 
 
-                  
-                    
+
+
 
                 </div>
 
@@ -544,7 +549,7 @@
                         <input type="text" placeholder="">
 
                         <button type="button" aria-label="리뷰 검색">
-                            <img src="./images/icon/search.png" alt="">
+                            <img src="./images/icon/search.png" alt="돋보기 아이콘">
                         </button>
 
                     </div>
@@ -817,7 +822,7 @@
 
                             <img src="./images/payment-page/review/review5.png" alt="리뷰 사진">
 
-                            <img src="./images/payment-page/review6.png" alt="리뷰 사진">
+                            <img src="./images/payment-page/review/review_image6.png" alt="리뷰 사진">
 
                         </div>
 
@@ -923,7 +928,36 @@
             </div>
         </div>
     </footer>
-<script src="./js/javascript.js"></script>
+    <script src="./js/javascript.js"></script>
+
+    <script>
+         const allNavLinks = document.querySelectorAll('.main-menu a, .sub-menu a, .header-wrap a');
+        // ※ 만약 네비게이션 선택자명이 다르다면 상단 헤더 영역 전체의 a 태그를 지정하는 'header a' 등으로 변경하셔도 됩니다.
+
+        allNavLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                // 아직 링크(href) 연결을 안 했거나 '#'일 경우 페이지 최상단으로 튕기는 현상 방지
+                const href = link.getAttribute('href');
+                if (!href || href === '#' || href === '') {
+                    e.preventDefault();
+                }
+
+                // 클릭 직후 포커스(Focus) 상태를 즉시 해제하여 잔상이 남지 않게 함
+                link.blur();
+            });
+        });
+
+        let bgHam = document.querySelector(".ham");
+        let menu = document.querySelector("nav");
+        bgHam.addEventListener("click", () => {
+            menu.classList.add("active");
+        })
+
+        let closeBtn = document.querySelector(".hamClose");
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        })
+    </script>
 </body>
 
 </html>

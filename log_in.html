@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="./images/icon/favicon.png">
+    <title>BYHEYDEY - 로그인</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/fontello.css">
-    <link rel="stylesheet" href="./css/style_about_brand.css">
+    <link rel="stylesheet" href="./css/log_in.css">
     <link rel="stylesheet" href="./css/style_header_footer.css">
 </head>
 
 <body>
-    <!-- 1. header -->
+
+    <!-- HEADER -->
     <header>
         <div class="header-inner">
             <div class="header-left">
@@ -122,90 +124,68 @@
             </button>
         </div>
     </header>
-    <main>
-        <!-- about_brand_wrap -->
-        <section class="brand_story">
-            <div class="inner">
-                <div class="about_brand">
-                    <div class="img-box">
-                        <img src="./images/04.BRANDSTORY/brandstory1.png" alt="">
-                    </div>
-                    <div class="text-box">
-                        <h2 class="title">BYHEYDEY | Since 2008</h2>
-                        <div class="detail">
-                            <p class="eng-detail">
-                                ByHeydey began in 2008 with a new perspective on the furniture market. As
-                                a first-generation design furniture brand, we move forward with both pride in our
-                                origins
-                                and humility rooted in serving the user. Our shared mission is to democratize quality
-                                and
-                                make sustainable design accessible to more people. Through mutual trust and transparent
-                                processes that satisfy everyone involved—including the user—we aim to lead another
-                                positive
-                                shift in the field of furniture design.</p>
-                            <p class="kor-detail">
-                                바이헤이데이는 지난 2008년, 가구 시장의 새로운 관점으로 시작되었습니다. 디자인 가구 브랜드 1세대로서의 자부심과 언제나 사용자를 위함이라는 겸손함으로
-                                시작합니다. 우리의 공통된 사명은 품질을 민주화하고 더 많은 사람들이 지속 가능한 디자인에 접근할 수 있도록 하는 것입니다. 서로에게 신뢰를 가지고 사용자를
-                                포함한
-                                모두가 만족할 수 있는 프로세스의 투명성을 통해 우리는 또 한 번 가구 디자인 분야에서 긍정적인 변화를 주도하고자 합니다.
-                            </p>
-                        </div>
-                    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="login-container">
+        <div class="login-box">
+            <form id="loginForm" class="login-form">
+                <!-- 아이디 -->
+                <div class="form-group">
+                    <label for="username">아이디</label>
+                    <input type="text" id="username" placeholder="아이디" required>
                 </div>
-                <div class="about_brand">
-                    <div class="img-box">
-                        <img src="./images/04.BRANDSTORY/brandstory2.png" alt="">
-                    </div>
-                    <div class="text-box">
-                        <h2 class="title">Less Elements For Functionalism</h2>
-                        <div class="detail">
-                            <p class="eng-detail">
-                                ByHeydey’s design is grounded in functionalism, aiming for reasonable pricing and
-                                balanced
-                                quality. Inspired by Bauhaus, Dieter Rams, and Apple, our approach focuses on continuous
-                                reduction rather than addition.
-                                By resisting fleeting trends, we naturally achieve timeless design. We pursue minimalist
-                                furniture that seamlessly blends into a space without asserting itself, committed to the
-                                exceptionally high level of completion that minimalism demands.</p>
-                            <p class="kor-detail">
-                                바이헤이데이는 합리적인 가격과 균형 잡힌 품질을 목표로 기능주의 기반의 디자인을 선보입니다. 바우하우스에서 애플로 이어지는 기능주의 정신에 따라, 우리는
-                                더하기보다
-                                끊임없이 비워 내는 디자인을 지향합니다.
-                                유행을 타지 않는 타임리스 디자인을 통해 공간 속에서 튀지 않고 자연스럽게
-                                녹아드는 가구를 만듭니다. 나아가 미니멀리즘이 요구하는 극도의 완성도를 구현해 내는 것이 우리의 표준이자 목표입니다.
-                            </p>
-                        </div>
-                    </div>
+
+                <!-- 비밀번호 -->
+                <div class="form-group">
+                    <label for="password">비밀번호</label>
+                    <input type="password" id="password" placeholder="비밀번호" required>
                 </div>
-                <div class="about_brand last">
-                    <div class="img-box">
-                        <img src="./images/04.BRANDSTORY/brandstory3.png" alt="">
-                    </div>
-                    <div class="text-box">
-                        <h2 class="title">LEFF | Office Collection</h2>
-                        <div class="detail">
-                            <p class="eng-detail">
-                                The LEFF office collection takes its name from ByHeyDey's motto, "Less Elements For
-                                Functionalism". For creators who value order and order, we propose the most efficient
-                                and
-                                functional office space. We create an environment where you can immerse yourself in your
-                                work by strictly excluding ostentatious decorations and focusing only on essential
-                                functions. It presents new alternatives and directions for the domestic office furniture
-                                market.</p>
-                            <p class="kor-detail">
-                                LEFF 오피스 컬렉션은 바이헤이데이의 모토인 "Less Elements For Functionalism"에서 이름을 따왔습니다. 질서와 정돈을 중시하며 높은
-                                기준을
-                                가진 크리에이터를 위해, 가장 효율적이고 기능적인 오피스 공간을 제안합니다.
-                                과시적인 장식을 극도로 배제하고 본질적인 기능에만 집중하여 일에 깊이 몰두할 수 있는 환경을 만듭니다. 이는 국내 사무용 가구 시장에 새로운 대안과 방향성을
-                                제시합니다.
-                            </p>
-                        </div>
-                    </div>
+
+                <!-- 아이디 저장 체크박스 -->
+                <div class="checkbox-group">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" id="saveId">
+                        <span class="checkmark"></span>
+                        <span class="label-text">아이디 저장</span>
+                    </label>
                 </div>
+
+                <!-- 로그인 버튼 -->
+                <button type="submit" class="btn-login">로그인</button>
+
+                <!-- 계정 관련 링크 -->
+                <div class="login-links">
+                    <a href="#">아이디 찾기</a>
+                    <span class="divider">|</span>
+                    <a href="#">비밀번호 찾기</a>
+                    <span class="divider">|</span>
+                    <a href="#">회원가입</a>
+                </div>
+            </form>
+
+            <!-- 소셜 로그인 -->
+            <div class="social-login-group">
+                <!-- 네이버 -->
+                <button type="button" class="btn-social btn-naver">
+                    <div class="social-icon"><img src="./images/icon/naver.png" alt="네이버 아이콘"></div>
+                    <span>네이버 로그인</span>
+                </button>
+
+                <!-- 카카오 -->
+                <button type="button" class="btn-social btn-kakao">
+                    <div class="social-icon"><img src="./images/icon/kakao.png" alt="카카오 아이콘"></div>
+                    <span>카카오 로그인</span>
+                </button>
             </div>
-        </section>
+
+            <!-- 비회원 주문조회 -->
+            <div class="guest-order-section">
+                <a href="#" class="guest-order-link">비회원 주문조회</a>
+            </div>
+        </div>
     </main>
-    <!-- 2. footer -->
+
+    <!-- FOOTER -->
     <footer>
         <div class="footer-inner inner">
             <div class="address-left">
@@ -273,16 +253,18 @@
             });
         });
 
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            const threshold = 100;
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // 폼 제출 시 페이지가 새로고침되는 것을 방지합니다.
 
-            if (window.scrollY > threshold) {
-                header.classList.add('is-scrolled');
-            } else {
-                header.classList.remove('is-scrolled');
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            if (username && password) {
+                alert('로그인 되었습니다.');
+                window.location.href = './index.html'; // 로그인 완료 후 메인 페이지로 이동
             }
         });
+
         let bgHam = document.querySelector(".ham");
         let menu = document.querySelector("nav");
         bgHam.addEventListener("click", () => {

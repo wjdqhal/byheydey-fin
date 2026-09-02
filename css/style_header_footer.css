@@ -20,6 +20,11 @@ body {
     background-color: var(--bg-color);
 }
 
+.inner {
+    max-width: 1640px;
+    margin: 0 auto;
+}
+
 .m-header,
 .ham{
     display: none;
