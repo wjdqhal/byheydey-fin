@@ -15,11 +15,22 @@
         display: block;
     }
 
-    .ham {
+    .ham>button{
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         right: 2em;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .ham>button {
+        background-image: url(../images/icon/ham.png);
+    }
+
+    .ham>button.on {
+        background-image: url(../images/icon/close.png);
     }
 
     .gnb-list {
@@ -34,7 +45,7 @@
         display: block;
     }
 
-    .m-header>div{
+    .m-header>div {
         border-bottom: 2px solid rgba(255, 255, 255, 0.15);
         height: 5em;
         display: flex;
@@ -63,6 +74,10 @@
         background: #111;
         height: 100vh;
         /* display: none; */
+    }
+
+    nav.active {
+        right: 0%;
     }
 
     .main-menu {
