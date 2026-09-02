@@ -409,6 +409,7 @@ footer {
     }
     nav.active{
         right: 0;
+        transition: right 0.3s ease;
     }
     .main-menu {
         flex-direction: column;
@@ -465,7 +466,7 @@ footer {
     }
 
     .sub-list .depth {
-        padding-top: 20px;
+        /* padding-top: 20px; */
     }
 
     .sub-list>li>a {
@@ -524,7 +525,7 @@ footer {
         }
 
         .sub-list>li>a {
-            padding: 1em 4em;
+            padding: 1.75em 4em;
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             /* 화살표배경 */
         }
@@ -538,6 +539,7 @@ footer {
             background: #292929;
             padding: 1em 6em 2em;
             gap: 1.5em;
+            margin-top: 0;
         }
 
         .main-menu>li .sub-list>li:hover .depth {
