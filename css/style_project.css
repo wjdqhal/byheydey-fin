@@ -3,10 +3,11 @@ body {
 }
 
 .main_project {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/03.PROJECT/main/Project-main.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/03.PROJECT/main/Project-main.png);
     height: 960px;
     margin: 0 auto;
     width: 100%;
+    padding-top: 3em;
 }
 
 .main_project_inner {
@@ -15,14 +16,15 @@ body {
     max-width: 1920px;
     height: 960px;
     margin: 0 auto;
+    gap: 19.75em;
 }
 
 .project-left {
-    margin: 475px 0 180px 350px;
+    margin: 29.69em 0 11.25em 21.88em;
 }
 
 .title-box .section-title {
-    font-size: 84px;
+    font-size: 5.25em;
     font-weight: 600;
     line-height: 100px;
     margin-bottom: 16px;
@@ -30,7 +32,7 @@ body {
 }
 
 .title-box .sub-title {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 500;
     line-height: 29px;
     color: #fff;
@@ -38,9 +40,11 @@ body {
 }
 
 .btn {
-    display: block;
-    width: 295px;
-    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18.44em;
+    height: 3.25em;
     text-align: center;
     line-height: 52px;
     background-color: #fff;
@@ -49,9 +53,11 @@ body {
 }
 
 .btn-black {
-    display: block;
-    width: 190px;
-    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11.88em;
+    height: 3.25em;
     background-color: #000;
     color: #fff;
 }
@@ -77,7 +83,7 @@ body {
     display: flex;
     gap: 34px;
     margin-top: 24px;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 500;
     color: #A3A1A1;
 }
@@ -129,8 +135,9 @@ body {
 
 /* lounge */
 .lounge_project {
-background-color: #EFF2F6;
+    background-color: #EFF2F6;
 }
+
 .lounge-left .section-title {
     color: #000;
 }
@@ -160,15 +167,17 @@ background-color: #EFF2F6;
     /* overflow: hidden; */
 }
 
+
 .lounge-right .lounge-list>li {
     flex: 0 0 calc((100% - 10px) / 4);
 
 }
 
 /* work office */
-.work-space-wrap{
+.work-space-wrap {
     background-color: #505050;
 }
+
 .work-space-wrap>.inner {
     max-width: 1920px;
     margin: 0 auto;
@@ -210,6 +219,8 @@ background-color: #EFF2F6;
     font-size: 2.5em;
 } */
 
+
+
 /* progress */
 .progress .inner {
     max-width: 1640px;
@@ -245,16 +256,20 @@ background-color: #EFF2F6;
 .progress-list:last-child {
     border-right: none;
 }
-.progress-set{
+
+.progress-set {
     padding: 1em 0;
 }
-.progress-set p{
+
+.progress-set p {
     font-size: 1.25em;
     font-weight: 500;
 }
-.progress-set .step{
+
+.progress-set .step {
     margin: 0.6em 0;
 }
+
 .progress-set img {
     width: 40px;
 }
@@ -268,6 +283,319 @@ background-color: #EFF2F6;
     gap: 2em;
 }
 
-.progress-end .sub-title{
+.progress-end .sub-title {
     font-size: 1.5em;
+}
+
+
+
+/* =========================
+   Tablet : 1024px 이하
+========================= */
+@media (max-width: 1024px) {
+
+    /* ---------- Main Project ---------- */
+
+    .main_project {
+        height: auto;
+        min-height: 800px;
+        padding-top: 0;
+    }
+
+    .main_project_inner {
+        height: auto;
+        min-height: 800px;
+        padding: 0 5%;
+        gap: 0;
+    }
+
+    .project-left {
+        /* margin: 400px 0 100px 0;
+        z-index: 2; */
+        width: 42%;
+    }
+
+    .title-box .section-title {
+        line-height: 1.1;
+    }
+
+    .title-box .sub-title {
+        line-height: 1.4;
+        font-size: 1.12em;
+    }
+
+    .project-right {
+        left: auto;
+        right: 5%;
+        width: 48%;
+        max-width: 500px;
+    }
+
+
+
+
+    /* ---------- Project Tab ---------- */
+
+    .project-right .project-tab-menu {
+        gap: 20px;
+    }
+
+
+    /* ---------- Lounge ---------- */
+
+    .lounge_project_inner {
+        gap: 40px;
+        padding: 120px 5% 150px;
+    }
+
+    .lounge-left {
+        margin-left: 0;
+        flex: 0 0 30%;
+    }
+
+    .lounge-right {
+        width: 70%;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .lounge-right .lounge-list {
+        gap: 16px;
+    }
+
+    .lounge-right .lounge-list>li {
+        flex: 0 0 70%;
+    }
+
+
+    /* ---------- Work Space ---------- */
+
+    .work-space-wrap>.inner {
+        padding: 140px 5% 160px;
+    }
+
+    .work-space-wrap .btn {
+        right: 5%;
+    }
+
+    .work-space-list>li .text-box {
+        padding: 30px;
+    }
+
+
+    /* ---------- Progress ---------- */
+
+    .progress .inner {
+        padding: 0 5%;
+    }
+
+}
+
+
+/* =========================
+   Mobile : 768px 이하
+========================= */
+@media (max-width: 768px) {
+
+    /* ---------- Main Project ---------- */
+
+    .main_project {
+        min-height: auto;
+        height: auto;
+    }
+
+    .main_project_inner {
+        min-height: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 80px 20px 60px;
+    }
+
+    .project-left {
+        margin: 0 0 40px;
+    }
+
+    .title-box .section-title {
+        line-height: 1.1;
+        font-size: 4em;;
+    }
+
+    .title-box .sub-title {
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 295px;
+        max-height: 35px;
+    }
+
+    .btn-black{
+        width:100%;
+        max-width:190px;
+    }
+
+
+    /* ---------- Project Card ---------- */
+
+    .project-right {
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+
+        width: 100%;
+        height: auto;
+        min-height: 560px;
+
+        padding-bottom: 30px;
+    }
+
+    .project-right .project-tab-menu {
+        width: 100%;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .project-right .project-tab-menu>li {
+        padding: 12px 0;
+    }
+
+    .project-type-list {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .project-type-list .img-box {
+        width: 100%;
+    }
+
+    .project-type-list .img-box img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .project-type-list .text-box {
+        padding: 8px 5px 0 0;
+    }
+
+
+    /* ---------- Lounge ---------- */
+
+    .lounge_project_inner {
+        display: flex;
+        flex-direction: column;
+
+        gap: 40px;
+        padding: 80px 20px 100px;
+    }
+
+    .lounge-left {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .lounge-left .btn{
+        max-width:170px;
+        width: 100%;
+    }
+
+    .lounge-right {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .lounge-right .lounge-list {
+        gap: 16px;
+    }
+
+    .lounge-right .lounge-list>li {
+        flex: 0 0 75%;
+    }
+
+    .lounge-right .lounge-list>li img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+
+
+
+    /* ---------- Work Space ---------- */
+
+    .work-space-wrap>.inner {
+        padding: 80px 20px 100px;
+    }
+
+    .work-space-wrap .bg-btn {
+        height: 52px;
+    }
+
+    .work-space-wrap .btn {
+        position: relative;
+        right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+
+        width:100%;
+        max-width: 100px;
+        max-height: 30px;
+        line-height: 48px;
+    }
+
+
+
+    .work-space-list>li .text-box {
+        padding: 25px;
+    }
+
+
+    /* ---------- Progress ---------- */
+
+    .progress .inner {
+        padding: 0 20px;
+    }
+
+    .progress .section-title {
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    .progress .detail {
+        line-height: 1.6;
+    }
+
+    .progress-list {
+        flex-direction: column;
+    }
+
+    .progress-list>li {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .progress-list>li:last-child {
+        border-bottom: none;
+    }
+
+    .progress-set {
+        padding: 25px 0;
+    }
+
+    .progress-end {
+        margin: 50px 0;
+        text-align: center;
+    }
+
+
+    .progress-end .btn{
+        width:100%;
+        max-width:180px;
+    }
 }
