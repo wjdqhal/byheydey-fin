@@ -645,9 +645,9 @@ main{
 .review-sort button {
     border: 0;
     background: transparent;
-
     font-size: 12px;
     color: #aaa;
+    
 }
 
 .review-sort button.active {
@@ -686,6 +686,7 @@ main{
 .review-search img {
     width: 15px;
     margin: 0 auto;
+    filter: invert(1);
 }
 
 
