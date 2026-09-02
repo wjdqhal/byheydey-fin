@@ -1,7 +1,19 @@
 let hamBtn = document.querySelector(".ham>button");
-let menu = document.querySelector("nav");
+let menuWrap = document.querySelector("nav");
+
+let menu = document.querySelectorAll(".main-menu>li>a");
 
 hamBtn.addEventListener("click",()=>{
     hamBtn.classList.toggle("on");
-    menu.classList.toggle("active");
+    menuWrap.classList.toggle("active");
 })
+
+// menu.forEach((m)=>{
+//     m.addEventListener("click",()=>{
+//         let sub = m.nextElementSibling;
+//         if(sub){
+//             sub.classList.toggle("active");
+//             m.classList.toggle("active");
+//         }
+//     })
+// })
