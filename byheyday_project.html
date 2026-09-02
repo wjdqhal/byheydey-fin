@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/fontello.css">
+    <link rel="stylesheet" href="./css/style_project.css">
+    <link rel="stylesheet" href="./css/style_project_stay.css">
+    <link rel="stylesheet" href="./css/style_header_footer.css">
+</head>
+
+<body>
+    <!-- 1. header -->
+    <header>
+        <div class="header-inner">
+            <div class="header-left">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./images/icon/header-Logo.png" alt="BYHEYDEY logo">
+                    </a>
+                </h1>
+                <nav aria-label="메인 메뉴">
+                    <div class="m-header">
+                        <div>
+                            <p><a href="#">
+                                    <img src="./images/icon/header-Logo.png" alt="BYHEYDEY logo">
+                                </a>
+                            </p>
+                            <button type="button" class="hamClose" aria-label="메뉴 닫기">
+                                <img src="./images/icon/close.png" alt="메뉴 닫기 아이콘">
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="main-menu">
+                        <li>
+                            <a href="#" aria-haspopup="true" aria-expanded="false">PRODUCT</a>
+                            <ul class="sub-list" aria-label="PRODUCT 서브 메뉴">
+                                <li><a href="#">BEST</a></li>
+                                <li><a href="#">House</a>
+                                    <ul class="depth">
+                                        <li><a href="#">All</a></li>
+                                        <li><a href="#">Sofa</a></li>
+                                        <li><a href="#">Table</a></li>
+                                        <li><a href="#">Storage</a></li>
+                                        <li><a href="#">Homedeco</a></li>
+                                        <li><a href="#">Care</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Office</a>
+                                    <ul class="depth">
+                                        <li><a href="#">All</a></li>
+                                        <li><a href="#">Desk</a></li>
+                                        <li><a href="#">Storage</a></li>
+                                        <li><a href="#">Seating</a></li>
+                                        <li><a href="#">Worktool</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">PROJECT</a>
+                        </li>
+                        <li>
+                            <a href="#" aria-haspopup="true" aria-expanded="false">BRANDS</a>
+                            <ul class="sub-list" aria-label="BRANDS 서브 메뉴">
+                                <li><a href="#">About</a></li>
+                                <li>
+                                    <a href="#">Showroom</a>
+                                    <ul class="depth">
+                                        <li><a href="#">Flagship store</a></li>
+                                        <li><a href="#">Movement lab</a></li>
+                                        <li><a href="#">Department</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" aria-haspopup="true" aria-expanded="false">MEMBERSHIP</a>
+                            <ul class="sub-list" aria-label="MEMBERSHIP 서브 메뉴">
+                                <li><a href="#">Club movement</a></li>
+                                <li>
+                                    <a href="#">Membership</a>
+                                    <ul class="depth">
+                                        <li><a href="#">Business</a></li>
+                                        <li><a href="#">Private Order</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" aria-haspopup="true" aria-expanded="false">SUPPORT</a>
+                            <ul class="sub-list" aria-label="SUPPORT 서브 메뉴">
+                                <li><a href="#">Notice</a></li>
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">Q&A</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <ul class="gnb-list">
+                <li><a href="#"><img src="./images/icon/search.png" alt="검색 아이콘"></a></li>
+                <li>
+                    <a href="#" aria-haspopup="true" aria-expanded="false"><img src="./images/icon/user.png"
+                            alt="마이페이지"></a>
+                    <ul class="user-list" aria-label="사용자 메뉴">
+                        <li><a href="#">Log in</a></li>
+                        <li><a href="#">Join</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><img src="./images/icon/cart.png" alt="장바구니 아이콘">
+                        <span class="cart-count">3</span>
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="ham" aria-label="메뉴 열기">
+                <img src="./images/icon/ham.png" alt="메뉴 열기 아이콘">
+            </button>
+        </div>
+    </header>
+    <section class="main_project">
+        <div class="main_project_inner">
+            <div class="title-box project-left">
+                <h2 class="section-title">Project</h2>
+                <p class="sub-title">지금 바로 미팅을 신청해 보세요.</p>
+                <p class="btn"><a href="#">견적 문의하기</a></p>
+            </div>
+            <div class="sub-bg project-right">
+                <ul class="project-tab-menu">
+                    <li class="active"><a href="#">LOUNGE</a></li>
+                    <li><a href="#">OFFICE</a></li>
+                    <li><a href="#">STAY</a></li>
+                    <li><a href="#">F&B</a></li>
+                </ul>
+                <div class="project-type-list">
+                    <div class="project-type-lounge active">
+                        <div class="img-box">
+                            <a href="#"><img src="./images/03.PROJECT/main/Project-lounge-1.png" alt=""></a>
+                        </div>
+                        <div class="text-box">
+                            <span>SEONGSU YUL, 2026</span>
+                        </div>
+                    </div>
+                    <div class="project-type-office">
+                        <div class="img-box">
+                            <img src="./images/03.PROJECT/main/Project-office-1.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <span>Gangnam Office, 2023</span>
+                        </div>
+                    </div>
+                    <div class="project-type-stay">
+                        <div class="img-box">
+                            <img src="./images/03.PROJECT/main/Project-stay-1.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <span>Stay Aleun, 2026</span>
+                        </div>
+                    </div>
+                    <div class="project-type-fb">
+                        <div class="img-box">
+                            <img src="./images/03.PROJECT/main/Project-f&b-1.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <span>Seongsu Cafe, 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-circle">
+                    <span class="active"></span><span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="lounge_project">
+        <div class="lounge_project_inner">
+            <div class="title-box lounge-left">
+                <h2 class="section-title">Lounge </h2>
+                <p class="sub-title">어떤 무드든 맞춰드리겠습니다.</p>
+                <p class="btn btn-black"><a href="#">견적 문의하기</a></p>
+            </div>
+            <div class="lounge-right swiper">
+                <ul class="lounge-list swiper-wrapper">
+                    <li class="swiper-slide"><img src="./images/03.PROJECT/lounge/Project-lounge-1.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./images/03.PROJECT/lounge/Project-lounge-2.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./images/03.PROJECT/lounge/Project-lounge-3.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./images/03.PROJECT/lounge/Project-lounge-4.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./images/03.PROJECT/lounge/Project-lounge-5.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./images/03.PROJECT/lounge/Project-lounge-6.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./images/03.PROJECT/lounge/Project-lounge-7.png" alt=""></li>
+                    <li class="swiper-slide"><img src="./images/03.PROJECT/lounge/Project-lounge-8.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="work-space-wrap">
+        <div class="inner">
+            <div class="bg-btn">
+                <p class="btn btn-black"><a href="#">견적 문의하기</a></p>
+            </div>
+            <div class="work-space swiper">
+                <ul class="work-space-list swiper-wrapper">
+                    <li class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/03.PROJECT/work-space/work-space1.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h3>Work Space</h3>
+                            <p>강남구 오피스</p>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/03.PROJECT/work-space/work-space2.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h3>Work Space</h3>
+                            <p>성동구 오피스</p>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/03.PROJECT/work-space/work-space3.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h3>Work Space</h3>
+                            <p>동대문구 오피스</p>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/03.PROJECT/work-space/work-space4.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h3>Work Space</h3>
+                            <p>송파구 오피스</p>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/03.PROJECT/work-space/work-space5.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h3>Work Space</h3>
+                            <p>서초구 오피스</p>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/03.PROJECT/work-space/work-space5.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h3>Work Space</h3>
+                            <p>강동구 오피스</p>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/03.PROJECT/work-space/work-space5.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h3>Work Space</h3>
+                            <p>강동구 오피스</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="stay-wrap-in">
+        <div class="inner">
+            <div class="stay-wrap-left">
+                <div class="title">
+                    <span>STAY</span>
+                </div>
+                <div class="more-btn">
+                    <div class="btn1"><a href="#"></a></div>
+                    <div class="btn2"><a href="#"></a></div>
+                    <div class="btn3"><a href="#"></a></div>
+                </div>
+                <div class="stay-detail">
+                    <span class="room-title">스테이 아른</span>
+                </div>
+            </div>
+            <div class="stay-wrap-right">
+                <h2></h2>
+                <ul class="product-list">
+                    <li><a href="#">
+                            <div class="img-box">
+                                <img src="./images/03.PROJECT/stay.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <h3 class="product-name">Multi Sofa | Leather</h3>
+                                <p class="product-price">2,960,000원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section> -->
+    <section class="stay-wrap">
+        <div class="card-container">
+            <div class="room-section">
+                <div class="room-header">
+                    <span class="brand-tag">STAY</span>
+                </div>
+
+                <button class="hotspot" style="top: 50%; left: 13%;" aria-label="제품 정보 보기"></button>
+                <button class="hotspot" style="top: 40%; left: 45%;" aria-label="제품 정보 보기"></button>
+                <button class="hotspot" style="top: 55%; left: 43%;" aria-label="제품 정보 보기"></button>
+
+                <div class="room-footer">
+                    <span class="room-title">스테이 아른</span>
+                </div>
+            </div>
+
+            <div class="product-section">
+                <h2 class="section-title">Project Product</h2>
+
+                <div class="product-slider">
+                    <button class="nav-btn prev-btn" aria-label="이전 상품">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <div class="product-image-wrap">
+                        <img src="./images/03.PROJECT/sopa-png.png" alt="Multi Sofa Leather" class="product-img">
+                    </div>
+
+                    <button class="nav-btn next-btn" aria-label="다음 상품">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <h3 class="product-name">Multi Sofa | Leather</h3>
+                    <p class="product-price">2,960,000원</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="progress">
+        <div class="inner">
+            <h2 class="section-title">Progress</h2>
+            <p class="detail">
+                기성제품은 물론, 공간별 컨셉과 용도에 맞춘 커스텀 제품으로 공간을 구성할 수 있습니다.
+            </p>
+            <ul class="progress-list">
+                <li>
+                    <div class="progress-set">
+                        <img src="./images/icon/Inquiry.png" alt="step01">
+                        <p class="step">Step 01</p>
+                        <p>컨설팅 문의</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="progress-set">
+                        <img src="./images/icon/Consultation.png" alt="step02">
+                        <p class="step">Step 02</p>
+                        <p>디자이너 협의</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="progress-set">
+                        <img src="./images/icon/Planning.png" alt="step03">
+                        <p class="step">Step 03</p>
+                        <p>디자인 기획</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="progress-set">
+                        <img src="./images/icon/Purchase.png" alt="step04">
+                        <p class="step">Step 04</p>
+                        <p>구매 및 배송</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="progress-end">
+                <p class="sub-title">사업자 등록하여 별도의 문의없이 구매해보세요!</p>
+                <p class="btn btn-black"><a href="#">등록하러 가기</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- 2. footer -->
+    <footer>
+        <div class="footer-inner inner">
+            <div class="address-left">
+                <p class="footer-logo">
+                    <a href="#"><img src="./images/icon/footer-Logo.png" alt="BYHEYDEY logo"></a>
+                </p>
+                <address>
+                    <p><span>바이헤이데이</span> <span>대표자 조형석</span> <span>대표번호 1588-7193</span></p>
+                    <p><span>통신판매업 2021-서울마포-2699</span> <span>사업자등록번호 220-85-46645</span></p>
+                    <p><span>E-mail byheydeydey@gmail.com</span> <span>국민은행 069101-04-263160 바이헤이데이</span></p>
+                    <p><span>[03988] 서울 마포구 성미산로22길 18 (연남동504-50) 프로젝트 에이 A동 2~3층</span></p>
+                </address>
+            </div>
+            <div class="address-right">
+                <ul class="footer-menu">
+                    <li>
+                        <strong>PRODUCT</strong>
+                        <ul class="footer-Product-list sub-link-list">
+                            <li><a href="#">Best</a></li>
+                            <li><a href="#">House</a></li>
+                            <li><a href="#">Office</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>PROJECT</strong></li>
+                    <li>
+                        <strong>BRANDS</strong>
+                        <ul class="footer-Brands-list sub-link-list">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Showroom</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>MEMBERSHIP</strong>
+                        <ul class="footer-Membership-list sub-link-list">
+                            <li><a href="#">Clubmovement</a></li>
+                            <li><a href="#">Membership</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>SUPPORT</strong>
+                        <ul class="footer-Support-list sub-link-list">
+                            <li><a href="#">Notice</a></li>
+                            <li><a href="#">Review</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.work-space', {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 24,
+            centeredSlides: true,
+            breakpoints: {
+                // 640: {
+                //     slidesPerView: 2,
+                //     spaceBetween: 20,
+                // },
+                768: {
+                    // slidesPerView: 2.4,
+                    spaceBetween: 16,
+                    centeredSlides: true,
+                },
+                1024: {
+                    // slidesPerView: 2.4,
+                    spaceBetween: 24,
+                    centeredSlides: true,
+                },
+            },
+        });
+        const loungeSwiper = new Swiper('.lounge-right ', {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            grabCursor: true,
+            loop: false,
+            freeMode: true,
+        });
+                window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            const threshold = 100;
+
+            if (window.scrollY > threshold) {
+                header.classList.add('is-scrolled');
+            } else {
+                header.classList.remove('is-scrolled');
+            }
+        });
+        let bgHam = document.querySelector(".ham");
+        let menu = document.querySelector("nav");
+        bgHam.addEventListener("click", () => {
+            menu.classList.add("active");
+        })
+
+        let closeBtn = document.querySelector(".hamClose");
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        })
+    </script>
+</body>
+
+</html>
