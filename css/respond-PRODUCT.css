@@ -1,0 +1,264 @@
+/* 아이패드 */
+@media screen and (max-width:1279px) {
+    body {
+        font-size: 14px;
+    }
+
+    header:has(.sub-list:hover)::after,
+    header:has(.main-menu > li:hover .sub-list)::after {
+        opacity: 0;
+    }
+
+    /* 보이기 */
+    .m-header,
+    .ham {
+        display: block;
+    }
+
+    .ham {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 2em;
+    }
+
+    .gnb-list {
+        display: none;
+    }
+
+    .header-inner {
+        position: relative;
+    }
+
+    .m-header {
+        display: block;
+    }
+
+    .m-header>div{
+        border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+        height: 5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .m-header>div button.close {
+        /* close 배경 */
+    }
+
+    .m-header>div p {
+        text-align: center;
+    }
+
+
+    .m-header>div p img {
+        width: 185px;
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;
+        right: -100%;
+        top: 0;
+        background: #111;
+        height: 100vh;
+        /* display: none; */
+    }
+
+    .main-menu {
+        flex-direction: column;
+        gap: 0;
+
+    }
+
+    .main-menu>li>a {
+        line-height: 1.5;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 1em 3em;
+        /* 화살표 */
+        font-size: 16px;
+        border-bottom: 1px solid #999;
+        padding: 1.5em 2em;
+        /* 화살표 */
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.25em;
+        font-weight: 700;
+    }
+
+    .main-menu>li>a::after {
+        content: "\e800";
+        font-family: "fontello";
+        font-size: 1em;
+    }
+
+    .main-menu>li:hover>a::after {
+        content: "\e801";
+        font-family: "fontello";
+        font-size: 1em;
+    }
+
+    .main-menu>.active>a {
+        /* 반대화살표 */
+    }
+
+    .sub-list {
+        display: none;
+        position: static;
+        opacity: 0;
+        visibility: visible;
+        /* display: none; */
+        background: #1D1D1D;
+        /* justify-content: center; */
+        padding: 42px 0 52px 140px;
+        gap: 180px;
+    }
+
+    .main-menu>li:hover .sub-list {
+        display: flex;
+        opacity: 1;
+    }
+
+    .sub-list .depth {
+        padding-top: 20px;
+    }
+
+    .sub-list>li>a {
+        margin-bottom: 0;
+    }
+
+    .sub-list>li>a {
+        font-size: 1.15em;
+        font-weight: 600;
+    }
+
+    /* .main-menu>li:hover .sub-list{
+        display: block; */
+    .depth {
+        /* margin-top: 1.4em; */
+    }
+
+    .depth>li>a {
+        line-height: 1.4em;
+        font-size: 1.15em;
+        font-weight: 500;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+
+}
+
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+    body {
+        font-size: 12px;
+    }
+
+    .main-menu>li>a {
+        font-size: 1.33em;
+        font-weight: 700;
+    }
+
+    /* .header-inner {
+        padding: 0 1.5em;
+        height: 50px;
+    } */
+
+    .sub-list {
+        /* flex-direction: column;
+        gap: 1em; */
+        display: none;
+        padding: 0;
+    }
+
+
+    .main-menu>li:hover .sub-list {
+        display: block;
+        opacity: 1;
+    }
+
+    .sub-list>li>a {
+        padding: 1.75em 4em;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        /* 화살표배경 */
+    }
+
+    .sub-list>.active>a {
+        /* 반대화살표 */
+    }
+
+    .depth {
+        display: none;
+        background: #292929;
+        padding: 1em 6em 2em;
+        gap: 1.5em;
+    }
+
+    .main-menu>li .sub-list>li:hover .depth {
+        display: flex;
+        opacity: 1;
+    }
+
+    .mine-vanner {
+        padding-top: 0;
+    }
+
+
+    .mine-vanner>.img-box {
+        height: 60vh;
+        display: flex;
+        position: relative;
+        left: -45%;
+        /* justify-content: center; */
+        /* overflow: hidden; */
+    }
+
+    .mine-vanner>.img-box>img {
+        max-width: 1920px;
+        width: 1920px;
+        height: 100%;
+    }
+
+    .Product-goods-list ul>li {
+        flex: 0 0 calc((100% - 3.75em) / 2);
+        overflow: hidden;
+    }
+
+    .Product-goods-list {
+        padding-left: 1.88em;
+    }
+
+    .Product-list-wrap {
+        padding-left: 1.88em;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    body {
+        font-size: 10px;
+    }
+
+    footer {
+        padding: 40px 0;
+    }
+
+    .footer-inner .address-right {
+        display: none;
+    }
+
+    .footer-inner address span {
+        display: block;
+    }
+
+    .footer-inner address span+span::before {
+        display: none;
+    }
+
+}
