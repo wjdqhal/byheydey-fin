@@ -1,27 +1,34 @@
-body{
+body {
     background-color: #EFF2F6;
 }
-.about_brand{
+
+.about_brand {
     /* background: pink; */
     width: 100%;
-    padding-top: 150px;
+    padding-top: 80px;
 }
-.inner{
+
+.inner {
     width: 100%;
     /* margin: 0 auto; */
     /* background: red; */
 }
-.about_brand .img-box{
-    width: 100%;
+
+.about_brand .img-box {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
 }
-.about_brand .text-box{
+
+
+.about_brand .text-box {
     font-family: "Pretendard", sans-serif;
     margin: 150px auto 0;
     /* padding: 150px 350px; */
-    max-width: 1200px;
+    max-width: 1640px;
     padding: 0 1em;
 }
-.about_brand .text-box>.title{
+
+.about_brand .text-box>.title {
     font-weight: 700;
     font-size: 1.5em;
     line-height: 1.5em;
@@ -29,7 +36,8 @@ body{
     margin-bottom: 30px;
     padding: 0;
 }
-.about_brand .text-box .detail{
+
+.about_brand .text-box .detail {
     display: flex;
     gap: 120px;
     font-weight: 500;
@@ -37,11 +45,13 @@ body{
     letter-spacing: 0.06em;
     padding: 0;
 }
-.about_brand .text-box .detail>p{
+
+.about_brand .text-box .detail>p {
     flex: 1;
-    
+
 }
-.last .text-box .detail{
+
+.last .text-box .detail {
     /* margin-bottom: 150px; */
     padding-bottom: 150px;
 }
