@@ -154,9 +154,16 @@ body {
     background-color: #D5D5D5;
 }
 
-.project-type-office,
+/* .project-type-office,
 .project-type-stay,
 .project-type-fb {
+    display: none;
+} */
+
+.project-type-list>div.active{
+    display: block;
+}
+.project-type-list>div{
     display: none;
 }
 
