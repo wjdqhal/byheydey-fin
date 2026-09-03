@@ -22,7 +22,7 @@
 .room-section {
   flex: 1;
   position: relative;
-  background: url('../images/03.PROJECT/stay.png') no-repeat center center / cover;
+  background: url('../images/03.PROJECT/stay/stay_main.png') no-repeat center center / cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -87,7 +87,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 40px 20px;
   background-color: #ffffff;
@@ -100,6 +100,16 @@
   margin-top: 10px;
 }
 
+.stay-project-list>div{
+  display: none;
+}
+.stay-project-list>div.active{
+  display:block;
+}
+.stay-product{
+  display: flex;
+  justify-content: center;
+}
 .product-slider {
   display: flex;
   align-items: center;
