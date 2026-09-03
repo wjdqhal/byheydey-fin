@@ -12,7 +12,7 @@
 
 /* 숨기기 */
 .m-header,
-.ham{
+.ham {
     display: none;
 }
 
@@ -819,12 +819,13 @@ header:has(.main-menu > li:hover .sub-list)::after {
     left: 0;
 }
 
-.clubmovement-list>li .text-box>strong {
+.clubmovement-list>li .text-box>p {
+    margin-right: 1.5em;
     font-size: 1.25em;
     font-weight: 600;
 }
 
-.clubmovement-list>li .text-box>p {
+.clubmovement-list>li .text-box>span {
     font-weight: 500;
 }
 
@@ -940,4 +941,3 @@ footer {
 .footer-inner .sub-link-list a:hover {
     color: #ffffff;
 }
-
