@@ -4,52 +4,64 @@ body {
 
 .main_project {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/03.PROJECT/main/Project-main.png);
-    height: 960px;
-    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    min-height: 960px;
     width: 100%;
-    padding-top: 3em;
+    margin: 0 auto;
 }
 
 .main_project_inner {
     display: flex;
-    position: relative;
-    max-width: 1920px;
-    height: 960px;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1400px;
     margin: 0 auto;
-    gap: 19.75em;
+    padding: 6em 1em;
+    box-sizing: border-box;
 }
 
 .project-left {
-    margin: 29.69em 0 11.25em 21.88em;
+    margin: 0;
+    flex: 1;
+    max-width: 500px;
 }
 
 .title-box .section-title {
-    font-size: 5.25em;
+    font-size: clamp(40px, 5vw, 84px);
     font-weight: 600;
-    line-height: 100px;
+    line-height: 1.2;
     margin-bottom: 16px;
     color: #fff;
 }
 
 .title-box .sub-title {
-    font-size: 1.5em;
+    font-size: clamp(16px, 2vw, 24px);
     font-weight: 500;
-    line-height: 29px;
+    line-height: 1.3;
     color: #fff;
     margin-bottom: 30px;
 }
 
 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 18.44em;
-    height: 3.25em;
+    display: block;
+    width: 100%;
+    max-width: 295px;
+    height: 52px;
     text-align: center;
     line-height: 52px;
     background-color: #fff;
     color: #000;
     border-radius: 10px;
+}
+
+.btn a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .btn-black {
@@ -63,11 +75,15 @@ body {
 }
 
 .project-right {
-    position: absolute;
-    left: 50%;
-    top: 90px;
-    width: 592px;
-    height: 741px;
+    position: relative;
+    top: auto;
+    left: auto;
+
+    width: 100%;
+    max-width: 592px;
+    height: auto;
+    min-height: 700px;
+    padding-bottom: 30px;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -78,14 +94,19 @@ body {
     align-items: center;
 }
 
-
 .project-right .project-tab-menu {
     display: flex;
     gap: 34px;
     margin-top: 24px;
-    font-size: 1.5em;
+    font-size: clamp(16px, 2vw, 24px);
     font-weight: 500;
     color: #A3A1A1;
+    list-style: none;
+}
+
+.project-right .project-tab-menu a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .project-right .project-tab-menu .active {
@@ -95,6 +116,17 @@ body {
 
 .project-right .project-tab-menu>li {
     padding: 16px 0;
+}
+
+.project-type-list {
+    width: 90%;
+}
+
+.project-type-list img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
 }
 
 .project-type-list .text-box {
@@ -108,6 +140,7 @@ body {
 .project-right .tab-circle {
     display: flex;
     gap: 12px;
+    margin-top: 20px;
 }
 
 .project-right .tab-circle span {
@@ -121,21 +154,17 @@ body {
     background-color: #D5D5D5;
 }
 
-/* .project-right .project-type-list>div{
-    display: none;
-}
-.project-right .project-type-list>.active{
-    display: block;
-} */
 .project-type-office,
 .project-type-stay,
 .project-type-fb {
     display: none;
 }
 
-/* lounge */
+/* --------------- lounge ---------------- */
 .lounge_project {
     background-color: #EFF2F6;
+    width: 100%;
+    overflow: hidden;
 }
 
 .lounge-left .section-title {
@@ -143,12 +172,12 @@ body {
 }
 
 .lounge-left .sub-title {
-    color: #4E4E4E
+    color: #4E4E4E;
 }
 
 .lounge_project_inner {
-    /* height: 960px; */
     display: flex;
+    align-items: flex-start;
     gap: 86px;
     max-width: 1920px;
     margin: 0 auto;
@@ -157,23 +186,47 @@ body {
 
 .lounge-left {
     margin-left: 7.3%;
+    flex-shrink: 0;
 }
 
-.lounge-right {}
+.lounge-right {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.lounge-right .swiper-wrapper {
+    align-items: flex-start;
+}
 
 .lounge-right .lounge-list {
     display: flex;
-    gap: 1.25em;
-    /* overflow: hidden; */
 }
 
 
 .lounge-right .lounge-list>li {
-    flex: 0 0 calc((100% - 10px) / 4);
-
+    flex-shrink: 0;
+    height: auto;
 }
 
-/* work office */
+.lounge-right .lounge-list>li:nth-child(odd) {
+    aspect-ratio: 4 / 3;
+}
+
+.lounge-right .lounge-list>li:nth-child(even) {
+    aspect-ratio: 3 / 4.8;
+}
+
+.lounge-right .lounge-list>li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+
+/* ------------------- work office -------------------- */
 .work-space-wrap {
     background-color: #505050;
 }
@@ -215,13 +268,8 @@ body {
     opacity: 1;
 }
 
-/* .work-space-list .text-box>h3{
-    font-size: 2.5em;
-} */
 
-
-
-/* progress */
+/* -------------------- progress -----------------*/
 .progress .inner {
     max-width: 1640px;
     margin: 0 auto;
@@ -247,13 +295,12 @@ body {
 }
 
 .progress-list>li {
-    /* width: 100%; */
     flex: 1;
     text-align: center;
     border-right: 1px solid #ccc;
 }
 
-.progress-list:last-child {
+.progress-list>li:last-child {
     border-right: none;
 }
 
@@ -287,315 +334,61 @@ body {
     font-size: 1.5em;
 }
 
-
-
-/* =========================
-   Tablet : 1024px 이하
-========================= */
-@media (max-width: 1024px) {
-
-    /* ---------- Main Project ---------- */
-
-    .main_project {
-        height: auto;
-        min-height: 800px;
-        padding-top: 0;
-    }
-
+/* 아이패드 */
+@media screen and (max-width:1279px) {
     .main_project_inner {
-        height: auto;
-        min-height: 800px;
-        padding: 0 5%;
-        gap: 0;
-    }
-
-    .project-left {
-        /* margin: 400px 0 100px 0;
-        z-index: 2; */
-        width: 42%;
-    }
-
-    .title-box .section-title {
-        line-height: 1.1;
-    }
-
-    .title-box .sub-title {
-        line-height: 1.4;
-        font-size: 1.12em;
-    }
-
-    .project-right {
-        left: auto;
-        right: 5%;
-        width: 48%;
-        max-width: 500px;
-    }
-
-
-
-
-    /* ---------- Project Tab ---------- */
-
-    .project-right .project-tab-menu {
         gap: 20px;
     }
 
-
-    /* ---------- Lounge ---------- */
-
-    .lounge_project_inner {
-        gap: 40px;
-        padding: 120px 5% 150px;
+    .btn {
+        aspect-ratio: 14/5;
     }
-
-    .lounge-left {
-        margin-left: 0;
-        flex: 0 0 30%;
-    }
-
-    .lounge-right {
-        width: 70%;
-        min-width: 0;
-        overflow: hidden;
-    }
-
-    .lounge-right .lounge-list {
-        gap: 16px;
-    }
-
-    .lounge-right .lounge-list>li {
-        flex: 0 0 70%;
-    }
-
-
-    /* ---------- Work Space ---------- */
-
-    .work-space-wrap>.inner {
-        padding: 140px 5% 160px;
-    }
-
-    .work-space-wrap .btn {
-        right: 5%;
-    }
-
-    .work-space-list>li .text-box {
-        padding: 30px;
-    }
-
-
-    /* ---------- Progress ---------- */
 
     .progress .inner {
-        padding: 0 5%;
+        padding: 1em;
     }
-
 }
 
+/* 모바일 */
+@media screen and (max-width:767px) {
 
-/* =========================
-   Mobile : 768px 이하
-========================= */
-@media (max-width: 768px) {
-
-    /* ---------- Main Project ---------- */
-
-    .main_project {
-        min-height: auto;
-        height: auto;
+    .btn {
+        max-width: 180px;
+        height: 40px;
+        line-height: 40px;
     }
+
 
     .main_project_inner {
-        min-height: auto;
-        height: auto;
-        display: flex;
         flex-direction: column;
-        padding: 80px 20px 60px;
-    }
-
-    .project-left {
-        margin: 0 0 40px;
+        align-items: flex-start;
+        gap: 20px;
     }
 
     .title-box .section-title {
-        line-height: 1.1;
-        font-size: 4em;;
+        margin-bottom: 14px;
     }
 
     .title-box .sub-title {
-        margin-bottom: 20px;
+        margin-bottom: 16px;
     }
-
-    .btn {
-        width: 100%;
-        max-width: 295px;
-        max-height: 35px;
-    }
-
-    .btn-black{
-        width:100%;
-        max-width:190px;
-    }
-
-
-    /* ---------- Project Card ---------- */
-
-    .project-right {
-        position: relative;
-        left: auto;
-        right: auto;
-        top: auto;
-
-        width: 100%;
-        height: auto;
-        min-height: 560px;
-
-        padding-bottom: 30px;
-    }
-
-    .project-right .project-tab-menu {
-        width: 100%;
-        justify-content: center;
-        gap: 16px;
-        flex-wrap: wrap;
-    }
-
-    .project-right .project-tab-menu>li {
-        padding: 12px 0;
-    }
-
-    .project-type-list {
-        width: 100%;
-        padding: 0 20px;
-    }
-
-    .project-type-list .img-box {
-        width: 100%;
-    }
-
-    .project-type-list .img-box img {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-    .project-type-list .text-box {
-        padding: 8px 5px 0 0;
-    }
-
-
-    /* ---------- Lounge ---------- */
 
     .lounge_project_inner {
-        display: flex;
         flex-direction: column;
-
-        gap: 40px;
-        padding: 80px 20px 100px;
     }
 
-    .lounge-left {
-        width: 100%;
-        margin-left: 0;
+    .project-right {
+        min-height: 400px;
+
     }
 
-    .lounge-left .btn{
-        max-width:170px;
-        width: 100%;
-    }
-
-    .lounge-right {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .lounge-right .lounge-list {
-        gap: 16px;
-    }
-
-    .lounge-right .lounge-list>li {
-        flex: 0 0 75%;
-    }
-
-    .lounge-right .lounge-list>li img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-
-
-
-
-    /* ---------- Work Space ---------- */
-
-    .work-space-wrap>.inner {
-        padding: 80px 20px 100px;
-    }
-
-    .work-space-wrap .bg-btn {
-        height: 52px;
+    .lounge_project_inner {
+        padding: 150px 1em;
     }
 
     .work-space-wrap .btn {
-        position: relative;
-        right: auto;
-        margin-left: auto;
-        margin-bottom: 20px;
-
-        width:100%;
-        max-width: 100px;
-        max-height: 30px;
-        line-height: 48px;
+        right: 30%;
+        transform: translateX(50%);
     }
 
-
-
-    .work-space-list>li .text-box {
-        padding: 25px;
-    }
-
-
-    /* ---------- Progress ---------- */
-
-    .progress .inner {
-        padding: 0 20px;
-    }
-
-    .progress .section-title {
-        padding-top: 60px;
-        text-align: center;
-    }
-
-    .progress .detail {
-        line-height: 1.6;
-    }
-
-    .progress-list {
-        flex-direction: column;
-    }
-
-    .progress-list>li {
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid #ccc;
-    }
-
-    .progress-list>li:last-child {
-        border-bottom: none;
-    }
-
-    .progress-set {
-        padding: 25px 0;
-    }
-
-    .progress-end {
-        margin: 50px 0;
-        text-align: center;
-    }
-
-
-    .progress-end .btn{
-        width:100%;
-        max-width:180px;
-    }
 }
