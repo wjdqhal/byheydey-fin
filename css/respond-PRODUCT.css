@@ -164,6 +164,13 @@
         gap: 48px;
     }
 
+    .Product-list-wrap {
+        padding-left: 1.88em;
+    }
+
+    .Product-goods-list {
+        padding: 1em;
+    }
 
 }
 
@@ -243,16 +250,8 @@
         flex-direction: column;
     }
 
-    .Product-goods-list {
-        padding: 1em;
-    }
-
-    .Product-goods-list img{
+    .Product-goods-list img {
         width: 100%;
-    }
-
-    .Product-list-wrap {
-        padding-left: 1.88em;
     }
 
 }
