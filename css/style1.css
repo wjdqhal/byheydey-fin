@@ -428,7 +428,7 @@ main{
 }
 
 .section-title a {
-    font-size: 11px;
+    font-size: 14px;
     color: #777;
 }
 
@@ -645,7 +645,7 @@ main{
 .review-sort button {
     border: 0;
     background: transparent;
-    font-size: 12px;
+    font-size: 14px;
     color: #aaa;
     
 }
