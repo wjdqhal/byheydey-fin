@@ -710,6 +710,7 @@ main{
     width: 280px;
     padding: 25px;
     /* font-size:1.25em; */
+    box-sizing: content-box;
     background: #f7f7f7;
 }
 
@@ -761,16 +762,21 @@ main{
     margin-top: 20px;
 
     display: flex;
-    gap: 10px;
-
+    gap: 15px;
+    align-items: flex-start;
+    
     /* font-size: 10px; */
 }
 
 .purchase-product > span {
     color: #999;
+    flex-shrink: 0;
 }
 
 .purchase-product p {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
     line-height: 1.5;
 }
 
@@ -846,7 +852,7 @@ main{
     border: 0;
     background: transparent;
 
-    font-size: 10px;
+    font-size: 16px;
     color: #777;
 }
 
