@@ -817,6 +817,7 @@ header:has(.main-menu > li:hover .sub-list)::after {
     color: #fff;
     top: 0;
     left: 0;
+    word-break: keep-all;
 }
 
 .clubmovement-list>li .text-box>p {
