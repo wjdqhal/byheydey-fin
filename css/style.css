@@ -51,6 +51,8 @@ body {
     color: var(--sub-text-color);
     line-height: 1.5em;
     padding: 1.5em 0;
+    word-break: keep-all;
+    max-width: 580px;
 }
 
 .btn>a {
@@ -796,6 +798,9 @@ header:has(.main-menu > li:hover .sub-list)::after {
 
 .clubmovement-wrap .title-box {
     padding: 4.88em 0 6.25em;
+}
+.clubmovement-wrap .title-box>.detail{
+    /* margin-bottom: 5em; */
 }
 
 .clubmovement-wrap {
