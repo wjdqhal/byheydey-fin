@@ -270,6 +270,9 @@ header:has(.main-menu > li:hover .sub-list)::after {
 .mine-vanner>.img-box>img{
     width: 100%;
 }
+.mine-vanner>.m-img-box{
+    display: none;
+}
 
 .Product-list-wrap>ul {
     display: flex;
