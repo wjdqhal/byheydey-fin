@@ -19,10 +19,12 @@ body {
     color: var(--primary-color);
     background-color: var(--bg-color);
 }
-footer .inner {
+
+.inner {
     max-width: 1640px;
     margin: 0 auto;
 }
+
 .m-header,
 .ham{
     display: none;
@@ -33,28 +35,14 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    /* background-color: #111; */
+    background-color: #111;
     transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-header:hover {
-    background-color: #111111;
-}
-
-header.is-scrolled {
-    background-color: #111;
-    box-shadow: 0 0 20px #fff;
-}
-
-header.is-scrolled:hover {
-    background-color: #111;
-    box-shadow: 0 0 20px #fff;
 }
 
 
 .header-inner {
     max-width: 1920px;
-    height: 80px;
+    height: 5em;
     margin: 0 auto;
     padding: 0 3.75em;
     display: flex;
@@ -273,6 +261,8 @@ footer {
     align-items: flex-start;
     width: 100%;
     padding: 0 1em;
+    margin: 0 auto;
+    max-width: 1640px;
 }
 
 .footer-inner .address-left {
@@ -423,6 +413,7 @@ footer {
     }
     nav.active{
         right: 0;
+        transition: right 0.3s ease;
     }
     .main-menu {
         flex-direction: column;
@@ -479,7 +470,7 @@ footer {
     }
 
     .sub-list .depth {
-        padding-top: 20px;
+        /* padding-top: 20px; */
     }
 
     .sub-list>li>a {
@@ -538,7 +529,7 @@ footer {
         }
 
         .sub-list>li>a {
-            padding: 1em 4em;
+            padding: 1.75em 4em;
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             /* 화살표배경 */
         }
@@ -552,6 +543,7 @@ footer {
             background: #292929;
             padding: 1em 6em 2em;
             gap: 1.5em;
+            margin-top: 0;
         }
 
         .main-menu>li .sub-list>li:hover .depth {

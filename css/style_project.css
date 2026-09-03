@@ -65,9 +65,11 @@ body {
 }
 
 .btn-black {
-    display: block;
-    width: 190px;
-    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11.88em;
+    height: 3.25em;
     background-color: #000;
     color: #fff;
 }
@@ -200,6 +202,7 @@ body {
 .lounge-right .lounge-list {
     display: flex;
 }
+
 
 .lounge-right .lounge-list>li {
     flex-shrink: 0;

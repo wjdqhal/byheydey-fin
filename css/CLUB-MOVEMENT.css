@@ -1,0 +1,641 @@
+
+/* 공통 */
+
+
+.title-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.title-box .section-title {
+    font-size: clamp(1.8rem, 4vw, 2.75rem);
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    text-align: center;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    line-height: 1.3;
+}
+
+.title-box>.sub-title {
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    line-height: 1.6;
+    padding-top: 0.5em;
+    text-align: center;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+.title-box>.detail {
+    color: var(--sub-text-color);
+    line-height: 1.6em;
+    padding: 1.5em 0;
+    text-align: center;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+.btn>a {
+    background: var(--bg-color);
+    border-radius: 10px;
+    border: var(--border-color) solid 1px;
+    color: #414040;
+    padding: 0 24px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.img-box>ul {
+    display: none;
+}
+
+.img-box>ul.active {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-box .trip-img,
+.img-box .dining-img,
+.img-box .cafe-img,
+.img-box .culture-img,
+.img-box .fashion-img {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* -------------------------------section 1-------------------------------------------- */
+
+.lab-wrap {
+    padding-top: 16em;
+    width: 100%;
+}
+
+.lab-wrap .title-box .detail>span {
+    display: block;
+}
+
+.lab-wrap .title-box .detail{
+    line-height: 2;
+}
+
+.lab-wrap .lab-store-row {
+    margin-top: 100px;
+}
+
+
+
+/* -----------------------------------------Section 2----------------------------------------------------------- */
+.club-wrap {
+    padding: 6.25em 0 6.25em;
+    background-color: #fff;
+}
+
+.tier-price-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 60px;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.tier-price-list li {
+    flex: 1;
+    max-width: 360px;
+    background: #fff;
+    position: relative;
+}
+
+.tier-card-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 30px 24px;
+    border-radius: 6px;
+    position: relative;
+    background-color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tier-price-list li:nth-child(1) .tier-card-link,
+.tier-price-list .white .tier-card-link {
+    border: 1px solid #d0d0d0;
+}
+
+.tier-price-list li:nth-child(2) .tier-card-link,
+.tier-price-list .blue .tier-card-link {
+    border: 1.5px solid #4a82f6;
+}
+
+.tier-price-list li:nth-child(3) .tier-card-link,
+.tier-price-list .brown .tier-card-link {
+    border: 1.5px solid #a3752c;
+}
+
+.tier-price-list .badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    line-height: 1.2;
+}
+
+.tier-price-list .badge.gray,
+.tier-price-list .white .badge {
+    background: linear-gradient(135deg, #eeeeee, #bcbcbc) !important;
+    color: #111 !important;
+}
+
+.tier-price-list .badge.blue,
+.tier-price-list .blue .badge {
+    background: linear-gradient(135deg, #8eb4ff, #4a82f6) !important;
+    color: #111 !important;
+}
+
+.tier-price-list .badge.brown,
+.tier-price-list .brown .badge {
+    background: linear-gradient(135deg, #c9a35c, #a3752c) !important;
+    color: #ffffff !important;
+}
+
+.tier-price-list .tier-title {
+    display: block;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #222;
+    margin: 0 0 8px 0;
+}
+
+.tier-price-list .price {
+    font-weight: 700;
+    color: #111;
+    margin: 0 0 20px 0;
+}
+
+.tier-price-list .desc {
+    font-size: 0.81em;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+    word-break: keep-all;
+}
+
+.tier-benefit-list {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.tier-benefit {
+    flex: 1;
+    max-width: 360px;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    padding: 40px 24px 30px;
+    text-align: center;
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.tier-benefit.featured {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.tier-benefit:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+.tier-benefit .tier-name {
+    display: block;
+    font-size: 1.38em;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #222;
+}
+
+.tier-benefit ul {
+    margin: 0 0 30px 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.tier-benefit ul li {
+    font-size: 0.81em;
+    color: #444;
+    padding: 12px 0;
+    line-height: 1.4;
+    border-bottom: 1px solid #eee;
+    word-break: keep-all;
+}
+
+.tier-benefit ul li:last-child {
+    border-bottom: none;
+}
+
+.tier-benefit .btn {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.tier-benefit .btn a,
+.tier-benefit .btn button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 15.5px 39px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 0.75em;
+    color: #333;
+    background: #f7f7f7;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.tier-benefit .btn a:hover,
+.tier-benefit .btn button:hover {
+    background: #222;
+    color: #fff;
+    border-color: #222;
+}
+
+/* ----------------------------------------------Section 3------------------------------------------------- */
+.partner-wrap {
+    padding-top: 100px;
+    height: 960px;
+}
+
+
+.partner-wrap .title-box {
+    margin-bottom: 60px;
+}
+
+.partner-tab {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 42px;
+    padding-left: 0;
+    text-align: left;
+}
+
+.partner-tab li {
+    margin-right: 0;
+}
+
+.partner-tab button {
+    padding: 10px 24px;
+    border-radius: 30px;
+    background: #ffffff;
+    color: #333333;
+    font-size: 0.88em;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.partner-tab button:hover,
+.partner-tab li.active button {
+    background: #111111;
+    color: #ffffff;
+}
+
+.partner-slider-track {
+    overflow: hidden !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.partner-slider-track::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+.partner-wrap .partner-slider-track>ul {
+    display: none;
+}
+
+.partner-wrap .partner-slider-track>ul.active {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 24px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.partner-wrap .partner-slider-track>ul>li {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: calc((100% - (24px * 3)) / 4);
+}
+
+.partner-wrap .img-box li a {
+    display: block;
+    text-decoration: none;
+}
+
+.partner-wrap .img-box .trip-img,
+.partner-wrap .img-box .dining-img,
+.partner-wrap .img-box .cafe-img,
+.partner-wrap .img-box .culture-img,
+.partner-wrap .img-box .fashion-img {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.partner-wrap .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.partner-wrap li:hover img {
+    transform: scale(1.03);
+}
+
+.partner-wrap p[class$="-name"],
+.partner-wrap .partner-name {
+    font-size: 0.88em;
+    font-weight: 600;
+    color: #111111;
+    text-align: left;
+    margin: 12px 0 0 0;
+    line-height: 1.4;
+}
+
+/* -----------------------------------------------Section 4----------------------------------------- */
+.app-wrap {
+    padding: 120px 0 140px;
+    background-color: var(--bg-color);
+}
+
+.app-wrap .title-box {
+    margin-bottom: 60px;
+}
+
+.app-screen-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+    /* 중앙 정렬 유지 */
+    box-sizing: border-box;
+}
+
+.phone-card {
+    flex: 1;
+    max-width: 310px;
+    aspect-ratio: 9 / 19.5;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+}
+
+.phone-card:hover {
+    transform: translateY(-10px);
+
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    border-radius: 21px;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.phone-screen img {
+    width: 100%;
+    /* height: 100%;
+    object-fit: cover; */
+    display: block;
+}
+
+
+/* ---------------------------------1279 반응형---------------------------------------------------- */
+@media screen and (max-width: 1279px) {
+    body {
+        padding-top: 100px;
+    }
+
+    .lab-wrap {
+        padding-top: 40px;
+    }
+
+    .tier-price-list,
+    .tier-benefit-list {
+        gap: 16px;
+    }
+
+    .tier-card-link {
+        padding: 24px 16px;
+    }
+
+    .partner-wrap {
+        padding-top: 60px;
+        height: 550px;
+    }
+
+    .partner-wrap .img-box {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 20px;
+    }
+
+    .partner-wrap .partner-slider-track {
+        display: block;
+        width: 100%;
+        min-height: auto !important;
+        height: auto;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .partner-wrap .partner-slider-track>ul.active {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        gap: 16px;
+        width: max-content !important;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .partner-btn-wrap,
+    .alliance-btn-group {
+        display: flex;
+        gap: 20px;
+    }
+
+    .partner-wrap .partner-slider-track>ul>li {
+        width: calc(70vw - 20px) !important;
+        max-width: 220px !important;
+        flex-shrink: 0 !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .partner-wrap .img-box .trip-img,
+    .partner-wrap .img-box .dining-img,
+    .partner-wrap .img-box .cafe-img,
+    .partner-wrap .img-box .culture-img,
+    .partner-wrap .img-box .fashion-img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .partner-wrap .img-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* --------------------------------------------767-------------------------------------------------- */
+@media screen and (max-width: 767px) {
+    body {
+        padding-top: 90px;
+    }
+
+    .inner {
+        padding: 0 16px;
+    }
+
+    .lab-wrap {
+        padding-top: 20px;
+    }
+
+    .lab-wrap .title-box .detail>span {
+        display: none;
+    }
+
+    .lab-wrap .lab-store-row {
+        margin-top: 0.8em;
+    }
+
+    .tier-benefit-list {
+        display: none !important;
+    }
+
+    .tier-price-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 0;
+    }
+
+    .tier-price-list li {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .tier-card-link:active {
+        background-color: #f8f8f8;
+        transform: scale(0.98);
+    }
+
+    .partner-wrap {
+        padding-top: 40px;
+        height: 450px;
+    }
+
+    .partner-tab {
+        gap: 10px;
+        margin-bottom: 24px;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 8px;
+    }
+
+    .partner-tab li {
+        margin-right: 0;
+    }
+
+    .partner-tab button {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .partner-wrap .partner-slider-track {
+        min-height: auto !important;
+        height: auto;
+    }
+
+    .partner-wrap .partner-slider-track>ul>li {
+        width: calc(80vw - 20px) !important;
+        max-width: 180px !important;
+    }
+
+    .app-wrap {
+        padding: 60px 0;
+    }
+
+    .app-screen-grid {
+        max-width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        justify-content: center;
+    }
+
+    .app-screen-grid .phone-card {
+        flex: 0 0 calc(50% - 8px) !important;
+        max-width: calc(50% - 8px) !important;
+    }
+
+
+}
