@@ -354,7 +354,7 @@
     }
 
     main {
-        padding-top: 65px;
+        padding-top: 70px;
     }
 
 
@@ -503,7 +503,7 @@
         width: 100% !important;
         height: 40px !important;
         padding: 0 10px !important;
-        font-size: 0.75em !important;
+        font-size: 0.88em !important;
     }
 
 
@@ -521,7 +521,7 @@
 
     .quantity-number {
         width: 40px;
-        font-size: 0.81em;
+        font-size: 1em;
     }
 
 
@@ -568,7 +568,7 @@
         margin: 0 !important;
         padding: 0 10px !important;
 
-        font-size: 0.88em !important;
+        font-size: 1em !important;
 
         box-sizing: border-box;
     }
@@ -598,7 +598,7 @@
     }
 
     .product-tab a {
-        font-size: 0.63em;
+        font-size: 1em;
         white-space: nowrap;
     }
 

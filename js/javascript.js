@@ -84,12 +84,12 @@ minusBtn.addEventListener("click", () => {
 
 // 수량 감소
 
-minusBtn.addEventListener("click", () => {
-    if (quantity > 0) {
-        quantity--;
-        quantityNumber.textContent = quantity;
-    }
-});
+// minusBtn.addEventListener("click", () => {
+//     if (quantity > 0) {
+//         quantity--;
+//         quantityNumber.textContent = quantity;
+//     }
+// });
 
 
 

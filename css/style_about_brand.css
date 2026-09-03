@@ -9,16 +9,42 @@ body {
 }
 
 .inner {
-    width: 100%;
+    /* width: 100%; */
     /* margin: 0 auto; */
     /* background: red; */
 }
 
 .about_brand .img-box {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
+    width: 100%;
 }
 
+.brand_story .img-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.brand_story>div>.img-box {
+    width: 100%;
+    height: 600px;
+    /* aspect-ratio: 3/1; */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.brand_story>div:first-child>.img-box {
+    background-image: url(../images/04.BRANDSTORY/1.jpg);
+    height: 850px;
+}
+
+.brand_story>div:nth-child(2)>.img-box {
+    background-image: url(../images/04.BRANDSTORY/2.png);
+}
+
+.brand_story>div:nth-child(3)>.img-box {
+    background-image: url(../images/04.BRANDSTORY/3.jpg);
+}
 
 .about_brand .text-box {
     font-family: "Pretendard", sans-serif;
@@ -60,12 +86,30 @@ body {
     .about_brand {
         padding-top: 70px;
     }
+
     .about_brand .text-box {
         margin: 130px auto 60px;
     }
+
     .last .text-box .detail {
-    padding-bottom: 60px;
-}
+        padding-bottom: 60px;
+    }
+
+    .brand_story>div:first-child>.img-box {
+        height: 450px;
+        background-size: cover;
+    }
+
+    .brand_story>div>.img-box {
+        width: 100%;
+        height: 500px;
+        /* aspect-ratio: 3/1; */
+        /* background-attachment: fixed; */
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+
 }
 
 @media screen and (max-width:767px) {
@@ -82,10 +126,12 @@ body {
     .about_brand {
         padding-top: 50px;
     }
-        .about_brand .text-box {
+
+    .about_brand .text-box {
         margin: 100px auto 50px;
     }
-        .last .text-box .detail {
-    padding-bottom: 50px;
-}
+
+    .last .text-box .detail {
+        padding-bottom: 50px;
+    }
 }

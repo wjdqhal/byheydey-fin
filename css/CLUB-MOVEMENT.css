@@ -1,4 +1,3 @@
-
 .title-box {
     text-align: center;
     display: flex;
@@ -499,6 +498,10 @@
     object-fit: contain;
 }
 
+.app-wrap .inner .store-icon {
+    display: none;
+}
+
 
 /* ---------------------------------1279 반응형---------------------------------------------------- */
 @media screen and (max-width: 1279px) {
@@ -676,8 +679,25 @@
     }
 
     .app-wrap>.inner>.QR {
-        gap: 40px;
+        display: none;
     }
 
+    .app-wrap .inner .store-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
 
+    .app-wrap .inner .store-icon .appstore {
+        display: block;
+        width: 150px;
+        height: auto;
+    }
+
+    .app-wrap .inner .store-icon .playstore {
+        display: block;
+        width: 150px;
+        height: auto;
+    }
 }

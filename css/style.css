@@ -630,18 +630,21 @@ header:has(.main-menu > li:hover .sub-list)::after {
 
 /* ------------------------care------------------------- */
 .care-wrap {
-    position: relative;
     width: 100%;
     background-color: #EFF2F6;
     overflow: hidden;
 }
 
 .care-inner {
-    position: relative;
-    max-width: 1920px;
-    height: 960px;
+    max-width: 1640px;
     margin: 0 auto;
-    padding: 0 140px;
+    padding: 100px 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 40px;
 }
 
 .care-wrap>strong {
@@ -649,11 +652,13 @@ header:has(.main-menu > li:hover .sub-list)::after {
 }
 
 .care-title-box {
-    position: absolute;
-    top: 100px;
-    left: 140px;
+    position: static;
     width: 420px;
-    z-index: 2;
+    max-width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .care-wrap .btn>a {
@@ -666,19 +671,22 @@ header:has(.main-menu > li:hover .sub-list)::after {
 }
 
 .care-video-box {
-    position: absolute;
-    top: 50%;
-    right: 140px;
-    transform: translateY(-50%);
-    width: 1200px;
-    height: 675px;
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+
+    flex: 1 1 600px;
+    width: 100%;
+    max-width: 1000px;
+    aspect-ratio: 16 / 9;
+    /* 비디오 16:9 비율 유지 */
 }
 
 .care-wrap iframe {
     width: 100%;
     height: 100%;
     border: none;
-    z-index: 1;
 }
 
 /* -----------------------project-------------------------- */
@@ -789,9 +797,6 @@ header:has(.main-menu > li:hover .sub-list)::after {
     display: block;
 }
 
-
-.project-wrap .project-list-right .project-img .text-box .space {}
-
 .project-wrap .project-list-right .project-img .text-box .location {
     font-size: 0.88em;
 }
@@ -803,6 +808,8 @@ header:has(.main-menu > li:hover .sub-list)::after {
 }
 .clubmovement-wrap .title-box>.detail{
     /* margin-bottom: 5em; */
+    max-width: 580px;
+     word-break: keep-all;
 }
 
 .clubmovement-wrap {
@@ -824,7 +831,6 @@ header:has(.main-menu > li:hover .sub-list)::after {
     color: #fff;
     top: 0;
     left: 0;
-    word-break: keep-all;
 }
 
 .clubmovement-list>li .text-box>p {
