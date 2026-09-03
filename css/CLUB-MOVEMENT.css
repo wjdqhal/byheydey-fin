@@ -412,7 +412,7 @@
 
 /* -----------------------------------------------Section 4----------------------------------------- */
 .app-wrap {
-    padding: 120px 0 140px;
+    padding: 7.5em 0 10em;
     background-color: var(--bg-color);
 }
 
@@ -459,6 +459,21 @@
     /* height: 100%;
     object-fit: cover; */
     display: block;
+}
+
+.app-wrap>.inner>.QR {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 60px;
+    width: 100%;
+}
+
+.app-wrap>.inner>.QR img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
 }
 
 
@@ -553,7 +568,7 @@
     }
 
     .inner {
-        padding: 0 16px;
+        padding: 0 1em;
     }
 
     .lab-wrap {

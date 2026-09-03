@@ -448,32 +448,50 @@
 
     <!-- Initialize Swiper -->
     <script>
-        
+        const allNavLinks = document.querySelectorAll('.main-menu a, .sub-menu a, .header-wrap a');
+        // ※ 만약 네비게이션 선택자명이 다르다면 상단 헤더 영역 전체의 a 태그를 지정하는 'header a' 등으로 변경하셔도 됩니다.
+
+        allNavLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                // 아직 링크(href) 연결을 안 했거나 '#'일 경우 페이지 최상단으로 튕기는 현상 방지
+                const href = link.getAttribute('href');
+                if (!href || href === '#' || href === '') {
+                    e.preventDefault();
+                }
+
+                // 클릭 직후 포커스(Focus) 상태를 즉시 해제하여 잔상이 남지 않게 함
+                link.blur();
+            });
+        });
+
         var swiper = new Swiper('.work-space', {
             loop: true,
+            autoplay: {
+            delay: 3000,
+            disableOnInteraction: false},
             slidesPerView: 1,
             spaceBetween: 16,
             centeredSlides: false,
             breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 16,
-                    centeredSlides: false,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                    centeredSlides: true,
-                },
-                1024: {
-                    slidesPerView: 2.4,
-                    spaceBetween: 24,
-                    centeredSlides: true,
-                },
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 16,
+                centeredSlides: false,
             },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                centeredSlides: true,
+            },
+            1024: {
+                slidesPerView: 2.4,
+                spaceBetween: 24,
+                centeredSlides: true,
+            },
+        },
         });
 
-        
+
         const loungeSwiper = new Swiper('.lounge-right', {
             spaceBetween: 20,
             grabCursor: true,
@@ -484,8 +502,8 @@
 
             breakpoints: {
                 768: {
-                    slidesPerView: 3.5, 
-                    spaceBetween: 16,  
+                    slidesPerView: 3.5,
+                    spaceBetween: 16,
                 },
                 1024: {
                     slidesPerView: 3.8,
@@ -493,7 +511,7 @@
                 }
             }
         });
-        
+
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             const threshold = 100;
