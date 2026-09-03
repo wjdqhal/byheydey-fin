@@ -785,6 +785,10 @@ header:has(.main-menu > li:hover .sub-list)::after {
     line-height: 1.5em;
     font-size: clamp(10px, 1.2vw, 16px);
 }
+.project-wrap .project-list-right .detail>span{
+    display: block;
+}
+
 
 .project-wrap .project-list-right .project-img .text-box .space {}
 
@@ -796,6 +800,9 @@ header:has(.main-menu > li:hover .sub-list)::after {
 
 .clubmovement-wrap .title-box {
     padding: 4.88em 0 6.25em;
+}
+.clubmovement-wrap .title-box>.detail{
+    /* margin-bottom: 5em; */
 }
 
 .clubmovement-wrap {
@@ -817,14 +824,16 @@ header:has(.main-menu > li:hover .sub-list)::after {
     color: #fff;
     top: 0;
     left: 0;
+    word-break: keep-all;
 }
 
-.clubmovement-list>li .text-box>strong {
+.clubmovement-list>li .text-box>p {
+    margin-right: 1.5em;
     font-size: 1.25em;
     font-weight: 600;
 }
 
-.clubmovement-list>li .text-box>p {
+.clubmovement-list>li .text-box>span {
     font-weight: 500;
 }
 

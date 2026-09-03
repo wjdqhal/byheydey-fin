@@ -22,6 +22,7 @@
         width: 100%;
         height: auto !important;
         overflow: visible;
+
         padding-bottom: 40px;
     }
 
@@ -58,7 +59,7 @@
         height: 100% !important;
     }
 
-    .main-image > img {
+    .main-image>img {
         width: 100%;
         height: 100%;
 
@@ -261,7 +262,7 @@
     .product-tab {
         width: 100%;
         height: auto !important;
-         margin-top: 0 !important;
+        margin-top: 0 !important;
     }
 
     .product-tab .inner {
@@ -352,6 +353,10 @@
         box-sizing: border-box;
     }
 
+    main {
+        padding-top: 65px;
+    }
+
 
     /* =====================
        PAYMENT
@@ -361,7 +366,10 @@
         width: 100%;
         height: auto !important;
         min-height: 0;
+        padding-top: 0;
+        margin: 0 auto 0;
         padding-bottom: 15px !important;
+
         overflow: visible;
     }
 
@@ -371,6 +379,7 @@
     .payment-wrap {
         height: auto !important;
         min-height: 0;
+        margin-top: 0;
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -378,12 +387,21 @@
     }
 
     .payment-left {
-        position: relative; /* 썸네일과 페이지네이션 기준 */
+        position: relative;
+        /* 썸네일과 페이지네이션 기준 */
         width: 100% !important;
         height: auto !important;
         aspect-ratio: 1 / 1;
         overflow: hidden;
     }
+
+
+    .payment-right>div,
+    .payment-price {
+        padding: 0 1em;
+    }
+
+
 
     /* 메인 이미지 */
     .main-image {
@@ -392,7 +410,7 @@
         height: 100%;
     }
 
-    .main-image > img {
+    .main-image>img {
         width: 100%;
         height: 100%;
         display: block;
@@ -438,12 +456,12 @@
     .payment-right {
         width: 100% !important;
         min-width: 0 !important;
-        height: 680px !important;
+        height: 600px !important;
         min-height: 0 !important;
         flex: 0 0 auto !important;
         padding: 25px 0 0 !important;
-        
-        
+
+
 
         box-sizing: border-box;
         overflow: visible !important;
@@ -681,11 +699,12 @@
         width: 100%;
         min-width: 0;
         box-sizing: border-box;
+        padding: 20px;
     }
 
-    .review-user,
-    .review-content {
-        padding: 20px;
+
+    .review-text {
+        line-height: 2;
     }
 
     .review-images {
@@ -715,6 +734,7 @@
         width: 32px;
         height: 32px;
     }
+
     .image-pagination {
         position: absolute !important;
         z-index: 10;
@@ -761,7 +781,7 @@
     .review-list .inner {
         width: calc(100% - 30px);
     }
-    
+
 
     .payment-right {
         padding-top: 20px !important;

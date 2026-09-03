@@ -354,6 +354,12 @@
         display: none;
     }
 
+    .product-item .img-box {
+        overflow: visible;
+        /* height: auto; */
+        max-height: none;
+    }
+
     .office-right {
         width: 100%;
     }
