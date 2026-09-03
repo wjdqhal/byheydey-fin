@@ -448,9 +448,12 @@
 
     <!-- Initialize Swiper -->
     <script>
-        
+
         var swiper = new Swiper('.work-space', {
             loop: true,
+            autoplay: {
+            delay: 3000,
+            disableOnInteraction: false},
             slidesPerView: 1,
             spaceBetween: 16,
             centeredSlides: false,
@@ -473,7 +476,7 @@
             },
         });
 
-        
+
         const loungeSwiper = new Swiper('.lounge-right', {
             spaceBetween: 20,
             grabCursor: true,
@@ -484,8 +487,8 @@
 
             breakpoints: {
                 768: {
-                    slidesPerView: 3.5, 
-                    spaceBetween: 16,  
+                    slidesPerView: 3.5,
+                    spaceBetween: 16,
                 },
                 1024: {
                     slidesPerView: 3.8,
@@ -493,7 +496,7 @@
                 }
             }
         });
-        
+
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             const threshold = 100;

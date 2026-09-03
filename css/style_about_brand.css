@@ -30,7 +30,7 @@ body {
 
 .about_brand .text-box>.title {
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1.5em;
     letter-spacing: 0.06em;
     margin-bottom: 30px;
@@ -48,10 +48,21 @@ body {
 
 .about_brand .text-box .detail>p {
     flex: 1;
-
+    word-break: keep-all;
 }
 
 .last .text-box .detail {
     /* margin-bottom: 150px; */
     padding-bottom: 150px;
+}
+
+@media screen and (max-width:767px) {
+    .about_brand .text-box>.title{
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    .about_brand .text-box .detail {
+        flex-direction: column;
+        gap: 16px;
+    }
 }
