@@ -22,7 +22,7 @@ body {
 
 .about_brand .text-box {
     font-family: "Pretendard", sans-serif;
-    margin: 150px auto 0;
+    margin: 150px auto 70px;
     /* padding: 150px 350px; */
     max-width: 1640px;
     padding: 0 1em;
@@ -30,7 +30,7 @@ body {
 
 .about_brand .text-box>.title {
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1.5em;
     letter-spacing: 0.06em;
     margin-bottom: 30px;
@@ -48,10 +48,44 @@ body {
 
 .about_brand .text-box .detail>p {
     flex: 1;
-
+    word-break: keep-all;
 }
 
 .last .text-box .detail {
     /* margin-bottom: 150px; */
-    padding-bottom: 150px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width:1279px) {
+    .about_brand {
+        padding-top: 70px;
+    }
+    .about_brand .text-box {
+        margin: 130px auto 60px;
+    }
+    .last .text-box .detail {
+    padding-bottom: 60px;
+}
+}
+
+@media screen and (max-width:767px) {
+    .about_brand .text-box>.title {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .about_brand .text-box .detail {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .about_brand {
+        padding-top: 50px;
+    }
+        .about_brand .text-box {
+        margin: 100px auto 50px;
+    }
+        .last .text-box .detail {
+    padding-bottom: 50px;
+}
 }
