@@ -789,9 +789,6 @@ header:has(.main-menu > li:hover .sub-list)::after {
     display: block;
 }
 
-
-.project-wrap .project-list-right .project-img .text-box .space {}
-
 .project-wrap .project-list-right .project-img .text-box .location {
     font-size: 0.88em;
 }
