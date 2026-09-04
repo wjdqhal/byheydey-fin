@@ -310,11 +310,14 @@ body {
     transition: 0.5s;
 }
 
-.work-space-list>.swiper-slide-active .text-box {
+.work-space-list > .swiper-slide-active .text-box {
     opacity: 1;
 }
 
 /* -------------------- progress -----------------*/
+.progress{
+    padding: 3.5em 0;
+}
 .progress .inner {
     max-width: 1640px;
     margin: 0 auto;
@@ -359,7 +362,8 @@ body {
 }
 
 .progress-set img {
-    width: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 .progress-end {
