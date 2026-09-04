@@ -22,7 +22,7 @@
         width: 100%;
         height: auto !important;
         overflow: visible;
-
+        padding-top: 0;
         padding-bottom: 40px;
     }
 
@@ -143,6 +143,11 @@
        오른쪽 상품 정보
        이미지 아래로
     ===================== */
+
+    .payment-right>div,
+    .payment-price {
+        padding: 0 1em;
+    }
 
     .payment-right {
         width: 100% !important;
@@ -368,7 +373,7 @@
         min-height: 0;
         padding-top: 0;
         margin: 0 auto 0;
-        padding-bottom: 15px !important;
+        /* padding-bottom: 15px !important; */
 
         overflow: visible;
     }
@@ -390,11 +395,11 @@
         position: relative;
         /* 썸네일과 페이지네이션 기준 */
         width: 100% !important;
-        height: auto !important;
-        aspect-ratio: 1 / 1;
+        height: 50vh !important;
+        aspect-ratio: auto;
         overflow: hidden;
+        flex: none;
     }
-
 
     .payment-right>div,
     .payment-price {
@@ -461,8 +466,6 @@
         flex: 0 0 auto !important;
         padding: 25px 0 0 !important;
 
-
-
         box-sizing: border-box;
         overflow: visible !important;
     }
@@ -474,7 +477,7 @@
         box-sizing: border-box;
     }
 
-
+  
     /* 제목 */
 
     .payment-title h2 {
@@ -552,7 +555,7 @@
         flex-direction: column !important;
 
         margin-top: 25px !important;
-        gap: 10px;
+        gap: 15px;
 
         box-sizing: border-box;
     }
@@ -581,6 +584,7 @@
     .product-tab {
         width: 100%;
         height: auto !important;
+        margin: 50px auto 0;
     }
 
     .product-tab .inner {
@@ -653,6 +657,7 @@
         width: 100%;
         min-width: 0;
     }
+
 
 
     /* =====================
@@ -788,17 +793,17 @@
     }
 
     .payment-title h2 {
-        font-size: 1.13em;
+        /* font-size: 1.13em; */
     }
 
     .option-box select {
         height: 38px !important;
-        font-size: 0.69em !important;
+        /* font-size: 0.69em !important; */
     }
 
     .payment-btn button {
         height: 45px !important;
-        font-size: 0.81em !important;
+        /* font-size: 0.81em !important; */
     }
 
     .product-tab .inner {
@@ -810,7 +815,7 @@
     }
 
     .product-tab a {
-        font-size: 0.56em;
+        /* font-size: 0.56em; */
     }
 
     .review-user,

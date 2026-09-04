@@ -585,6 +585,7 @@
         height: 100%;
         object-fit: cover;
     }
+ 
 }
 
 /* --------------------------------------------767-------------------------------------------------- */
@@ -678,6 +679,7 @@
         max-width: calc(50% - 8px) !important;
     }
 
+     
     .app-wrap>.inner>.QR {
         display: none;
     }
@@ -686,18 +688,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 60px;
+        gap: 80px;
     }
 
     .app-wrap .inner .store-icon .appstore {
         display: block;
-        width: 150px;
+        width: 120px;
         height: auto;
     }
 
     .app-wrap .inner .store-icon .playstore {
         display: block;
-        width: 150px;
+        width: 120px;
         height: auto;
     }
 }
