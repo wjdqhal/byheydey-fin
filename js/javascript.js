@@ -44,6 +44,8 @@ thumbnails.forEach((thumbnail, index) => {
 
 
 
+
+
 //    수량 증가 / 감소
 
 
@@ -119,4 +121,5 @@ cartBtn.addEventListener("click", () => {
 
     alert("장바구니에 상품이 추가되었습니다.");
 });
+
 

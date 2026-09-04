@@ -14,13 +14,12 @@
 </head>
 
 <body>
-
     <!-- HEADER -->
-    <header>
+        <header>
         <div class="header-inner">
             <div class="header-left">
                 <h1 class="logo">
-                    <a href="./index.html">
+                    <a href="#">
                         <img src="./images/icon/header-Logo.png" alt="BYHEYDEY logo">
                     </a>
                 </h1>
@@ -105,16 +104,22 @@
                 </nav>
             </div>
             <ul class="gnb-list">
-                <li><a href="#"><img src="./images/icon/search.png" alt="검색 아이콘"></a></li>
+                <li class="search-btn">
+                    <a href="#" aria-label="검색">
+                        <img src="./images/icon/search.png" alt="검색 아이콘">
+                    </a>
+                </li>
                 <li>
-                    <a href="#" aria-haspopup="true" aria-expanded="false"><img src="./images/icon/user.png"
-                            alt="마이페이지"></a>
+                    <a href="#" aria-haspopup="true" aria-expanded="false">
+                        <img src="./images/icon/user.png" alt="마이페이지">
+                    </a>
                     <ul class="user-list" aria-label="사용자 메뉴">
                         <li><a href="./log_in.html">Log in</a></li>
                         <li><a href="#">Join</a></li>
                     </ul>
                 </li>
-                <li><a href="#"><img src="./images/icon/cart.png" alt="장바구니 아이콘">
+                <li><a href="#">
+                        <img src="./images/icon/cart.png" alt="장바구니 아이콘">
                         <span class="cart-count">0</span>
                     </a>
                 </li>
@@ -122,6 +127,32 @@
             <button type="button" class="ham" aria-label="메뉴 열기">
                 <img src="./images/icon/ham.png" alt="메뉴 열기 아이콘">
             </button>
+        </div>
+        <!-- search modal -->
+        <div class="search-modal" aria-hidden="true">
+            <div class="search-modal-inner">
+                <button type="button" class="search-close" aria-label="검색창 닫기">
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <h2>Search</h2>
+
+                <form class="search-form">
+                    <div class="search-input-wrap">
+                        <input type="text" placeholder="검색어를 입력하세요." aria-label="검색어 입력">
+
+                        <button type="submit" aria-label="검색">
+                            <img src="./images/icon/search.png" alt="돋보기 아이콘">
+                        </button>
+                    </div>
+                    <div class="search-tags">
+                        <button type="button"># Sofa</button>
+                        <button type="button"># Table</button>
+                        <button type="button"># Desk</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </header>
 
@@ -264,6 +295,67 @@
                 window.location.href = './index.html'; // 로그인 완료 후 메인 페이지로 이동
             }
         });
+
+        //search modal
+        const searchBtn = document.querySelector('.search-btn a');
+        const searchModal = document.querySelector('.search-modal');
+        const searchClose = document.querySelector('.search-close');
+        const searchInput = document.querySelector('.search-input-wrap input');
+        const searchForm = document.querySelector('.search-form');
+        const searchTags = document.querySelectorAll('.search-tags button');
+        
+        searchBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            searchModal.classList.add('active');
+            searchModal.setAttribute('aria-hidden', 'false');
+
+            setTimeout(() => {
+                searchInput.focus();
+            }, 300);
+            document.body.style.overflow = 'hidden';
+        });
+        
+        function closeSearch() {
+            searchModal.classList.remove('active');
+            searchModal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        searchClose.addEventListener('click', function () {
+            closeSearch();
+        });
+
+        searchModal.addEventListener('click', function (e) {
+            if (e.target === searchModal) {
+                closeSearch();
+            }
+        });
+
+
+        searchForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const keyword = searchInput.value.trim();
+
+            if (!keyword) {
+                searchInput.focus();
+                return;
+            }
+            console.log('검색어:', keyword);
+        });
+
+        searchTags.forEach(function (tag) {
+            tag.addEventListener('click', function () {
+                const keyword = this.textContent.replace('#', '').trim();
+                searchInput.value = keyword;
+                searchInput.focus();
+            });
+        });
+
+
+
+
 
         let bgHam = document.querySelector(".ham");
         let menu = document.querySelector("nav");

@@ -331,6 +331,38 @@
         margin-top: 0;
     }
 
+      .search-modal-inner {
+        height: 500px;
+        padding: 130px 20px 0;
+    }
+
+    .search-close {
+        top: 25px;
+        right: 25px;
+    }
+
+    .search-modal h2 {
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+
+    .search-form {
+        width: 100%;
+    }
+
+    .search-input-wrap input {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .search-tags {
+        gap: 25px;
+    }
+
+    .search-tags button {
+        font-size: 14px;
+    }
+
     .main-menu>li .sub-list>li:hover .depth {
         display: flex;
         opacity: 1;
