@@ -809,7 +809,7 @@ header:has(.main-menu > li:hover .sub-list)::after {
 .clubmovement-wrap .title-box>.detail{
     /* margin-bottom: 5em; */
     max-width: 580px;
-     word-break: keep-all;
+    word-break: keep-all;
 }
 
 .clubmovement-wrap {

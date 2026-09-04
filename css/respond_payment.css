@@ -144,6 +144,11 @@
        이미지 아래로
     ===================== */
 
+    .payment-right>div,
+    .payment-price {
+        padding: 0 1em;
+    }
+
     .payment-right {
         width: 100% !important;
         min-width: 0 !important;
@@ -654,6 +659,7 @@
         min-width: 0;
     }
 
+   
 
     /* =====================
        PHOTO & VIDEO
