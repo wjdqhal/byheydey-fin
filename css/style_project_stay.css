@@ -1,16 +1,26 @@
+.stay .section-title{
+  color: #000;
+}
+.stay .sub-title{
+  color: #4E4E4E;
+}
+.stay-left{
+  padding: 100px 0 0 0;
+  margin-left: 7.3%;
+}
 .stay-wrap {
   background-color: #ebf1f6; 
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
-  padding: 20px;
+  /* min-height: 90vh; */
+  padding: 20px 20px 100px;
 }
 
 .card-container {
   display: flex;
   width: 100%;
-  max-width: 960px;
+  max-width: 800px;
   height: 500px;
   background-color: #ffffff;
   border-radius: 8px;
@@ -198,6 +208,7 @@
     padding: 30px 20px;
   }
   .stay-wrap{
-    align-items: stretch
+    align-items: stretch;
+    min-height: 90vh;
   }
 }
