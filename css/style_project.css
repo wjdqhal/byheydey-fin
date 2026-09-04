@@ -258,20 +258,56 @@ body {
 
 }
 
-.work-space-list>li .text-box {
+/* ------------------- 슬라이드 -------------------- */
+.work-space-list > li {
+    position: relative;
+}
+
+
+/* 이미지 */
+.work-space-list > li .img-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.work-space-list > li .img-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* 사이드 슬라이드 어두운 배경 */
+.work-space-list > li:not(.swiper-slide-active) .img-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+
+/* 가운데 슬라이드는 밝게 */
+.work-space-list > li.swiper-slide-active .img-box::after {
+    background: transparent;
+}
+
+
+/* 기존 텍스트 */
+.work-space-list > li .text-box {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    /* background: rgba(0, 0, 0, 0.4); */
     color: #fff;
     padding: 50px 80px;
     opacity: 0;
     transition: 0.5s;
 }
 
-.work-space-list>.swiper-slide-active .text-box {
+.work-space-list > .swiper-slide-active .text-box {
     opacity: 1;
 }
 
