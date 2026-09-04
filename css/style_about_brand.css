@@ -96,18 +96,14 @@ body {
     }
 
     .brand_story>div:first-child>.img-box {
-        height: 450px;
+        max-width:100%;
+        height: 650px;
         background-size: cover;
     }
 
     .brand_story>div>.img-box {
         width: 100%;
         height: 500px;
-        /* aspect-ratio: 3/1; */
-        /* background-attachment: fixed; */
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center center;
     }
 
 }
@@ -134,4 +130,21 @@ body {
     .last .text-box .detail {
         padding-bottom: 50px;
     }
+
+    .brand_story>div:first-child>.img-box {
+        max-width:100%;
+        height: 350px;
+        background-size: cover;
+    }
+
+    .brand_story>div>.img-box {
+        width: 100%;
+        height: 200px;
+        /* aspect-ratio: 3/1; */
+        /* background-attachment: fixed; */
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+
 }

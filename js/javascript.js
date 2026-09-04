@@ -44,6 +44,8 @@ thumbnails.forEach((thumbnail, index) => {
 
 
 
+
+
 //    수량 증가 / 감소
 
 
@@ -91,5 +93,33 @@ minusBtn.addEventListener("click", () => {
 //     }
 // });
 
+
+let cartCount = document.querySelector(".cart-count");
+let cartBtn = document.querySelector(".cart-btn");
+
+// 페이지가 열릴 때 저장된 장바구니 개수 가져오기
+let currentCartCount = Number(localStorage.getItem("cartCount")) || 0;
+
+cartCount.textContent = currentCartCount;
+
+
+// 장바구니 버튼
+cartBtn.addEventListener("click", () => {
+
+    if (quantity === 0) {
+        alert("상품 수량을 선택해주세요.");
+        return;
+    }
+
+    currentCartCount += quantity;
+
+    // 화면에 반영
+    cartCount.textContent = currentCartCount;
+
+    // 브라우저에 저장
+    localStorage.setItem("cartCount", currentCartCount);
+
+    alert("장바구니에 상품이 추가되었습니다.");
+});
 
 
