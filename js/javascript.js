@@ -123,3 +123,16 @@ cartBtn.addEventListener("click", () => {
 });
 
 
+const heartBtn = document.querySelector(".heart-btn");
+
+if (heartBtn) {
+    heartBtn.addEventListener("click", function () {
+        heartBtn.classList.toggle("active");
+
+        if (heartBtn.classList.contains("active")) {
+            heartBtn.setAttribute("aria-label", "찜 취소");
+        } else {
+            heartBtn.setAttribute("aria-label", "찜하기");
+        }
+    });
+}
