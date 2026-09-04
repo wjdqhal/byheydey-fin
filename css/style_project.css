@@ -160,10 +160,11 @@ body {
     display: none;
 } */
 
-.project-type-list>div.active{
+.project-type-list>div.active {
     display: block;
 }
-.project-type-list>div{
+
+.project-type-list>div {
     display: none;
 }
 
@@ -241,30 +242,68 @@ body {
 .work-space-wrap>.inner {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 200px 0 230px;
+    padding: 100px 0 230px;
 }
 
 .work-space-wrap .bg-btn {
-    position: relative;
-    /* background-color: pink; */
+    /* position: relative;
     width: 100%;
-    height: 60px;
+    height: 60px; */
 }
 
 .work-space-wrap .btn {
-    margin-bottom: 26px;
-    position: absolute;
-    right: 35%;
+    margin-bottom: 16px;
+    /* position: absolute; */
+    /* right: 35%; */
 
 }
 
+.work-space-wrap .title-box {
+    margin-left: 7.3%;
+}
+
+.work-space-list>li {
+    position: relative;
+}
+
+
+/* 이미지 */
+.work-space-list>li .img-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.work-space-list>li .img-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* 사이드 슬라이드 어두운 배경 */
+.work-space-list>li:not(.swiper-slide-active) .img-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+
+/* 가운데 슬라이드는 밝게 */
+.work-space-list>li.swiper-slide-active .img-box::after {
+    background: transparent;
+}
+
+
+/* 기존 텍스트 */
 .work-space-list>li .text-box {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    /* background: rgba(0, 0, 0, 0.4); */
     color: #fff;
     padding: 50px 80px;
     opacity: 0;
@@ -275,7 +314,6 @@ body {
     opacity: 1;
 }
 
-
 /* -------------------- progress -----------------*/
 .progress .inner {
     max-width: 1640px;
@@ -283,15 +321,11 @@ body {
 }
 
 .progress .section-title {
-    padding: 76px 0 1em;
-    font-size: 2em;
-    font-weight: 600;
+    color: #000;
 }
 
-.progress .detail {
-    margin-bottom: 3em;
-    font-size: 1.5em;
-    font-weight: 500;
+.progress .sub-title {
+    color: #4E4E4E;
 }
 
 .progress-list {
@@ -393,9 +427,9 @@ body {
         padding: 150px 1em;
     }
 
-    .work-space-wrap .btn {
+    /* .work-space-wrap .btn {
         right: 30%;
         transform: translateX(50%);
-    }
+    } */
 
 }
