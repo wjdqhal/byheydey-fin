@@ -50,6 +50,10 @@
   justify-content: center;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
+.hotspot.active {
+  background-color:rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
 
 .hotspot::before,
 .hotspot::after {
@@ -71,7 +75,10 @@
   transform: scale(1.15);
   background-color: rgba(0, 0, 0, 0.7);
 }
-
+.hotspot.active::before,
+.hotspot.active::after {
+  background-color: #111;
+}
 /* 좌하단 타이틀 */
 .room-footer {
   text-align: right;
@@ -99,12 +106,22 @@
   color: #222;
   margin-top: 10px;
 }
-
-.stay-project-list>div{
-  display: none;
+.stay-project-list{
+  position: relative;
 }
-.stay-project-list>div.active{
-  display:block;
+
+.stay-project-list>.product-slider{
+  /* display: none; */
+  opacity: 0;
+  transition: 0.3s;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.stay-project-list>.product-slider.active{
+  /* display:block; */
+  opacity: 1;
+  position: relative;
 }
 .stay-product{
   display: flex;
@@ -114,6 +131,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
   width: 100%;
   max-width: 360px;
 }
