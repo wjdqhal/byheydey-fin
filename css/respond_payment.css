@@ -1,0 +1,825 @@
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    /* =====================
+       공통 섹션 너비
+    ===================== */
+
+    .payment-wrap,
+    .product-tab .inner,
+    .review-summary .inner,
+    .review-list .inner {
+        width: calc(100% - 80px);
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+
+    /* =====================
+       PAYMENT
+    ===================== */
+
+    .payment {
+        width: 100%;
+        height: auto !important;
+        overflow: visible;
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+
+    .payment-wrap {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+        overflow: visible;
+    }
+
+
+    /* =====================
+       메인 이미지
+    ===================== */
+
+    .payment-left {
+        position: relative;
+
+        width: 100% !important;
+        min-width: 0 !important;
+        height: auto !important;
+
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+
+        box-sizing: border-box;
+    }
+
+    .main-image {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .main-image>img {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover !important;
+    }
+
+
+    /* =====================
+       썸네일
+       이미지 위에 겹침
+    ===================== */
+
+    .thumbnail-list {
+        position: absolute !important;
+        z-index: 10;
+
+        top: 25px;
+        left: 25px;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 10px;
+
+        width: auto !important;
+        height: auto !important;
+    }
+
+    .thumb {
+        width: 70px !important;
+        height: 70px !important;
+
+        flex: none;
+    }
+
+    .thumb img {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+        object-fit: cover;
+    }
+
+
+    /* =====================
+       이미지 페이지네이션
+       이미지 위에 겹침
+    ===================== */
+
+    .image-pagination,
+    .image-paginnation {
+        position: absolute !important;
+        z-index: 10;
+
+        bottom: 30px !important;
+        left: 50% !important;
+
+        transform: translateX(-50%);
+
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+
+        gap: 10px;
+    }
+
+    .image-pagination span,
+    .image-paginnation span {
+        display: block !important;
+
+        width: 11px !important;
+        height: 11px !important;
+
+        border-radius: 50%;
+    }
+
+
+    /* =====================
+       오른쪽 상품 정보
+       이미지 아래로
+    ===================== */
+
+    .payment-right>div,
+    .payment-price {
+        padding: 0 1em;
+    }
+
+    .payment-right {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+
+        padding: 45px 0 0 !important;
+
+        box-sizing: border-box;
+        overflow: visible !important;
+    }
+
+
+    /* 제목 */
+
+    .payment-title h2 {
+        font-size: 1.75em !important;
+    }
+
+    .payment-price {
+        font-size: 1.25em !important;
+    }
+
+    .payment-description {
+        font-size: 0.88em !important;
+        line-height: 1.7;
+    }
+
+
+    /* 옵션 */
+
+    .option-box {
+        width: 100% !important;
+        margin-top: 30px !important;
+    }
+
+    .option-box select {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        height: 52px !important;
+
+        font-size: 0.88em !important;
+
+        box-sizing: border-box;
+    }
+
+
+    /* 수량 */
+
+    .quantity-area {
+        width: 100%;
+        margin-top: 40px !important;
+    }
+
+    .quantity-box button {
+        width: 42px !important;
+        height: 42px !important;
+    }
+
+    .quantity-number {
+        width: 45px;
+        font-size: 1em;
+    }
+
+
+    /* 가격 */
+
+    .total-price {
+        width: 100%;
+        margin-top: 30px !important;
+    }
+
+    .total-price strong {
+        font-size: 1.63em !important;
+    }
+
+
+    /* =====================
+       구매 / 장바구니
+       세로로 배치
+    ===================== */
+
+    .payment-btn {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        margin-bottom: 0 !important;
+        gap: 16px;
+
+        margin-top: 40px !important;
+        margin-bottom: 0 !important;
+        box-sizing: border-box;
+    }
+
+    .payment-btn button {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        height: 64px !important;
+        min-height: 64px;
+        margin: 0 !important;
+        padding: 0 24px;
+        font-size: 1.15em !important;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================
+       PRODUCT TAB
+    ===================== */
+
+    .product-tab {
+        width: 100%;
+        height: auto !important;
+        margin-top: 0 !important;
+    }
+
+    .product-tab .inner {
+        width: calc(100% - 80px);
+    }
+
+    .product-tab ul {
+        width: 100%;
+        height: 80px !important;
+    }
+
+    .product-tab li {
+        flex: 1;
+    }
+
+    .product-tab a {
+        font-size: 0.88em !important;
+    }
+
+
+    /* =====================
+       REVIEW
+    ===================== */
+
+    .review-summary {
+        height: auto !important;
+        padding: 70px 0 50px;
+    }
+
+    .review-score-area {
+        width: 100%;
+    }
+
+    .review-score strong {
+        font-size: 3.25em !important;
+    }
+
+    .review-chart {
+        min-width: 0;
+    }
+
+
+    /* 포토&동영상 숨김 */
+
+    .photo-review {
+        display: none !important;
+    }
+
+
+    /* =====================
+       REVIEW LIST
+    ===================== */
+
+    .review-list {
+        height: auto !important;
+        padding-top: 50px;
+    }
+
+    .review-user {
+        width: 30%;
+    }
+
+    .review-content {
+        width: 70%;
+        min-width: 0;
+    }
+}
+
+
+/* =====================================
+   MOBILE
+   767px 이하
+===================================== */
+
+@media screen and (max-width: 767px) {
+
+    /* =====================
+       공통 너비
+    ===================== */
+
+    .payment-wrap,
+    .product-tab .inner,
+    .review-summary .inner,
+    .review-list .inner {
+        width: calc(100% - 40px);
+        max-width: none;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    main {
+        padding-top: 70px;
+    }
+
+
+    /* =====================
+       PAYMENT
+    ===================== */
+
+    .payment {
+        width: 100%;
+        height: auto !important;
+        min-height: 0;
+        padding-top: 0;
+        margin: 0 auto 0;
+        /* padding-bottom: 15px !important; */
+
+        overflow: visible;
+    }
+
+    /* 이미지 위
+       상품정보 아래 */
+
+    .payment-wrap {
+        height: auto !important;
+        min-height: 0;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        overflow: visible;
+    }
+
+    .payment-left {
+        position: relative;
+        /* 썸네일과 페이지네이션 기준 */
+        width: 100% !important;
+        height: 50vh !important;
+        aspect-ratio: auto;
+        overflow: hidden;
+        flex: none;
+    }
+
+    .payment-right>div,
+    .payment-price {
+        padding: 0 1em;
+    }
+
+
+
+    /* 메인 이미지 */
+    .main-image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-image>img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+
+    /* 썸네일 */
+
+    .thumbnail-list {
+        position: absolute !important;
+        z-index: 10;
+
+        top: 15px;
+        left: 15px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        width: auto !important;
+        height: auto !important;
+    }
+
+    .thumb {
+        width: 50px;
+        height: 50px;
+        flex: none;
+    }
+
+    .thumb img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+
+    /* =====================
+       PAYMENT RIGHT
+    ===================== */
+
+    .payment-right {
+        width: 100% !important;
+        min-width: 0 !important;
+        height: 600px !important;
+        min-height: 0 !important;
+        flex: 0 0 auto !important;
+        padding: 25px 0 0 !important;
+
+        box-sizing: border-box;
+        overflow: visible !important;
+    }
+
+    /* 내부 모든 요소 화면 밖 방지 */
+
+    .payment-right * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+  
+    /* 제목 */
+
+    .payment-title h2 {
+        font-size: clamp(18px, 5vw, 24px);
+        line-height: 1.4;
+    }
+
+    .payment-price {
+        font-size: clamp(15px, 4vw, 18px);
+    }
+
+    .payment-description {
+        font-size: clamp(11px, 3vw, 13px);
+        line-height: 1.6;
+    }
+
+
+    /* 옵션 */
+
+    .option-box {
+        width: 100% !important;
+        margin-top: 20px;
+    }
+
+    .option-box select {
+        width: 100% !important;
+        height: 40px !important;
+        padding: 0 10px !important;
+        font-size: 0.88em !important;
+    }
+
+
+    /* 수량 */
+
+    .quantity-area {
+        width: 100%;
+        margin-top: 20px !important;
+    }
+
+    .quantity-box button {
+        width: 34px !important;
+        height: 34px !important;
+    }
+
+    .quantity-number {
+        width: 40px;
+        font-size: 1em;
+    }
+
+
+    /* 총 가격 */
+
+    .total-price {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .total-price strong {
+        font-size: clamp(18px, 5vw, 24px);
+    }
+
+
+    /* =====================
+       버튼
+       구매
+       장바구니
+    ===================== */
+
+    .payment-btn {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        margin-top: 25px !important;
+        gap: 15px;
+
+        box-sizing: border-box;
+    }
+
+    .payment-btn button {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        flex: none !important;
+
+        height: 48px !important;
+        margin: 0 !important;
+        padding: 0 10px !important;
+
+        font-size: 1em !important;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================
+       PRODUCT TAB
+    ===================== */
+
+    .product-tab {
+        width: 100%;
+        height: auto !important;
+        margin: 50px auto 0;
+    }
+
+    .product-tab .inner {
+        width: calc(100% - 40px);
+    }
+
+    .product-tab ul {
+        width: 100%;
+        height: 60px;
+    }
+
+    .product-tab li {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .product-tab a {
+        font-size: 1em;
+        white-space: nowrap;
+    }
+
+
+    /* =====================
+       REVIEW SUMMARY
+    ===================== */
+
+    .review-summary {
+        height: auto !important;
+        padding: 50px 0 35px;
+        overflow: visible;
+    }
+
+    .review-summary .inner {
+        height: auto !important;
+        overflow: visible;
+    }
+
+    .section-title h2 {
+        font-size: 1.25em;
+    }
+
+    .review-score-area {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .review-score {
+        width: 100%;
+        height: auto;
+        min-height: 120px;
+
+        padding-bottom: 25px;
+
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .review-score strong {
+        font-size: 2.50em;
+    }
+
+    .review-chart {
+        width: 100%;
+        padding: 25px 0 0;
+        box-sizing: border-box;
+    }
+
+    .chart-item {
+        width: 100%;
+        min-width: 0;
+    }
+
+
+
+    /* =====================
+       PHOTO & VIDEO
+       완전히 숨김
+    ===================== */
+
+    .photo-review {
+        display: none !important;
+    }
+
+
+    /* =====================
+       REVIEW LIST
+    ===================== */
+
+    .review-list {
+        height: auto !important;
+        padding-top: 50px;
+    }
+
+    .review-list-top {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .review-search {
+        width: 100%;
+    }
+
+    .review-search input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .review-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .review-user,
+    .review-content {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+
+    .review-text {
+        line-height: 2;
+    }
+
+    .review-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .review-images img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+
+    /* =====================
+       PAGINATION
+    ===================== */
+
+    .pagination {
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+
+    .pagination button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .image-pagination {
+        position: absolute !important;
+        z-index: 10;
+
+        bottom: 20px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .image-pagination span {
+        display: block;
+        width: 8px;
+        height: 8px;
+
+        border-radius: 50%;
+        background: #fff;
+    }
+
+    .image-pagination span.active {
+        background: #555;
+    }
+
+}
+
+
+/* =====================================
+   SMALL MOBILE
+   480px 이하
+===================================== */
+
+@media screen and (max-width: 480px) {
+
+    /* 모든 주요 섹션 같은 좌우 여백 */
+
+    .payment-wrap,
+    .product-tab .inner,
+    .review-summary .inner,
+    .review-list .inner {
+        width: calc(100% - 30px);
+    }
+
+
+    .payment-right {
+        padding-top: 20px !important;
+    }
+
+    .payment-title h2 {
+        /* font-size: 1.13em; */
+    }
+
+    .option-box select {
+        height: 38px !important;
+        /* font-size: 0.69em !important; */
+    }
+
+    .payment-btn button {
+        height: 45px !important;
+        /* font-size: 0.81em !important; */
+    }
+
+    .product-tab .inner {
+        width: calc(100% - 30px);
+    }
+
+    .product-tab ul {
+        height: 55px;
+    }
+
+    .product-tab a {
+        /* font-size: 0.56em; */
+    }
+
+    .review-user,
+    .review-content {
+        padding: 15px;
+    }
+}

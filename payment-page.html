@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="byheydey/favison" href="./images/icon/favicon.png">
+    <title>BYHEYDEY</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/fontello.css">
+    <link rel="stylesheet" href="./css/style_payment.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/respond_payment.css">
+    <link rel="stylesheet" href="./css/respond.css">
+    <link rel="stylesheet" href="./css/style_header_footer.css">
+
+
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header-inner">
+            <div class="header-left">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./images/icon/header-Logo.png" alt="BYHEYDEY logo">
+                    </a>
+                </h1>
+                <nav aria-label="메인 메뉴">
+                    <div class="m-header">
+                        <div>
+                            <p><a href="./index.html">
+                                    <img src="./images/icon/header-Logo.png" alt="BYHEYDEY logo">
+                                </a>
+                            </p>
+                            <button type="button" class="hamClose" aria-label="메뉴 닫기">
+                                <img src="./images/icon/close.png" alt="메뉴 닫기 아이콘">
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="main-menu">
+                        <li>
+                            <a href="#" aria-haspopup="true" aria-expanded="false">PRODUCT</a>
+                            <ul class="sub-list" aria-label="PRODUCT 서브 메뉴">
+                                <li><a href="./PRODUCT.html">BEST</a></li>
+                                <li><a href="#">House</a>
+                                    <ul class="depth">
+                                        <li><a href="#">All</a></li>
+                                        <li><a href="#">Sofa</a></li>
+                                        <li><a href="#">Table</a></li>
+                                        <li><a href="#">Storage</a></li>
+                                        <li><a href="#">Homedeco</a></li>
+                                        <li><a href="#">Care</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Office</a>
+                                    <ul class="depth">
+                                        <li><a href="#">All</a></li>
+                                        <li><a href="#">Desk</a></li>
+                                        <li><a href="#">Storage</a></li>
+                                        <li><a href="#">Seating</a></li>
+                                        <li><a href="#">Worktool</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./byheyday_project.html">PROJECT</a>
+                        </li>
+                        <li>
+                            <a href="#" aria-haspopup="true" aria-expanded="false">BRANDS</a>
+                            <ul class="sub-list" aria-label="BRANDS 서브 메뉴">
+                                <li><a href="./byheyday_about_brand.html">About</a></li>
+                                <li>
+                                    <a href="#">Showroom</a>
+                                    <ul class="depth">
+                                        <li><a href="#">Flagship store</a></li>
+                                        <li><a href="#">Movement lab</a></li>
+                                        <li><a href="#">Department</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" aria-haspopup="true" aria-expanded="false">MEMBERSHIP</a>
+                            <ul class="sub-list" aria-label="MEMBERSHIP 서브 메뉴">
+                                <li><a href="./CLUB-MOVEMENT.html">Club movement</a></li>
+                                <li>
+                                    <a href="#">Membership</a>
+                                    <ul class="depth">
+                                        <li><a href="#">Business</a></li>
+                                        <li><a href="#">Private Order</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" aria-haspopup="true" aria-expanded="false">SUPPORT</a>
+                            <ul class="sub-list" aria-label="SUPPORT 서브 메뉴">
+                                <li><a href="#">Notice</a></li>
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">Q&A</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <ul class="gnb-list">
+                <li class="search-btn">
+                    <a href="#" aria-label="검색">
+                        <img src="./images/icon/search.png" alt="검색 아이콘">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-haspopup="true" aria-expanded="false">
+                        <img src="./images/icon/user.png" alt="마이페이지">
+                    </a>
+                    <ul class="user-list" aria-label="사용자 메뉴">
+                        <li><a href="./log_in.html">Log in</a></li>
+                        <li><a href="#">Join</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">
+                        <img src="./images/icon/cart.png" alt="장바구니 아이콘">
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="ham" aria-label="메뉴 열기">
+                <img src="./images/icon/ham.png" alt="메뉴 열기 아이콘">
+            </button>
+        </div>
+        <!-- search modal -->
+        <div class="search-modal" aria-hidden="true">
+            <div class="search-modal-inner">
+                <button type="button" class="search-close" aria-label="검색창 닫기">
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <h2>Search</h2>
+
+                <form class="search-form">
+                    <div class="search-input-wrap">
+                        <input type="text" placeholder="검색어를 입력하세요." aria-label="검색어 입력">
+
+                        <button type="submit" aria-label="검색">
+                            <img src="./images/icon/search.png" alt="돋보기 아이콘">
+                        </button>
+                    </div>
+                    <div class="search-tags">
+                        <button type="button"># Sofa</button>
+                        <button type="button"># Table</button>
+                        <button type="button"># Desk</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- main 구매간다잉-->
+    <main>
+        <!-- =========================
+            01. 상품 구매 영역
+        ========================== -->
+        <section class="payment">
+
+            <div class="payment-wrap">
+
+
+                <!-- 왼쪽 상품 이미지 -->
+                <div class="payment-left">
+                    <!-- <img src="./images/payment-page/item1.png" alt=""> -->
+                    <div class="main-image">
+                        <img src="./images/payment-page/item1.png" alt="Recto Lounge Chair">
+                    </div>
+                    <!-- 썸네일 -->
+                    <div class="thumbnail-list">
+
+                        <button type="button" class="thumb active">
+                            <img src="./images/payment-page/item1.png" alt="Recto Lounge Chair 이미지 1">
+                        </button>
+
+                        <button type="button" class="thumb">
+                            <img src="./images/payment-page/item2.png" alt="Recto Lounge Chair 이미지 2">
+                        </button>
+
+                        <button type="button" class="thumb">
+                            <img src="./images/payment-page/item3.png" alt="Recto Lounge Chair 이미지 3">
+                        </button>
+
+                        <button type="button" class="thumb">
+                            <img src="./images/payment-page/item4.png" alt="Recto Lounge Chair 이미지 4">
+                        </button>
+
+                        <button type="button" class="thumb">
+                            <img src="./images/payment-page/item5.png" alt="Recto Lounge Chair 이미지 5">
+                        </button>
+
+                    </div>
+                    <div class="image-pagination">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+
+                <!-- 오른쪽 상품 정보 -->
+                <div class="payment-right">
+
+
+                    <!-- 상품명 + 찜 -->
+                    <div class="payment-title">
+
+                        <h2>Recto Lounge Chair</h2>
+
+                        <button type="button" class="heart-btn" aria-label="찜하기">
+                            <i class="fa-regular fa-heart">♡</i>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- 가격 -->
+                    <p class="payment-price">850,000원</p>
+
+
+                    <!-- 컬러 -->
+                    <div class="color-list">
+
+                        <button type="button" class="color color-01"></button>
+                        <button type="button" class="color color-02"></button>
+                        <button type="button" class="color color-03"></button>
+
+                    </div>
+
+
+                    <!-- 상품 설명 -->
+                    <div class="payment-description">
+
+                        <p>
+                            <span>얇고 정제된 스틸 프레임 위에 직육면체의 쿠션을 얹은 구조는,</span>
+                            <span>형태와 기능이 명확히 일치하는 구조적 미를 드러냅니다.</span>
+                        </p>
+
+                        <p>
+                            <span>가죽/패브릭의 밀도감, 프레임의 긴장감, 그리고 표면의 쉐이딩이</span>
+                            <span>단순한 선과 면의 조합 안에서도 충분한 깊이를 만들어냅니다.</span>
+                        </p>
+
+                    </div>
+
+
+                    <!-- 옵션 선택 -->
+                    <div class="option-box">
+
+                        <select name="item-list" id="item-list">
+
+                            <option value="austen01">
+                                Recto Lounge Chair - Austen01(아이보리)+White(170,000 추가)
+                            </option>
+
+                            <option value="austen05">
+                                Recto Lounge Chair - Austen05(브라운)+Black(170,000 추가)
+                            </option>
+
+                            <option value="vele01">
+                                Recto Lounge Chair - Vele01(블랙)+Black(170,000 추가)
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- 수량 -->
+                    <div class="quantity-area">
+
+                        <!-- <p>수량</p> -->
+
+                        <div class="quantity-box">
+
+                            <button type="button" class="minus-btn">
+                                −
+                            </button>
+
+                            <span class="quantity-number">0</span>
+
+                            <button type="button" class="plus-btn">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 판매가 -->
+                    <div class="total-price">
+
+                        <p>판매가</p>
+
+                        <strong>0원</strong>
+
+                    </div>
+
+
+                    <!-- 구매 버튼 -->
+                    <div class="payment-btn">
+
+                        <button type="button" class="buy-btn">
+                            구매
+                        </button>
+
+                        <button type="button" class="cart-btn">
+                            장바구니
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+            02. 상품 상세 탭
+        ========================== -->
+        <section class="product-tab">
+
+            <div class="inner">
+
+                <ul>
+
+                    <li>
+                        <a href="#detail">상세정보</a>
+                    </li>
+
+                    <li class="active">
+                        <a href="#review">리뷰(10)</a>
+                    </li>
+
+                    <li>
+                        <a href="#qna">Q&A</a>
+                    </li>
+
+                    <li>
+                        <a href="#delivery">배송/반품/설치</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+            03. 리뷰 요약
+        ========================== -->
+        <section class="review-summary" id="review">
+
+            <div class="inner">
+
+
+                <!-- 제목 -->
+                <div class="section-title">
+
+                    <h2>REVIEW</h2>
+
+                    <a href="#">전체 상품 리뷰 보기</a>
+
+                </div>
+
+
+                <!-- 리뷰 점수 -->
+                <div class="review-score-area">
+
+
+                    <!-- 왼쪽 별점 -->
+                    <div class="review-score">
+
+                        <strong>
+                            <span>★</span>
+                            5.0
+                        </strong>
+
+                        <p>리뷰 10개</p>
+
+                    </div>
+
+
+                    <!-- 오른쪽 그래프 -->
+                    <div class="review-chart">
+
+                        <div class="chart-item">
+
+                            <span>아주 좋아요</span>
+
+                            <div class="bar">
+                                <span class="bar-fill"></span>
+                            </div>
+
+                            <b>10</b>
+
+                        </div>
+
+
+                        <div class="chart-item">
+
+                            <span>맘에 들어요</span>
+
+                            <div class="bar">
+                                <span class="bar-fill"></span>
+                            </div>
+
+                            <b>0</b>
+
+                        </div>
+
+
+                        <div class="chart-item">
+
+                            <span>보통이에요</span>
+
+                            <div class="bar">
+                                <span class="bar-fill"></span>
+                            </div>
+
+                            <b>0</b>
+
+                        </div>
+
+
+                        <div class="chart-item">
+
+                            <span>그저 그래요</span>
+
+                            <div class="bar">
+                                <span class="bar-fill"></span>
+                            </div>
+
+                            <b>0</b>
+
+                        </div>
+
+
+                        <div class="chart-item">
+
+                            <span>별로예요</span>
+
+                            <div class="bar">
+                                <span class="bar-fill"></span>
+                            </div>
+
+                            <b>0</b>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 리뷰 작성 -->
+                <div class="review-write-area">
+
+                    <button type="button" class="review-write-btn">
+                        내 리뷰 작성 하기
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+            04. 포토 & 동영상
+        ========================== -->
+        <section class="photo-review">
+
+            <div class="inner">
+
+
+                <div class="section-title">
+
+                    <h2>포토&동영상</h2>
+
+                    <a href="#">전체보기 ›</a>
+
+                </div>
+
+
+                <!-- 포토 리스트 -->
+                <div class="photo-list">
+
+
+                    <div class="photo-item">
+                        <img src="./images/payment-page/review/review1.png" alt="리뷰 이미지">
+                    </div>
+
+
+                    <div class="photo-item">
+                        <img src="./images/payment-page/review/review2.png" alt="리뷰 이미지">
+                    </div>
+
+
+                    <div class="photo-item">
+                        <img src="./images/payment-page/review/review3.png" alt="리뷰 이미지">
+                    </div>
+
+
+                    <div class="photo-item">
+                        <img src="./images/payment-page/review/review4.png" alt="리뷰 이미지">
+                    </div>
+
+
+                    <div class="photo-item">
+                        <img src="./images/payment-page/review/review5.png" alt="리뷰 이미지">
+
+                        <button type="button" class="next-btn">
+                            ›
+                        </button>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+            05. 리뷰 목록
+        ========================== -->
+        <section class="review-list">
+
+            <div class="inner">
+
+
+                <!-- 리뷰 정렬 + 검색 -->
+                <div class="review-list-top">
+
+                    <div class="review-sort">
+
+                        <button type="button" class="active">
+                            최신순
+                        </button>
+
+                        <button type="button">
+                            별점순
+                        </button>
+
+                    </div>
+
+
+                    <div class="review-search">
+
+                        <input type="text" placeholder="">
+
+                        <button type="button" aria-label="리뷰 검색">
+                            <img src="./images/icon/search.png" alt="돋보기 아이콘">
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 리뷰 01 -->
+                <article class="review-item">
+
+
+                    <!-- 리뷰 사용자 정보 -->
+                    <div class="review-user">
+
+                        <div class="user-name">
+                            <strong>신라라</strong>
+                            <span>2025.02.13</span>
+                        </div>
+
+
+                        <ul class="user-info">
+
+                            <li>
+                                <span>주거형태</span>
+                                <b>주택</b>
+                            </li>
+
+                            <li>
+                                <span>평수</span>
+                                <b>3평</b>
+                            </li>
+
+                            <li>
+                                <span>가족형태</span>
+                                <b>4인 가족</b>
+                            </li>
+
+                            <li>
+                                <span>반려동물</span>
+                                <b>유</b>
+                            </li>
+
+                        </ul>
+
+
+                        <div class="purchase-product">
+
+                            <span>구매옵션</span>
+
+                            <p>
+                                <span>Recto Lounge Chair</span>
+                                <span>- Austen01(아이보리)+White</span>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 리뷰 내용 -->
+                    <div class="review-content">
+
+
+                        <div class="review-rating">
+                            ★★★★★
+                        </div>
+
+
+                        <strong class="review-title">
+                            디자인 만족해요
+                        </strong>
+
+
+                        <p class="review-text">
+                            <span>의자를 잘 산거같아요!!</span>
+                            <span>이런 소재는 정말 좋습니다!</span>
+                        </p>
+
+
+                        <!-- 리뷰 이미지 -->
+                        <div class="review-images">
+
+                            <img src="./images/payment-page/review/review1.png" alt="리뷰 사진">
+
+                            <img src="./images/payment-page/review/review2.png" alt="리뷰 사진">
+
+                            <img src="./images/payment-page/review/review3.png" alt="리뷰 사진">
+
+                        </div>
+
+
+                        <!-- 리뷰 하단 -->
+                        <div class="review-bottom">
+
+                            <button type="button">
+                                👍 유용해요 3
+                            </button>
+
+                            <button type="button">
+                                🚨 신고/차단
+                            </button>
+
+                        </div>
+
+
+                    </div>
+
+                </article>
+
+
+                <!-- 리뷰 02 -->
+                <article class="review-item">
+
+
+                    <div class="review-user">
+
+                        <div class="user-name">
+                            <strong>박수수</strong>
+                            <span>2025.03.13</span>
+                        </div>
+
+
+                        <ul class="user-info">
+
+                            <li>
+                                <span>주거형태</span>
+                                <b>주택</b>
+                            </li>
+
+                            <li>
+                                <span>평수</span>
+                                <b>6평</b>
+                            </li>
+
+                            <li>
+                                <span>가족형태</span>
+                                <b>5인 가족</b>
+                            </li>
+
+                            <li>
+                                <span>반려동물</span>
+                                <b>무</b>
+                            </li>
+
+                        </ul>
+
+
+                        <div class="purchase-product">
+
+                            <span>구매옵션</span>
+
+                            <p>
+                                <span>Recto Lounge Chair</span>
+                                <span>- Austen05(브라운)+Black</span>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="review-content">
+
+                        <div class="review-rating">
+                            ★★★★★
+                        </div>
+
+                        <strong class="review-title">
+                            디자인 만족해요
+                        </strong>
+
+                        <p class="review-text">
+                            <span>보자마자 이게 레트로 느낌에 좋죠!</span>
+                            <span>어느 어디에 둬도 잘 어울리는 느낌입니다.</span>
+                        </p>
+
+
+                        <div class="review-images">
+
+                            <img src="./images/payment-page/review/review4.png" alt="리뷰 사진">
+
+                        </div>
+
+
+                        <div class="review-bottom">
+
+                            <button type="button">
+                                👍 유용해요 1
+                            </button>
+
+                            <button type="button">
+                                🚨 신고/차단
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 리뷰 03 -->
+                <article class="review-item">
+
+
+                    <div class="review-user">
+
+                        <div class="user-name">
+                            <strong>정미미</strong>
+                            <span>2020.02.13</span>
+                        </div>
+
+
+                        <ul class="user-info">
+
+                            <li>
+                                <span>주거형태</span>
+                                <b>아파트</b>
+                            </li>
+
+                            <li>
+                                <span>평수</span>
+                                <b>24평</b>
+                            </li>
+
+                            <li>
+                                <span>가족형태</span>
+                                <b>2인 가족</b>
+                            </li>
+
+                            <li>
+                                <span>반려동물</span>
+                                <b>유</b>
+                            </li>
+
+                        </ul>
+
+
+                        <div class="purchase-product">
+
+                            <span>구매옵션</span>
+
+                            <p>
+                                <span>Recto Lounge Chair</span>
+                                <span>- Austen01(아이보리)+White</span>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="review-content">
+
+                        <div class="review-rating">
+                            ★★★★★
+                        </div>
+
+                        <strong class="review-title">
+                            디자인 만족해요
+                        </strong>
+
+                        <p class="review-text">
+                            <span>쇼룸에서 바로보고 구매했습니다!</span>
+                            <span>저희 집 인테리어와 잘 어울려서 너무 마음에 들어요 :)</span>
+                        </p>
+
+
+                        <div class="review-images">
+
+                            <img src="./images/payment-page/review/review5.png" alt="리뷰 사진">
+
+                            <img src="./images/payment-page/review/review_image6.png" alt="리뷰 사진">
+
+                        </div>
+
+
+                        <div class="review-bottom">
+
+                            <button type="button">
+                                👍 유용해요 17
+                            </button>
+
+                            <button type="button">
+                                🚨 신고/차단
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 페이지네이션 -->
+                <div class="pagination">
+
+                    <button type="button" class="arrow-btn">
+                        <img src="./images/icon/arrow-left1.png" alt="">
+                    </button>
+
+                    <button type="button" class="active">
+                        1
+                    </button>
+
+                    <button type="button">
+                        2
+                    </button>
+
+                    <button type="button">
+                        3
+                    </button>
+
+                    <button type="button" class="arrow-btn">
+                        <img src="./images/icon/arrow-right1.png" alt="">
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <!-- 2. footer -->
+    <footer>
+        <div class="footer-inner inner">
+            <div class="address-left">
+                <p class="footer-logo">
+                    <a href="#"><img src="./images/icon/footer-Logo.png" alt="BYHEYDEY logo"></a>
+                </p>
+                <address>
+                    <p><span>바이헤이데이</span> <span>대표자 조형석</span> <span>대표번호 1588-7193</span></p>
+                    <p><span>통신판매업 2021-서울마포-2699</span> <span>사업자등록번호 220-85-46645</span></p>
+                    <p><span>E-mail byheydeydey@gmail.com</span> <span>국민은행 069101-04-263160 바이헤이데이</span></p>
+                    <p><span>[03988] 서울 마포구 성미산로22길 18 (연남동504-50) 프로젝트 에이 A동 2~3층</span></p>
+                </address>
+            </div>
+            <div class="address-right">
+                <ul class="footer-menu">
+                    <li>
+                        <strong>PRODUCT</strong>
+                        <ul class="footer-Product-list sub-link-list">
+                            <li><a href="#">Best</a></li>
+                            <li><a href="#">House</a></li>
+                            <li><a href="#">Office</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>PROJECT</strong></li>
+                    <li>
+                        <strong>BRANDS</strong>
+                        <ul class="footer-Brands-list sub-link-list">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Showroom</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>MEMBERSHIP</strong>
+                        <ul class="footer-Membership-list sub-link-list">
+                            <li><a href="#">Clubmovement</a></li>
+                            <li><a href="#">Membership</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>SUPPORT</strong>
+                        <ul class="footer-Support-list sub-link-list">
+                            <li><a href="#">Notice</a></li>
+                            <li><a href="#">Review</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Floating buttons: Chatbot + Top -->
+    <div class="floating-actions" aria-label="빠른 메뉴">
+        <button type="button" class="chatbot-btn" aria-label="챗봇 열기" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                    d="M20 11.2c0 4.2-3.6 7.6-8 7.6-1 0-2-.2-2.9-.5L5 20l.9-3.2A7.3 7.3 0 0 1 4 11.2C4 7 7.6 3.6 12 3.6s8 3.4 8 7.6Z">
+                </path>
+                <path d="M8.2 11.7h.01M12 11.7h.01M15.8 11.7h.01"></path>
+            </svg>
+        </button>
+        <button type="button" class="top-btn" aria-label="맨 위로 이동">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 14.5 12 8l6 6.5"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chatbot-panel" aria-hidden="true">
+        <div class="chatbot-header">
+            <strong>BYHEYDEY CHAT</strong>
+            <button type="button" class="chatbot-close" aria-label="챗봇 닫기">&times;</button>
+        </div>
+        <div class="chatbot-body">
+            <p class="chatbot-message">안녕하세요! 무엇을 도와드릴까요?</p>
+            <div class="chatbot-quick">
+                <button type="button">상품 문의</button>
+                <button type="button">배송 문의</button>
+                <button type="button">A/S 문의</button>
+            </div>
+        </div>
+        <form class="chatbot-form">
+            <input type="text" placeholder="메시지를 입력하세요." aria-label="챗봇 메시지 입력">
+            <button type="submit" aria-label="메시지 보내기">↑</button>
+        </form>
+    </div>
+    <script src="./js/javascript.js"></script>
+
+    <script>
+        const allNavLinks = document.querySelectorAll('.main-menu a, .sub-menu a, .header-wrap a');
+        // ※ 만약 네비게이션 선택자명이 다르다면 상단 헤더 영역 전체의 a 태그를 지정하는 'header a' 등으로 변경하셔도 됩니다.
+
+        allNavLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                // 아직 링크(href) 연결을 안 했거나 '#'일 경우 페이지 최상단으로 튕기는 현상 방지
+                const href = link.getAttribute('href');
+                if (!href || href === '#' || href === '') {
+                    e.preventDefault();
+                }
+
+                // 클릭 직후 포커스(Focus) 상태를 즉시 해제하여 잔상이 남지 않게 함
+                link.blur();
+            });
+        });
+
+        //search modal
+        const searchBtn = document.querySelector('.search-btn a');
+        const searchModal = document.querySelector('.search-modal');
+        const searchClose = document.querySelector('.search-close');
+        const searchInput = document.querySelector('.search-input-wrap input');
+        const searchForm = document.querySelector('.search-form');
+        const searchTags = document.querySelectorAll('.search-tags button');
+
+        searchBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            searchModal.classList.add('active');
+            searchModal.setAttribute('aria-hidden', 'false');
+
+            setTimeout(() => {
+                searchInput.focus();
+            }, 300);
+            document.body.style.overflow = 'hidden';
+        });
+
+        function closeSearch() {
+            searchModal.classList.remove('active');
+            searchModal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        searchClose.addEventListener('click', function () {
+            closeSearch();
+        });
+
+        searchModal.addEventListener('click', function (e) {
+            if (e.target === searchModal) {
+                closeSearch();
+            }
+        });
+
+
+        searchForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const keyword = searchInput.value.trim();
+
+            if (!keyword) {
+                searchInput.focus();
+                return;
+            }
+            console.log('검색어:', keyword);
+        });
+
+        searchTags.forEach(function (tag) {
+            tag.addEventListener('click', function () {
+                const keyword = this.textContent.replace('#', '').trim();
+                searchInput.value = keyword;
+                searchInput.focus();
+            });
+        });
+
+        // floating buttons
+        const topBtn = document.querySelector('.top-btn');
+        const chatbotBtn = document.querySelector('.chatbot-btn');
+        const chatbotPanel = document.querySelector('.chatbot-panel');
+        const chatbotClose = document.querySelector('.chatbot-close');
+        const chatbotForm = document.querySelector('.chatbot-form');
+        const chatbotInput = chatbotForm.querySelector('input');
+
+        topBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        chatbotBtn.addEventListener('click', () => {
+            const isOpen = chatbotPanel.classList.toggle('is-open');
+            chatbotBtn.setAttribute('aria-expanded', String(isOpen));
+            chatbotPanel.setAttribute('aria-hidden', String(!isOpen));
+            if (isOpen) setTimeout(() => chatbotInput.focus(), 200);
+        });
+
+        chatbotClose.addEventListener('click', () => {
+            chatbotPanel.classList.remove('is-open');
+            chatbotBtn.setAttribute('aria-expanded', 'false');
+            chatbotPanel.setAttribute('aria-hidden', 'true');
+        });
+
+        chatbotForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const message = chatbotInput.value.trim();
+            if (!message) return;
+            const reply = document.createElement('p');
+            reply.className = 'chatbot-message chatbot-message-user';
+            reply.textContent = message;
+            chatbotForm.insertAdjacentElement('beforebegin', reply);
+            chatbotInput.value = '';
+        });
+
+
+        let bgHam = document.querySelector(".ham");
+        let menu = document.querySelector("nav");
+        bgHam.addEventListener("click", () => {
+            menu.classList.add("active");
+        })
+
+        let closeBtn = document.querySelector(".hamClose");
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        })
+    </script>
+</body>
+
+</html>
