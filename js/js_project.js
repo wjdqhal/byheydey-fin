@@ -24,16 +24,43 @@ tabButton.forEach((tab, id) => {
 let selectBtn = document.querySelectorAll(".room-section>button")
 let selectContents = document.querySelectorAll(".stay-project-list>div")
 
+
 selectBtn.forEach((select, num) => {
     select.addEventListener("click", () => {
-        selectBtn.forEach(product => {
-            product.classList.remove("active");
-        })
-        select.classList.add("active");
-
-        selectContents.forEach(contents => {
-            contents.classList.remove("active");
-        })
-        selectContents[num].classList.add("active");
+        moveBanner(num)
     })
+})
+
+
+function moveBanner(num) {
+    selectBtn.forEach(product => {
+        product.classList.remove("active");
+    })
+    selectBtn[num].classList.add("active");
+
+    selectContents.forEach(contents => {
+        contents.classList.remove("active");
+    })
+    selectContents[num].classList.add("active");
+}
+
+let current = 0;
+
+let right = document.querySelector(".next-btn")
+let left = document.querySelector(".prev-btn")
+right.addEventListener("click",()=>{
+    current++;
+    if (current >= selectContents.length) {
+        current = 0;
+    }
+    moveBanner(current);
+    console.log("ddd:")
+})
+
+left.addEventListener("click",()=>{
+    current--;
+    if (current==0) {
+        current = selectContents.length;
+    }
+    moveBanner(current)
 })
