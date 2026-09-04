@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="byheydey/favison" href="./images/icon/favicon.png">
+    <title>BYHEYDEY</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/fontello.css">
@@ -18,7 +19,7 @@
         <div class="header-inner">
             <div class="header-left">
                 <h1 class="logo">
-                    <a href="./index.html">
+                    <a href="#">
                         <img src="./images/icon/header-Logo.png" alt="BYHEYDEY logo">
                     </a>
                 </h1>
@@ -103,17 +104,23 @@
                 </nav>
             </div>
             <ul class="gnb-list">
-                <li><a href="#"><img src="./images/icon/search.png" alt="검색 아이콘"></a></li>
+                <li class="search-btn">
+                    <a href="#" aria-label="검색">
+                        <img src="./images/icon/search.png" alt="검색 아이콘">
+                    </a>
+                </li>
                 <li>
-                    <a href="#" aria-haspopup="true" aria-expanded="false"><img src="./images/icon/user.png"
-                            alt="마이페이지"></a>
+                    <a href="#" aria-haspopup="true" aria-expanded="false">
+                        <img src="./images/icon/user.png" alt="마이페이지">
+                    </a>
                     <ul class="user-list" aria-label="사용자 메뉴">
                         <li><a href="./log_in.html">Log in</a></li>
                         <li><a href="#">Join</a></li>
                     </ul>
                 </li>
-                <li><a href="#"><img src="./images/icon/cart.png" alt="장바구니 아이콘">
-                        <span class="cart-count">3</span>
+                <li><a href="#">
+                        <img src="./images/icon/cart.png" alt="장바구니 아이콘">
+                        <span class="cart-count">0</span>
                     </a>
                 </li>
             </ul>
@@ -121,87 +128,112 @@
                 <img src="./images/icon/ham.png" alt="메뉴 열기 아이콘">
             </button>
         </div>
+        <!-- search modal -->
+        <div class="search-modal" aria-hidden="true">
+            <div class="search-modal-inner">
+                <button type="button" class="search-close" aria-label="검색창 닫기">
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <h2>Search</h2>
+
+                <form class="search-form">
+                    <div class="search-input-wrap">
+                        <input type="text" placeholder="검색어를 입력하세요." aria-label="검색어 입력">
+
+                        <button type="submit" aria-label="검색">
+                            <img src="./images/icon/search.png" alt="돋보기 아이콘">
+                        </button>
+                    </div>
+                    <div class="search-tags">
+                        <button type="button"># Sofa</button>
+                        <button type="button"># Table</button>
+                        <button type="button"># Desk</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </header>
     <main>
         <!-- about_brand_wrap -->
         <section class="brand_story">
-            <div class="inner">
-                <div class="about_brand">
-                    <div class="img-box">
-                        <img src="./images/04.BRANDSTORY/brandstory1.png" alt="">
-                    </div>
-                    <div class="text-box">
-                        <h2 class="title">BYHEYDEY | Since 2008</h2>
-                        <div class="detail">
-                            <p class="eng-detail">
-                                ByHeydey began in 2008 with a new perspective on the furniture market. As
-                                a first-generation design furniture brand, we move forward with both pride in our
-                                origins
-                                and humility rooted in serving the user. Our shared mission is to democratize quality
-                                and
-                                make sustainable design accessible to more people. Through mutual trust and transparent
-                                processes that satisfy everyone involved—including the user—we aim to lead another
-                                positive
-                                shift in the field of furniture design.</p>
-                            <p class="kor-detail">
-                                바이헤이데이는 지난 2008년, 가구 시장의 새로운 관점으로 시작되었습니다. 디자인 가구 브랜드 1세대로서의 자부심과 언제나 사용자를 위함이라는 겸손함으로
-                                시작합니다. 우리의 공통된 사명은 품질을 민주화하고 더 많은 사람들이 지속 가능한 디자인에 접근할 수 있도록 하는 것입니다. 서로에게 신뢰를 가지고 사용자를
-                                포함한
-                                모두가 만족할 수 있는 프로세스의 투명성을 통해 우리는 또 한 번 가구 디자인 분야에서 긍정적인 변화를 주도하고자 합니다.
-                            </p>
-                        </div>
+            <div class="about_brand">
+                <div class="img-box">
+                    <!-- <img src="./images/04.BRANDSTORY/brandstory1.png" alt=""> -->
+                </div>
+                <div class="text-box inner">
+                    <h2 class="title">BYHEYDEY | Since 2008</h2>
+                    <div class="detail">
+                        <p class="eng-detail">
+                            ByHeydey began in 2008 with a new perspective on the furniture market. As
+                            a first-generation design furniture brand, we move forward with both pride in our
+                            origins
+                            and humility rooted in serving the user. Our shared mission is to democratize quality
+                            and
+                            make sustainable design accessible to more people. Through mutual trust and transparent
+                            processes that satisfy everyone involved—including the user—we aim to lead another
+                            positive
+                            shift in the field of furniture design.</p>
+                        <p class="kor-detail">
+                            바이헤이데이는 지난 2008년, 가구 시장의 새로운 관점으로 시작되었습니다. 디자인 가구 브랜드 1세대로서의 자부심과 언제나 사용자를 위함이라는 겸손함으로
+                            시작합니다. 우리의 공통된 사명은 품질을 민주화하고 더 많은 사람들이 지속 가능한 디자인에 접근할 수 있도록 하는 것입니다. 서로에게 신뢰를 가지고 사용자를
+                            포함한
+                            모두가 만족할 수 있는 프로세스의 투명성을 통해 우리는 또 한 번 가구 디자인 분야에서 긍정적인 변화를 주도하고자 합니다.
+                        </p>
                     </div>
                 </div>
-                <div class="about_brand">
-                    <div class="img-box">
-                        <img src="./images/04.BRANDSTORY/brandstory2.png" alt="">
-                    </div>
-                    <div class="text-box">
-                        <h2 class="title">Less Elements For Functionalism</h2>
-                        <div class="detail">
-                            <p class="eng-detail">
-                                ByHeydey’s design is grounded in functionalism, aiming for reasonable pricing and
-                                balanced
-                                quality. Inspired by Bauhaus, Dieter Rams, and Apple, our approach focuses on continuous
-                                reduction rather than addition.
-                                By resisting fleeting trends, we naturally achieve timeless design. We pursue minimalist
-                                furniture that seamlessly blends into a space without asserting itself, committed to the
-                                exceptionally high level of completion that minimalism demands.</p>
-                            <p class="kor-detail">
-                                바이헤이데이는 합리적인 가격과 균형 잡힌 품질을 목표로 기능주의 기반의 디자인을 선보입니다. 바우하우스에서 애플로 이어지는 기능주의 정신에 따라, 우리는
-                                더하기보다
-                                끊임없이 비워 내는 디자인을 지향합니다.
-                                유행을 타지 않는 타임리스 디자인을 통해 공간 속에서 튀지 않고 자연스럽게
-                                녹아드는 가구를 만듭니다. 나아가 미니멀리즘이 요구하는 극도의 완성도를 구현해 내는 것이 우리의 표준이자 목표입니다.
-                            </p>
-                        </div>
+            </div>
+            <div class="about_brand">
+                <div class="img-box">
+                    <!-- <img src="./images/04.BRANDSTORY/brandstory2.png" alt=""> -->
+                </div>
+                <div class="text-box inner">
+                    <h2 class="title">Less Elements For Functionalism</h2>
+                    <div class="detail">
+                        <p class="eng-detail">
+                            ByHeydey’s design is grounded in functionalism, aiming for reasonable pricing and
+                            balanced
+                            quality. Inspired by Bauhaus, Dieter Rams, and Apple, our approach focuses on continuous
+                            reduction rather than addition.
+                            By resisting fleeting trends, we naturally achieve timeless design. We pursue minimalist
+                            furniture that seamlessly blends into a space without asserting itself, committed to the
+                            exceptionally high level of completion that minimalism demands.</p>
+                        <p class="kor-detail">
+                            바이헤이데이는 합리적인 가격과 균형 잡힌 품질을 목표로 기능주의 기반의 디자인을 선보입니다. 바우하우스에서 애플로 이어지는 기능주의 정신에 따라, 우리는
+                            더하기보다
+                            끊임없이 비워 내는 디자인을 지향합니다.
+                            유행을 타지 않는 타임리스 디자인을 통해 공간 속에서 튀지 않고 자연스럽게
+                            녹아드는 가구를 만듭니다. 나아가 미니멀리즘이 요구하는 극도의 완성도를 구현해 내는 것이 우리의 표준이자 목표입니다.
+                        </p>
                     </div>
                 </div>
-                <div class="about_brand last">
-                    <div class="img-box">
-                        <img src="./images/04.BRANDSTORY/brandstory3.png" alt="">
-                    </div>
-                    <div class="text-box">
-                        <h2 class="title">LEFF | Office Collection</h2>
-                        <div class="detail">
-                            <p class="eng-detail">
-                                The LEFF office collection takes its name from ByHeyDey's motto, "Less Elements For
-                                Functionalism". For creators who value order and order, we propose the most efficient
-                                and
-                                functional office space. We create an environment where you can immerse yourself in your
-                                work by strictly excluding ostentatious decorations and focusing only on essential
-                                functions. It presents new alternatives and directions for the domestic office furniture
-                                market.</p>
-                            <p class="kor-detail">
-                                LEFF 오피스 컬렉션은 바이헤이데이의 모토인 "Less Elements For Functionalism"에서 이름을 따왔습니다. 질서와 정돈을 중시하며 높은
-                                기준을
-                                가진 크리에이터를 위해, 가장 효율적이고 기능적인 오피스 공간을 제안합니다.
-                                과시적인 장식을 극도로 배제하고 본질적인 기능에만 집중하여 일에 깊이 몰두할 수 있는 환경을 만듭니다. 이는 국내 사무용 가구 시장에 새로운 대안과 방향성을
-                                제시합니다.
-                            </p>
-                        </div>
+            </div>
+            <div class="about_brand last">
+                <div class="img-box">
+                    <!-- <img src="./images/04.BRANDSTORY/brandstory3.png" alt=""> -->
+                </div>
+                <div class="text-box inner">
+                    <h2 class="title">LEFF | Office Collection</h2>
+                    <div class="detail">
+                        <p class="eng-detail">
+                            The LEFF office collection takes its name from ByHeyDey's motto, "Less Elements For
+                            Functionalism". For creators who value order and order, we propose the most efficient
+                            and
+                            functional office space. We create an environment where you can immerse yourself in your
+                            work by strictly excluding ostentatious decorations and focusing only on essential
+                            functions. It presents new alternatives and directions for the domestic office furniture
+                            market.</p>
+                        <p class="kor-detail">
+                            LEFF 오피스 컬렉션은 바이헤이데이의 모토인 "Less Elements For Functionalism"에서 이름을 따왔습니다. 질서와 정돈을 중시하며 높은
+                            기준을
+                            가진 크리에이터를 위해, 가장 효율적이고 기능적인 오피스 공간을 제안합니다.
+                            과시적인 장식을 극도로 배제하고 본질적인 기능에만 집중하여 일에 깊이 몰두할 수 있는 환경을 만듭니다. 이는 국내 사무용 가구 시장에 새로운 대안과 방향성을
+                            제시합니다.
+                        </p>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>
@@ -256,6 +288,42 @@
             </div>
         </div>
     </footer>
+    <!-- Floating buttons: Chatbot + Top -->
+    <div class="floating-actions" aria-label="빠른 메뉴">
+        <button type="button" class="chatbot-btn" aria-label="챗봇 열기" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                    d="M20 11.2c0 4.2-3.6 7.6-8 7.6-1 0-2-.2-2.9-.5L5 20l.9-3.2A7.3 7.3 0 0 1 4 11.2C4 7 7.6 3.6 12 3.6s8 3.4 8 7.6Z">
+                </path>
+                <path d="M8.2 11.7h.01M12 11.7h.01M15.8 11.7h.01"></path>
+            </svg>
+        </button>
+        <button type="button" class="top-btn" aria-label="맨 위로 이동">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 14.5 12 8l6 6.5"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chatbot-panel" aria-hidden="true">
+        <div class="chatbot-header">
+            <strong>BYHEYDEY CHAT</strong>
+            <button type="button" class="chatbot-close" aria-label="챗봇 닫기">&times;</button>
+        </div>
+        <div class="chatbot-body">
+            <p class="chatbot-message">안녕하세요! 무엇을 도와드릴까요?</p>
+            <div class="chatbot-quick">
+                <button type="button">상품 문의</button>
+                <button type="button">배송 문의</button>
+                <button type="button">A/S 문의</button>
+            </div>
+        </div>
+        <form class="chatbot-form">
+            <input type="text" placeholder="메시지를 입력하세요." aria-label="챗봇 메시지 입력">
+            <button type="submit" aria-label="메시지 보내기">↑</button>
+        </form>
+    </div>
     <script>
         const allNavLinks = document.querySelectorAll('.main-menu a, .sub-menu a, .header-wrap a');
         // ※ 만약 네비게이션 선택자명이 다르다면 상단 헤더 영역 전체의 a 태그를 지정하는 'header a' 등으로 변경하셔도 됩니다.
@@ -272,6 +340,100 @@
                 link.blur();
             });
         });
+
+        //search modal
+        const searchBtn = document.querySelector('.search-btn a');
+        const searchModal = document.querySelector('.search-modal');
+        const searchClose = document.querySelector('.search-close');
+        const searchInput = document.querySelector('.search-input-wrap input');
+        const searchForm = document.querySelector('.search-form');
+        const searchTags = document.querySelectorAll('.search-tags button');
+
+        searchBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            searchModal.classList.add('active');
+            searchModal.setAttribute('aria-hidden', 'false');
+
+            setTimeout(() => {
+                searchInput.focus();
+            }, 300);
+            document.body.style.overflow = 'hidden';
+        });
+
+        function closeSearch() {
+            searchModal.classList.remove('active');
+            searchModal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        searchClose.addEventListener('click', function () {
+            closeSearch();
+        });
+
+        searchModal.addEventListener('click', function (e) {
+            if (e.target === searchModal) {
+                closeSearch();
+            }
+        });
+
+
+        searchForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const keyword = searchInput.value.trim();
+
+            if (!keyword) {
+                searchInput.focus();
+                return;
+            }
+            console.log('검색어:', keyword);
+        });
+
+        searchTags.forEach(function (tag) {
+            tag.addEventListener('click', function () {
+                const keyword = this.textContent.replace('#', '').trim();
+                searchInput.value = keyword;
+                searchInput.focus();
+            });
+        });
+
+        // floating buttons
+        const topBtn = document.querySelector('.top-btn');
+        const chatbotBtn = document.querySelector('.chatbot-btn');
+        const chatbotPanel = document.querySelector('.chatbot-panel');
+        const chatbotClose = document.querySelector('.chatbot-close');
+        const chatbotForm = document.querySelector('.chatbot-form');
+        const chatbotInput = chatbotForm.querySelector('input');
+
+        topBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        chatbotBtn.addEventListener('click', () => {
+            const isOpen = chatbotPanel.classList.toggle('is-open');
+            chatbotBtn.setAttribute('aria-expanded', String(isOpen));
+            chatbotPanel.setAttribute('aria-hidden', String(!isOpen));
+            if (isOpen) setTimeout(() => chatbotInput.focus(), 200);
+        });
+
+        chatbotClose.addEventListener('click', () => {
+            chatbotPanel.classList.remove('is-open');
+            chatbotBtn.setAttribute('aria-expanded', 'false');
+            chatbotPanel.setAttribute('aria-hidden', 'true');
+        });
+
+        chatbotForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const message = chatbotInput.value.trim();
+            if (!message) return;
+            const reply = document.createElement('p');
+            reply.className = 'chatbot-message chatbot-message-user';
+            reply.textContent = message;
+            chatbotForm.insertAdjacentElement('beforebegin', reply);
+            chatbotInput.value = '';
+        });
+
 
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');

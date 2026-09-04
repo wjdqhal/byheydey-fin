@@ -111,23 +111,55 @@
                 </nav>
             </div>
             <ul class="gnb-list">
-                <li><a href="#"><img src="./images/icon/search.png" alt="검색 아이콘"></a></li>
+                <li class="search-btn">
+                    <a href="#" aria-label="검색">
+                        <img src="./images/icon/search.png" alt="검색 아이콘">
+                    </a>
+                </li>
                 <li>
-                    <a href="#" aria-haspopup="true" aria-expanded="false"><img src="./images/icon/user.png"
-                            alt="마이페이지"></a>
+                    <a href="#" aria-haspopup="true" aria-expanded="false">
+                        <img src="./images/icon/user.png" alt="마이페이지">
+                    </a>
                     <ul class="user-list" aria-label="사용자 메뉴">
                         <li><a href="./log_in.html">Log in</a></li>
                         <li><a href="#">Join</a></li>
                     </ul>
                 </li>
-                <li><a href="#"><img src="./images/icon/cart.png" alt="장바구니 아이콘">
-                        <span class="cart-count">3</span>
+                <li><a href="#">
+                        <img src="./images/icon/cart.png" alt="장바구니 아이콘">
+                        <span class="cart-count">0</span>
                     </a>
                 </li>
             </ul>
             <button type="button" class="ham" aria-label="메뉴 열기">
                 <img src="./images/icon/ham.png" alt="메뉴 열기 아이콘">
             </button>
+        </div>
+        <!-- search modal -->
+        <div class="search-modal" aria-hidden="true">
+            <div class="search-modal-inner">
+                <button type="button" class="search-close" aria-label="검색창 닫기">
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <h2>Search</h2>
+
+                <form class="search-form">
+                    <div class="search-input-wrap">
+                        <input type="text" placeholder="검색어를 입력하세요." aria-label="검색어 입력">
+
+                        <button type="submit" aria-label="검색">
+                            <img src="./images/icon/search.png" alt="돋보기 아이콘">
+                        </button>
+                    </div>
+                    <div class="search-tags">
+                        <button type="button"># Sofa</button>
+                        <button type="button"># Table</button>
+                        <button type="button"># Desk</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </header>
     <!-- 2. main -->
@@ -545,9 +577,11 @@
                         <h2 class="section-title">PROJECT</h2>
                         <p class="sub-title">가구 제안부터 공간 컨설팅까지 토탈 솔루션</p>
                         <p class="detail">
-                            고민은 줄이고 변화는 확실하게.<br>
-                            저희가 완성한 브랜드 리뉴얼 포트폴리오를 둘러보시고,<br>
-                            지금 미팅을 신청해 보세요</p>
+                            <span>고민은 줄이고 변화는 확실하게.</span>
+                            <span>저희가 완성한 브랜드 리뉴얼 포트폴리오를 둘러보시고,</span>
+                            <span>지금 미팅을 신청해 보세요.</span>
+
+                        </p>
                         <p class="btn"><a href="#">프로젝트 더보기</a></p>
                     </div>
                     <div class="project-img">
@@ -596,7 +630,7 @@
                 <div class="title-box">
                     <h2 class="section-title">CLUB MOVEMENT</h2>
                     <p class="sub-title">공간의 가치를 깊이 있게 다루는 이들을 위한 특권</p>
-                    <p class="detail">클럽무브먼트는 무브먼트랩의 멤버십 프로그램으로 무브먼트랩의 서비스와 상품들을<br>
+                    <p class="detail">클럽무브먼트는 무브먼트랩의 멤버십 프로그램으로 무브먼트랩의 서비스와 상품들을
                         합리적인 가격에 만나보실 수 있으며, 회원분들만을 위한 특별한 혜택과 이벤트가 제공됩니다. </p>
                     <p class="btn"><a href="">멤버십 가입하기</a></p>
                 </div>
@@ -606,56 +640,56 @@
                             <div class="img-box"><img src="./images/01.MAIN-SECTION/membership/mem-card_1.png" alt="">
                             </div>
                             <div class="text-box">
-                                <strong>한도 없는 할인 혜택으로<br>
-                                    완성하는 공간의 로망</strong>
-                                <p>프리미엄 가구 및 조명, 소품 등<br>
-                                    최대 30% 할인</p>
+                                <p>한도 없는 할인 혜택으로
+                                    완성하는 공간의 로망</p>
+                                <span>프리미엄 가구 및 조명, 소품 등
+                                    최대 30% 할인</span>
                             </div>
                         </li>
                         <li class="swiper-slide">
                             <div class="img-box"><img src="./images/01.MAIN-SECTION/membership/mem-card_2.png" alt="">
                             </div>
                             <div class="text-box">
-                                <strong>프리미엄 수입 조명<br>
-                                    멤버십 전용가로 구매하기</strong>
-                                <p>풍성한 세트 할인 혜택과 함께</p>
+                                <p>프리미엄 수입 조명
+                                    멤버십 전용가로 구매하기</p>
+                                <span>풍성한 세트 할인 혜택과 함께</span>
                             </div>
                         </li>
                         <li class="swiper-slide">
                             <div class="img-box"><img src="./images/01.MAIN-SECTION/membership/mem-card_3.png" alt="">
                             </div>
                             <div class="text-box">
-                                <strong>영감이 되는 카페에 다이닝<br>
-                                    공간들을 더 자주 부담 없이</strong>
-                                <p>200+ 제휴처 무제한 할인 혜택</p>
+                                <p>영감이 되는 카페에 다이닝
+                                    공간들을 더 자주 부담 없이</p>
+                                <span>200+ 제휴처 무제한 할인 혜택</span>
                             </div>
                         </li>
                         <li class="swiper-slide">
                             <div class="img-box"><img src="./images/01.MAIN-SECTION/membership/mem-card_4.png" alt="">
                             </div>
                             <div class="text-box">
-                                <strong>나만 알고싶은 스테이,<br>
-                                    가구까지 온전하게 경험하기</strong>
-                                <p>스테이 최대 48% 할인 및<br>
-                                    가구/소품 추가 할인 쿠폰 제공</p>
+                                <p>나만 알고싶은 스테이,
+                                    가구까지 온전하게 경험하기</p>
+                                <span>스테이 최대 48% 할인 및
+                                    가구/소품 추가 할인 쿠폰 제공</span>
                             </div>
                         </li>
                         <li class="swiper-slide">
                             <div class="img-box"><img src="./images/01.MAIN-SECTION/membership/mem-card_5.png" alt="">
                             </div>
                             <div class="text-box">
-                                <strong>취향의 변화까지 책임지는<br>
-                                    세컨드마켓 중고 거래 솔루션</strong>
-                                <p>리퍼브 및 중고 구매 할인과 판매 리워드</p>
+                                <p>취향의 변화까지 책임지는
+                                    세컨드마켓 중고 거래 솔루션</p>
+                                <span>리퍼브 및 중고 구매 할인과 판매 리워드</span>
                             </div>
                         </li>
                         <li class="swiper-slide">
                             <div class="img-box"><img src="./images/01.MAIN-SECTION/membership/mem-card_6.png" alt="">
                             </div>
                             <div class="text-box">
-                                <strong>이사 입주 전<br>
-                                    나만의 공간, 미리 그려보기</strong>
-                                <p>3D 스타일링 등 공간 제안 프로그램</p>
+                                <p>이사 입주 전
+                                    나만의 공간, 미리 그려보기</p>
+                                <span>3D 스타일링 등 공간 제안 프로그램</span>
                             </div>
                         </li>
                     </ul>
@@ -714,6 +748,42 @@
             </div>
         </div>
     </footer>
+    <!-- Floating buttons: Chatbot + Top -->
+    <div class="floating-actions" aria-label="빠른 메뉴">
+        <button type="button" class="chatbot-btn" aria-label="챗봇 열기" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                    d="M20 11.2c0 4.2-3.6 7.6-8 7.6-1 0-2-.2-2.9-.5L5 20l.9-3.2A7.3 7.3 0 0 1 4 11.2C4 7 7.6 3.6 12 3.6s8 3.4 8 7.6Z">
+                </path>
+                <path d="M8.2 11.7h.01M12 11.7h.01M15.8 11.7h.01"></path>
+            </svg>
+        </button>
+        <button type="button" class="top-btn" aria-label="맨 위로 이동">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 14.5 12 8l6 6.5"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chatbot-panel" aria-hidden="true">
+        <div class="chatbot-header">
+            <strong>BYHEYDEY CHAT</strong>
+            <button type="button" class="chatbot-close" aria-label="챗봇 닫기">&times;</button>
+        </div>
+        <div class="chatbot-body">
+            <p class="chatbot-message">안녕하세요! 무엇을 도와드릴까요?</p>
+            <div class="chatbot-quick">
+                <button type="button">상품 문의</button>
+                <button type="button">배송 문의</button>
+                <button type="button">A/S 문의</button>
+            </div>
+        </div>
+        <form class="chatbot-form">
+            <input type="text" placeholder="메시지를 입력하세요." aria-label="챗봇 메시지 입력">
+            <button type="submit" aria-label="메시지 보내기">↑</button>
+        </form>
+    </div>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
@@ -774,6 +844,7 @@
                 },
             },
         });
+
         //clubmovement
         var swiper = new Swiper('.clubmovement-list-wrap', {
             autoplay: {
@@ -801,6 +872,104 @@
             },
         });
 
+
+        //search modal
+        const searchBtn = document.querySelector('.search-btn a');
+        const searchModal = document.querySelector('.search-modal');
+        const searchClose = document.querySelector('.search-close');
+        const searchInput = document.querySelector('.search-input-wrap input');
+        const searchForm = document.querySelector('.search-form');
+        const searchTags = document.querySelectorAll('.search-tags button');
+
+        searchBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            searchModal.classList.add('active');
+            searchModal.setAttribute('aria-hidden', 'false');
+
+            setTimeout(() => {
+                searchInput.focus();
+            }, 300);
+            document.body.style.overflow = 'hidden';
+        });
+
+        function closeSearch() {
+            searchModal.classList.remove('active');
+            searchModal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        searchClose.addEventListener('click', function () {
+            closeSearch();
+        });
+
+        searchModal.addEventListener('click', function (e) {
+            if (e.target === searchModal) {
+                closeSearch();
+            }
+        });
+
+
+        searchForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const keyword = searchInput.value.trim();
+
+            if (!keyword) {
+                searchInput.focus();
+                return;
+            }
+            console.log('검색어:', keyword);
+        });
+
+        searchTags.forEach(function (tag) {
+            tag.addEventListener('click', function () {
+                const keyword = this.textContent.replace('#', '').trim();
+                searchInput.value = keyword;
+                searchInput.focus();
+            });
+        });
+
+
+        // floating buttons
+        const topBtn = document.querySelector('.top-btn');
+        const chatbotBtn = document.querySelector('.chatbot-btn');
+        const chatbotPanel = document.querySelector('.chatbot-panel');
+        const chatbotClose = document.querySelector('.chatbot-close');
+        const chatbotForm = document.querySelector('.chatbot-form');
+        const chatbotInput = chatbotForm.querySelector('input');
+
+        topBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        chatbotBtn.addEventListener('click', () => {
+            const isOpen = chatbotPanel.classList.toggle('is-open');
+            chatbotBtn.setAttribute('aria-expanded', String(isOpen));
+            chatbotPanel.setAttribute('aria-hidden', String(!isOpen));
+            if (isOpen) setTimeout(() => chatbotInput.focus(), 200);
+        });
+
+        chatbotClose.addEventListener('click', () => {
+            chatbotPanel.classList.remove('is-open');
+            chatbotBtn.setAttribute('aria-expanded', 'false');
+            chatbotPanel.setAttribute('aria-hidden', 'true');
+        });
+
+        chatbotForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const message = chatbotInput.value.trim();
+            if (!message) return;
+            const reply = document.createElement('p');
+            reply.className = 'chatbot-message chatbot-message-user';
+            reply.textContent = message;
+            chatbotForm.insertAdjacentElement('beforebegin', reply);
+            chatbotInput.value = '';
+        });
+
+
+
+        //header scroll
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             const threshold = 100;
@@ -812,6 +981,7 @@
             }
         });
 
+        //ham-btn
         let bgHam = document.querySelector(".ham");
         let menu = document.querySelector("nav");
         bgHam.addEventListener("click", () => {

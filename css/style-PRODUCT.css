@@ -1,9 +1,13 @@
-
 /* ==================================== main ==================================== */
 .mine-vanner {
     padding: 5em 0 5.44em;
 }
-.mine-vanner>.img-box>img{
+
+.mine-vanner>.m-img-box {
+    display: none;
+}
+
+.mine-vanner>.img-box>img {
     width: 100%;
 }
 
@@ -11,7 +15,7 @@
     display: flex;
     padding: 1em 0;
     gap: 1.88em;
-    font-size: 1.25em;
+    font-size: 1em;
     color: rgba(0, 0, 0, 0.40);
 }
 
@@ -27,7 +31,7 @@
     gap: 1.88em;
 }
 
-.Product-goods-list img{
+.Product-goods-list img {
     width: 49.81em;
 }
 
@@ -41,25 +45,28 @@
     padding: 1.88em 1.25em 0;
 }
 
-.Product-goods-list .goods-left>.goods-name{
-    font-size: 1.25em;
+.Product-goods-list .goods-left>.goods-name {
+    font-size: 1.06em;
+    font-weight: 500;
 }
-.Product-goods-list .goods-left>div>.goods-right{
+
+.Product-goods-list .goods-left>div>.goods-right {
     font-weight: 700;
     color: #FF5252;
 }
+
 .Product-goods-list .goods-left>div {
     display: flex;
     justify-content: space-between;
-    font-weight: 300;
-    padding-top: 0.31em;
+    /* font-weight: 300; */
+    padding-top: 0.7em;
 }
 
 .Product-goods-list .goods-left .goods-price {
     display: flex;
 }
 
-.sale{
+.sale {
     padding-left: 0.44em;
     text-decoration: line-through;
     color: #A7A7A7;
@@ -89,32 +96,35 @@
 /* 모바일 */
 @media screen and (max-width:767px) {
     .mine-vanner {
-        padding-top: 0;
+        padding-top: 3em;
     }
-
 
     .mine-vanner>.img-box {
-        height: 60vh;
-        display: flex;
-        position: relative;
-        left: -45%;
-        /* justify-content: center; */
-        /* overflow: hidden; */
+        display: none;
     }
 
-    .mine-vanner>.img-box>img {
-        max-width: 1920px;
-        width: 1920px;
+    .mine-vanner>.m-img-box>img {
+        width: 100%;
         height: 100%;
+        object-fit: cover;
     }
 
-    .Product-goods-list ul>li {
-        flex: 0 0 calc((100% - 3.75em) / 2);
-        overflow: hidden;
+    .mine-vanner>.m-img-box {
+        display: flex;
+        height: 60vh;
+        position: relative;
+    }
+
+    .Product-goods-list ul {
+        flex-direction: column;
     }
 
     .Product-goods-list {
-        padding-left: 1.88em;
+        /* padding: 0 1.88em; */
+    }
+
+    .Product-goods-list img {
+        width: 100%;
     }
 
     .Product-list-wrap {

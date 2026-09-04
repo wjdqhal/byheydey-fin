@@ -1,35 +1,69 @@
-body{
+body {
     background-color: #EFF2F6;
 }
-.about_brand{
+
+.about_brand {
     /* background: pink; */
     width: 100%;
-    padding-top: 150px;
+    padding-top: 5em;
 }
-.inner{
-    width: 100%;
+
+.inner {
+    /* width: 100%; */
     /* margin: 0 auto; */
     /* background: red; */
 }
-.about_brand .img-box{
+
+.about_brand .img-box {
     width: 100%;
 }
-.about_brand .text-box{
+
+.brand_story .img-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.brand_story>div>.img-box {
+    width: 100%;
+    height: 600px;
+    /* aspect-ratio: 3/1; */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.brand_story>div:first-child>.img-box {
+    background-image: url(../images/04.BRANDSTORY/1.jpg);
+    height: 850px;
+}
+
+.brand_story>div:nth-child(2)>.img-box {
+    background-image: url(../images/04.BRANDSTORY/2.png);
+}
+
+.brand_story>div:nth-child(3)>.img-box {
+    background-image: url(../images/04.BRANDSTORY/3.jpg);
+}
+
+.about_brand .text-box {
     font-family: "Pretendard", sans-serif;
-    margin: 150px auto 0;
+    margin: 150px auto 70px;
     /* padding: 150px 350px; */
-    max-width: 1200px;
+    max-width: 1640px;
     padding: 0 1em;
 }
-.about_brand .text-box>.title{
+
+.about_brand .text-box>.title {
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1.5em;
     letter-spacing: 0.06em;
     margin-bottom: 30px;
     padding: 0;
 }
-.about_brand .text-box .detail{
+
+.about_brand .text-box .detail {
     display: flex;
     gap: 120px;
     font-weight: 500;
@@ -37,11 +71,80 @@ body{
     letter-spacing: 0.06em;
     padding: 0;
 }
-.about_brand .text-box .detail>p{
+
+.about_brand .text-box .detail>p {
     flex: 1;
-    
+    word-break: keep-all;
 }
-.last .text-box .detail{
+
+.last .text-box .detail {
     /* margin-bottom: 150px; */
-    padding-bottom: 150px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width:1279px) {
+    .about_brand {
+        padding-top: 70px;
+    }
+
+    .about_brand .text-box {
+        margin: 130px auto 60px;
+    }
+
+    .last .text-box .detail {
+        padding-bottom: 60px;
+    }
+
+    .brand_story>div:first-child>.img-box {
+        max-width:100%;
+        height: 650px;
+        background-size: cover;
+    }
+
+    .brand_story>div>.img-box {
+        width: 100%;
+        height: 500px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .about_brand .text-box>.title {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .about_brand .text-box .detail {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .about_brand {
+        padding-top: 50px;
+    }
+
+    .about_brand .text-box {
+        margin: 100px auto 50px;
+    }
+
+    .last .text-box .detail {
+        padding-bottom: 50px;
+    }
+
+    .brand_story>div:first-child>.img-box {
+        max-width:100%;
+        height: 350px;
+        background-size: cover;
+    }
+
+    .brand_story>div>.img-box {
+        width: 100%;
+        height: 200px;
+        /* aspect-ratio: 3/1; */
+        /* background-attachment: fixed; */
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+
 }
