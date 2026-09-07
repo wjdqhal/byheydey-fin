@@ -357,18 +357,34 @@ main {
 }
 
 .heart-btn {
-    border: none;
-    background: none;
-    cursor: pointer;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    padding: 0;
 }
 
-.heart-btn i {
-    font-size: 1.5em;
-    color: #222;
+.heart-btn img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 0;
+    top: 0;
 }
 
-.heart-btn.active i {
-    color: red;
+.heart {
+    opacity: 1;
+}
+
+.heart-red {
+    opacity: 0;
+}
+
+.heart-btn.active .heart {
+    opacity: 0;
+}
+
+.heart-btn.active .heart-red {
+    opacity: 1;
 }
 
 /* ==============================
