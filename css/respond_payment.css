@@ -320,9 +320,32 @@
     /* =====================
        REVIEW LIST
     ===================== */
+.review-content {
+    min-width: 0;
+    overflow: hidden;
+}
 
+.review-images {
+    display: grid ;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) ;
+    gap: 10px ;
+
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.review-images img {
+    width: 100% ;
+    max-width: 100% ;
+    height: auto ;
+
+    display: block;
+    object-fit: cover;
+    box-sizing: border-box;
+}
     .review-list {
-        height: auto !important;
+        height: auto ;
         padding-top: 50px;
     }
 
