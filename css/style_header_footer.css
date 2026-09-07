@@ -52,6 +52,10 @@ header {
     align-items: center;
     position: relative;
 }
+.header-right{
+    display: flex;
+    gap: 1.88em;
+}
 
 .header-left {
     display: flex;
@@ -171,7 +175,7 @@ header:has(.main-menu > li:hover .sub-list)::after {
 .gnb-list {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 1.5em;
     list-style: none;
 }
 
@@ -729,7 +733,7 @@ footer {
 
 
     .gnb-list {
-        display: none;
+        /* display: none; */
     }
 
     .m-header {
@@ -772,6 +776,7 @@ footer {
         background: #111;
         height: 100vh;
         /* display: none; */
+        z-index: 100;
     }
 
     nav.active {
@@ -868,6 +873,10 @@ footer {
 @media screen and (max-width:767px) {
     body {
         font-size: 12px;
+    }
+
+    .gnb-list {
+        display: none;
     }
 
     .main-menu>li>a {
