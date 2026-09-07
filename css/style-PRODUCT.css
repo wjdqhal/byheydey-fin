@@ -78,7 +78,7 @@
     justify-content: center;
     gap: 2.31em;
     padding: 6.88em 0;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 600;
 }
 
@@ -91,7 +91,11 @@
 
 
 /* 아이패드 */
-@media screen and (max-width:1279px) {}
+@media screen and (max-width:1279px) {
+    .Product-list-wrap {
+        padding-left: 1.88em;
+    }
+}
 
 /* 모바일 */
 @media screen and (max-width:767px) {
@@ -120,14 +124,10 @@
     }
 
     .Product-goods-list {
-        /* padding: 0 1.88em; */
+        padding: 0 1em;
     }
 
     .Product-goods-list img {
         width: 100%;
-    }
-
-    .Product-list-wrap {
-        padding-left: 1.88em;
     }
 }
