@@ -509,6 +509,17 @@
         display: none;
     }
 
+    .clubmovement-wrap .title-box {
+        padding: 40px 1em;
+    }
+
+    .clubmovement-wrap .title-box .section-title{
+        font-size: 2em;
+    }
+     .clubmovement-wrap .title-box .sub-title{
+        font-size: 1.33em;
+    }
+
 
     .floating-actions {
         right: 16px;

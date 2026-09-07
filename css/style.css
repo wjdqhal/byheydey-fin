@@ -989,7 +989,7 @@ header:has(.main-menu > li:hover .sub-list)::after {
 /* --------------------------clubmovement--------------------------- */
 
 .clubmovement-wrap .title-box {
-    padding: 4.88em 0 6.25em;
+    padding: 5em 0;
 }
 
 .clubmovement-wrap .title-box>.detail {
