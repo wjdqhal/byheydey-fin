@@ -216,10 +216,19 @@ header:has(.main-menu > li:hover .sub-list)::after {
     visibility: visible;
 }
 
+.mobile-gnb{
+    display: none;
+}
+
+.header-right{
+    display: flex;
+    gap: 1.88em;
+}
+
 .gnb-list {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 1.5em;
     list-style: none;
 }
 
@@ -568,7 +577,7 @@ header:has(.main-menu > li:hover .sub-list)::after {
 
 .best-wrap .title-box {
     text-align: center;
-    padding: 4.88em 0 3.88em;
+    padding: 5em 0 3.88em;
 }
 
 .best-wrap .title-box>h2 {
@@ -817,7 +826,7 @@ header:has(.main-menu > li:hover .sub-list)::after {
 .care-inner {
     max-width: 1640px;
     margin: 0 auto;
-    padding: 100px 40px;
+    padding: 5em 40px;
 
     display: flex;
     flex-wrap: wrap;
@@ -871,7 +880,7 @@ header:has(.main-menu > li:hover .sub-list)::after {
 /* -----------------------project-------------------------- */
 .project-wrap {
     background: var(--secondary-color);
-    padding: 60px 140px;
+    padding: 5em 140px;
 }
 
 .project-wrap .inner {
@@ -919,6 +928,9 @@ header:has(.main-menu > li:hover .sub-list)::after {
     color: #fff;
 }
 
+.project-wrap .project-list-right{
+    padding-top: 32px;
+}
 
 .project-wrap .project-list-right .btn a:hover {
     background-color: #111;
@@ -940,9 +952,6 @@ header:has(.main-menu > li:hover .sub-list)::after {
     position: relative;
 }
 
-/* .project-wrap .project-list-right .project-img {
-    position: relative;
-} */
 
 .project-wrap .project-list-right .project-img .img-box>img {
     width: 100%;
@@ -952,7 +961,7 @@ header:has(.main-menu > li:hover .sub-list)::after {
 }
 
 .project-wrap .project-list-right .project-img .img-box {
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
 }
 
@@ -975,14 +984,10 @@ header:has(.main-menu > li:hover .sub-list)::after {
     top: 15px;
     left: 60%;
     transform: translateX(-10%);
-
     width: 90%;
-    box-sizing: border-box;
-
     color: #fff;
     line-height: 1.5em;
     font-size: clamp(10px, 1.2vw, 16px);
-
     overflow: hidden;
 }
 
@@ -997,7 +1002,7 @@ header:has(.main-menu > li:hover .sub-list)::after {
 /* --------------------------clubmovement--------------------------- */
 
 .clubmovement-wrap .title-box {
-    padding: 4.88em 0 6.25em;
+    padding: 5em 0 6.25em;
 }
 
 .clubmovement-wrap .title-box>.detail {
