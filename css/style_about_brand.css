@@ -71,6 +71,7 @@ body {
     line-height: 1.5em;
     letter-spacing: 0.06em;
     padding: 0;
+    text-align: justify;
 }
 
 .about_brand .text-box .detail>p {

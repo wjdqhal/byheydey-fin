@@ -18,7 +18,7 @@ body {
     width: 90%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 6em 1em;
+    padding: 6.25em 1em 5em;
     box-sizing: border-box;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .title-box .section-title {
-    font-size: clamp(40px, 5vw, 84px);
+    font-size: 2.75em;
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 16px;
@@ -37,7 +37,7 @@ body {
 }
 
 .title-box .sub-title {
-    font-size: clamp(16px, 2vw, 24px);
+    font-size: 1.25em;
     font-weight: 500;
     line-height: 1.3;
     color: #fff;
@@ -83,7 +83,7 @@ body {
     max-width: 592px;
     height: auto;
     min-height: 700px;
-    padding-bottom: 30px;
+    padding-bottom: 1.5em;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -96,9 +96,9 @@ body {
 
 .project-right .project-tab-menu {
     display: flex;
-    gap: 34px;
-    margin-top: 24px;
-    font-size: clamp(16px, 2vw, 24px);
+    gap: 1.4em;
+    margin-top: 1em;
+    font-size: 1.5em;
     font-weight: 500;
     color: #A3A1A1;
     list-style: none;
@@ -140,12 +140,12 @@ body {
 .project-right .tab-circle {
     display: flex;
     gap: 12px;
-    margin-top: 20px;
+    margin-top: 1em;
 }
 
 .project-right .tab-circle span {
-    width: 12px;
-    height: 12px;
+    width: 0.75em;
+    height: 0.75em;
     border-radius: 50%;
     background-color: #4D4D4D;
 }
@@ -189,7 +189,7 @@ body {
     gap: 86px;
     max-width: 1920px;
     margin: 0 auto;
-    padding: 190px 0 230px;
+    padding: 5em 0;
 }
 
 .lounge-left {
@@ -242,7 +242,7 @@ body {
 .work-space-wrap>.inner {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 100px 0 230px;
+    padding: 5em 0;
 }
 
 .work-space-wrap .bg-btn {
@@ -321,6 +321,7 @@ body {
 .progress .inner {
     max-width: 1640px;
     margin: 0 auto;
+    padding: 5em 1em;
 }
 
 .progress .section-title {
@@ -376,7 +377,7 @@ body {
 }
 
 .progress-end .sub-title {
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 /* 아이패드 */
@@ -408,6 +409,7 @@ body {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
+        padding: 70px 1em 40px;
     }
 
     .title-box .section-title {
@@ -428,12 +430,26 @@ body {
     }
 
     .lounge_project_inner {
-        padding: 150px 1em;
+        padding: 40px 1em;
     }
 
     /* .work-space-wrap .btn {
         right: 30%;
         transform: translateX(50%);
     } */
+    .work-space-wrap>.inner {
+        padding: 40px 1em;
+    }
+
+    .project-right .project-tab-menu a {
+        font-size: 1em;
+    }
+    
+    .main_project {
+        min-height: fit-content;
+    }
+    .title-box .section-title{
+        font-size: 2em;
+    }
 
 }
