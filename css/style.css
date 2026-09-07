@@ -101,6 +101,11 @@ header.is-scrolled:hover {
     position: relative;
 }
 
+.header-right{
+    display: flex;
+    gap: 1.88em;
+}
+
 .header-left {
     display: flex;
     align-items: center;
@@ -219,7 +224,7 @@ header:has(.main-menu > li:hover .sub-list)::after {
 .gnb-list {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 1.5em;
     list-style: none;
 }
 

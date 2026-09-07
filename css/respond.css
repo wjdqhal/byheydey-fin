@@ -17,7 +17,7 @@
 
 
     .gnb-list {
-        display: none;
+        /* display: none; */
     }
 
     .m-header {
@@ -60,6 +60,7 @@
         background: #111;
         height: 100vh;
         /* display: none; */
+        z-index: 100;
     }
 
     nav.active {
@@ -288,6 +289,10 @@
 @media screen and (max-width:767px) {
     body {
         font-size: 12px;
+    }
+
+    .gnb-list {
+        display: none;
     }
 
     .main-menu>li>a {
