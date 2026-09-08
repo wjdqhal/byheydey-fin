@@ -185,7 +185,7 @@
     }
 
     .office-right .section-title {
-        font-size: clamp(32px, 3.2vw, 44px);
+        font-size: 2.75em;
     }
 
     .offcie-right .sub-title {
@@ -405,6 +405,10 @@
         overflow: visible;
         padding: 60px 30px 80px;
         box-sizing: border-box;
+    }
+
+    .office-right .section-title {
+        font-size: 2em;
     }
 
     .product-grid-container {
