@@ -249,6 +249,10 @@ body {
 }
 
 @media (max-width: 767px) {
+    .login-form .form-group:first-child {
+        padding-top: 10em;
+    }
+
     .login-container {
         /* 모바일 헤더 높이가 작아질 경우 상단 여백 조정 */
         /* padding-top: 235px; */
