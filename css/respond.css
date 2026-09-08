@@ -15,11 +15,6 @@
         display: block;
     }
 
-
-    .gnb-list {
-        display: none;
-    }
-
     .m-header {
         display: block;
         /* padding: 1em; */
@@ -153,7 +148,6 @@
 
 
 
-
     /*--------office--------  */
     .office-collection-wrap {
         /* height: 720px; */
@@ -277,9 +271,9 @@
 
 
     .clubmovement-wrap .title-box {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 40px 16px;
     }
+
 
     .footer-inner {
         flex-direction: column;
@@ -311,6 +305,10 @@
         gap: 1em; */
         display: none;
         padding: 0;
+    }
+
+    .gnb-list {
+        display: none;
     }
 
 
@@ -380,6 +378,82 @@
         /* min-height: 400px; */
     }
 
+    .mobile-gnb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+
+        padding-top: 30px;
+
+        list-style: none;
+        border-top: 1px solid #999;
+    }
+
+    .mobile-gnb li {
+        position: relative;
+    }
+
+    .mobile-gnb a,
+    .mobile-gnb button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        padding: 0;
+
+        border: 0;
+        background: transparent;
+
+        color: #fff;
+        text-decoration: none;
+
+        font-size: 14px;
+        font-weight: 500;
+
+        cursor: pointer;
+    }
+
+    .mobile-gnb img {
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+    }
+
+    .mobile-gnb .cart-count {
+        position: absolute;
+        top: -7px;
+        left: 12px;
+
+        width: 14px;
+        height: 14px;
+
+        background: #3b82f6;
+        color: #fff;
+
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 9px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .title-box .section-title {
+        font-size: 2em;
+    }
+
+    /* best */
+    .best-wrap .inner {
+        padding: 40px 16px;
+    }
+
+    .best-wrap .title-box {
+        padding-top: 0;
+    }
 
     /* ------office------*/
     .office-collection-wrap {
@@ -409,7 +483,7 @@
         height: auto;
         min-height: 0;
         overflow: visible;
-        padding: 60px 30px 80px;
+        padding: 40px 16px;
         box-sizing: border-box;
     }
 
@@ -449,7 +523,7 @@
 
     /* ------care------- */
     .care-inner {
-        padding: 40px 20px;
+        padding: 40px 16px;
         gap: 20px;
     }
 
@@ -468,7 +542,7 @@
 
     .project-wrap .inner {
         display: flex;
-        padding: 56px 20px 64px;
+        padding: 40px 16px;
         flex-direction: column-reverse;
     }
 
