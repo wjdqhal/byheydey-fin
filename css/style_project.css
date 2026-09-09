@@ -1,5 +1,6 @@
 body {
     font-family: "Pretendary", sans-serif;
+    font-size: 16px;
 }
 
 .main_project {
@@ -322,6 +323,7 @@ body {
     max-width: 1640px;
     margin: 0 auto;
     padding: 5em 1em;
+    word-break: keep-all;
 }
 
 .progress .section-title {
@@ -350,7 +352,7 @@ body {
 }
 
 .progress-set {
-    padding: 1em 0;
+    padding: 1em 1em;
 }
 
 .progress-set p {
@@ -383,6 +385,10 @@ body {
 
 /* 아이패드 */
 @media screen and (max-width:1279px) {
+    body {
+        font-size: 14px;
+    }
+
     .main_project_inner {
         gap: 20px;
     }
@@ -396,8 +402,16 @@ body {
     }
 }
 
+.progress-set img {
+    width: 40px;
+    height: 40px;
+}
+
 /* 모바일 */
 @media screen and (max-width:767px) {
+    body {
+        font-size: 12px;
+    }
 
     .btn {
         max-width: 180px;
@@ -455,7 +469,22 @@ body {
     }
 
     .progress .inner {
-        padding: 40px 16px;
+        padding: 40px 1em;
     }
 
+    .progress-set img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .progress-set .step {
+        margin: 0.6em 0;
+    }
+    .progress-set p{
+        font-size: 1em;
+    }
+    .progress-end {
+    margin: 2em 0 0;
+    gap: 1.5em;
+}
 }
