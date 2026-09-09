@@ -37,7 +37,7 @@
     line-height: 1.6em;
     padding: 1.5em 0;
     text-align: center;
-    word-break: keep-all;
+    word-break: break-all;
     overflow-wrap: break-word;
     max-width: 100%;
 }
@@ -596,6 +596,10 @@
 
     .inner {
         padding: 0 16px;
+    }
+
+    .title-box .section-title{
+        font-size: 2em;
     }
 
     .lab-wrap {

@@ -576,16 +576,85 @@
             chatbotInput.value = '';
         });
 
+        //ham-btn
         let bgHam = document.querySelector(".ham");
         let menu = document.querySelector("nav");
         bgHam.addEventListener("click", () => {
             menu.classList.add("active");
+            document.body.classList.add("menu-open");
         })
 
         let closeBtn = document.querySelector(".hamClose");
         closeBtn.addEventListener("click", () => {
             menu.classList.remove("active");
+            document.body.classList.remove("menu-open");
         })
+
+
+        // tablet / mobile accordion menu
+        const mainMenuItems = document.querySelectorAll(".main-menu > li");
+        const subMenuItems = document.querySelectorAll(".sub-list > li");
+
+        mainMenuItems.forEach((item) => {
+            const link = item.querySelector(":scope > a");
+            const subList = item.querySelector(":scope > .sub-list");
+
+            // sub-list가 있는 메뉴만 클릭 이벤트 적용
+            if (!subList) return;
+
+            link.addEventListener("click", (e) => {
+
+                // PC에서는 기존 hover 방식 유지
+                if (window.innerWidth > 1279) return;
+
+                e.preventDefault();
+
+                const isActive = item.classList.contains("active");
+
+                // 다른 1depth 닫기
+                mainMenuItems.forEach((menuItem) => {
+                    menuItem.classList.remove("active");
+
+                    const menuLink = menuItem.querySelector(":scope > a");
+                    if (menuLink) {
+                        menuLink.setAttribute("aria-expanded", "false");
+                    }
+                });
+
+                // 다시 클릭하면 닫기
+                if (!isActive) {
+                    item.classList.add("active");
+                    link.setAttribute("aria-expanded", "true");
+                }
+            });
+        });
+
+        subMenuItems.forEach((item) => {
+            const link = item.querySelector(":scope > a");
+            const depth = item.querySelector(":scope > .depth");
+
+            // depth가 없는 메뉴는 그냥 링크로 사용
+            if (!depth) return;
+
+            link.addEventListener("click", (e) => {
+
+                // 모바일에서만 depth accordion
+                if (window.innerWidth > 767) return;
+
+                e.preventDefault();
+
+                const isActive = item.classList.contains("active");
+
+                // 같은 sub-list 안의 다른 depth 닫기
+                item.parentElement.querySelectorAll(":scope > li").forEach((subItem) => {
+                    subItem.classList.remove("active");
+                });
+
+                if (!isActive) {
+                    item.classList.add("active");
+                }
+            });
+        });
 
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
