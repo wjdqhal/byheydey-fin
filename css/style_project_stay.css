@@ -1,15 +1,18 @@
-.stay .section-title{
+.stay .section-title {
   color: #000;
 }
-.stay .sub-title{
+
+.stay .sub-title {
   color: #4E4E4E;
 }
-.stay-left{
+
+.stay-left {
   padding: 5em 0 0 0;
   margin-left: 7.3%;
 }
+
 .stay-wrap {
-  background-color: #ebf1f6; 
+  background-color: #ebf1f6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,8 +63,9 @@
   justify-content: center;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
+
 .hotspot.active {
-  background-color:rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
@@ -76,6 +80,7 @@
   width: 10px;
   height: 2px;
 }
+
 .hotspot::after {
   width: 2px;
   height: 10px;
@@ -85,10 +90,12 @@
   transform: scale(1.15);
   background-color: rgba(0, 0, 0, 0.7);
 }
+
 .hotspot.active::before,
 .hotspot.active::after {
   background-color: #111;
 }
+
 /* 좌하단 타이틀 */
 .room-footer {
   text-align: right;
@@ -116,11 +123,12 @@
   color: #222;
   margin-top: 10px;
 }
-.stay-project-list{
+
+.stay-project-list {
   position: relative;
 }
 
-.stay-project-list>.product-slider{
+.stay-project-list>.product-slider {
   /* display: none; */
   opacity: 0;
   transition: 0.3s;
@@ -128,15 +136,18 @@
   left: 0;
   top: 0;
 }
-.stay-project-list>.product-slider.active{
+
+.stay-project-list>.product-slider.active {
   /* display:block; */
   opacity: 1;
   position: relative;
 }
-.stay-product{
+
+.stay-product {
   display: flex;
   justify-content: center;
 }
+
 .product-slider {
   display: flex;
   align-items: center;
@@ -207,12 +218,15 @@
   .product-section {
     padding: 30px 20px;
   }
-  .stay-wrap{
+
+  .stay-wrap {
     align-items: stretch;
     min-height: 90vh;
     padding: 16px 1em 40px;
   }
-  .stay-left{
+
+  .stay-left {
     padding: 40px 0 0;
   }
+
 }

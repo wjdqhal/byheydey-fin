@@ -310,14 +310,14 @@ body {
     transition: 0.5s;
 }
 
-.work-space-list > .swiper-slide-active .text-box {
+.work-space-list>.swiper-slide-active .text-box {
     opacity: 1;
 }
 
 /* -------------------- progress -----------------*/
-.progress{
+/* .progress{
     padding: 3.5em 0;
-}
+} */
 .progress .inner {
     max-width: 1640px;
     margin: 0 auto;
@@ -378,6 +378,7 @@ body {
 
 .progress-end .sub-title {
     font-size: 1.25em;
+    word-break: keep-all;
 }
 
 /* 아이패드 */
@@ -444,12 +445,17 @@ body {
     .project-right .project-tab-menu a {
         font-size: 1em;
     }
-    
+
     .main_project {
         min-height: fit-content;
     }
-    .title-box .section-title{
+
+    .title-box .section-title {
         font-size: 2em;
+    }
+
+    .progress .inner {
+        padding: 40px 16px;
     }
 
 }
