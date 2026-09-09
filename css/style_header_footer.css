@@ -106,7 +106,7 @@ header {
     z-index: 1001;
 }
 
-.mobile-gnb{
+.mobile-gnb {
     display: none;
 }
 
@@ -187,8 +187,9 @@ header:has(.main-menu > li:hover .sub-list)::after {
     height: 18px;
 }
 
-.header-right{
+.header-right {
     display: flex;
+    gap: 1.88em;
 }
 
 .cart-count {
@@ -720,7 +721,7 @@ footer {
 /* ------------respond------------ */
 /* 아이패드 */
 @media screen and (max-width:1279px) {
-   body {
+    body {
         font-size: 14px;
     }
 
@@ -807,7 +808,7 @@ footer {
         justify-content: space-between;
         font-size: 1.25em;
         font-weight: 700;
-        color:#fff;
+        color: #fff;
     }
 
     .main-menu>li>a[aria-haspopup="true"]::after {
@@ -872,7 +873,7 @@ footer {
         gap: 48px;
     }
 
-    
+
 }
 
 /* 모바일 */

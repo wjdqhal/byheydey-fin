@@ -598,12 +598,13 @@
         padding: 0 16px;
     }
 
+
     .title-box .section-title{
         font-size: 2em;
     }
 
     .lab-wrap {
-        padding-top: 20px;
+        padding-top: 0px;
     }
 
     .lab-wrap .title-box .detail>span {
@@ -612,6 +613,10 @@
 
     .lab-wrap .lab-store-row {
         margin-top: 0.8em;
+    }
+
+    .club-wrap{
+        padding: 40px 16px 60px; 
     }
 
     .tier-benefit-list {
@@ -668,7 +673,7 @@
     }
 
     .app-wrap {
-        padding: 60px 0;
+        padding: 40px 0 60px;
     }
 
     .app-screen-grid {
