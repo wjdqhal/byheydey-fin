@@ -55,6 +55,12 @@
         background: #111;
         height: 100vh;
         /* display: none; */
+        height: 100dvh;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        overscroll-behavior: contain;
     }
 
     nav.active {
@@ -83,17 +89,17 @@
         font-weight: 700;
     }
 
-    .main-menu>li>a::after {
+    .main-menu>li>a[aria-haspopup="true"]::after {
         content: "\e800";
         font-family: "fontello";
         font-size: 1em;
     }
 
-    .main-menu>li:hover>a::after {
+    .main-menu>li.active>a[aria-haspopup="true"]::after {
         content: "\e801";
-        font-family: "fontello";
-        font-size: 1em;
     }
+
+
 
     .main-menu>.active>a {
         /* 반대화살표 */
@@ -111,7 +117,7 @@
         gap: 180px;
     }
 
-    .main-menu>li:hover .sub-list {
+    .main-menu>li.active>.sub-list {
         display: flex;
         opacity: 1;
     }
@@ -129,16 +135,6 @@
         font-weight: 600;
     }
 
-    /* .main-menu>li:hover .sub-list{
-        display: block; */
-    .depth {
-        /* margin-top: 1.4em; */
-    }
-
-    /* .depth {
-        margin-top: 1.4em;
-    }  */
-
 
     .depth>li>a {
         line-height: 1.4em;
@@ -147,6 +143,9 @@
     }
 
 
+    body.menu-open {
+        overflow: hidden;
+    }
 
     /*--------office--------  */
     .office-collection-wrap {
@@ -178,9 +177,10 @@
         margin-bottom: 40px;
     }
 
-    .office-right .section-title {
-        font-size: clamp(32px, 3.2vw, 44px);
-    }
+    /* .office-right .section-title {
+        font-size: 2.75em;
+        ;
+    } */
 
     .offcie-right .sub-title {
         font-size: clamp(16px, 1.5vw, 20px);
@@ -288,6 +288,7 @@
 @media screen and (max-width:767px) {
     body {
         font-size: 12px;
+        position: relative;
     }
 
     .main-menu>li>a {
@@ -311,8 +312,14 @@
         display: none;
     }
 
+    .m-header {
+        position: sticky;
+        top:0;
+        z-index: 1000;
+        background: #111;
+    }
 
-    .main-menu>li:hover .sub-list {
+    .main-menu>li.active>.sub-list {
         display: block;
         opacity: 1;
     }
@@ -326,6 +333,11 @@
     .sub-list>.active>a {
         /* 반대화살표 */
     }
+
+    .sub-list>li.active>.depth {
+        display: flex;
+    }
+
 
     .depth {
         display: none;
@@ -367,10 +379,6 @@
         font-size: 14px;
     }
 
-    .main-menu>li .sub-list>li:hover .depth {
-        display: flex;
-        opacity: 1;
-    }
 
     .main-slider-img-box {
         width: 100%;
@@ -384,7 +392,7 @@
         justify-content: center;
         gap: 35px;
 
-        padding-top: 30px;
+        padding: 30px 0 60px;
 
         list-style: none;
         border-top: 1px solid #999;
@@ -455,6 +463,10 @@
         padding-top: 0;
     }
 
+    .best-wrap .title-box>h2 {
+        font-size: 2em;
+    }
+
     /* ------office------*/
     .office-collection-wrap {
         width: 100%;
@@ -487,6 +499,10 @@
         box-sizing: border-box;
     }
 
+    .office-right .section-title {
+        font-size: 2em;
+    }
+
     .product-grid-container {
         width: 100%;
         height: auto;
@@ -500,6 +516,10 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 24px 12px;
+    }
+
+    .project-wrap .project-list-right {
+        padding-top: 0;
     }
 
     .product-item {
