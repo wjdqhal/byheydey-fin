@@ -266,7 +266,7 @@ main {
     font-size: 0.75em;
     cursor: pointer;
 } */
-.option-box {
+/* .option-box {
     position: relative;
 }
 
@@ -277,6 +277,33 @@ main {
     padding: 15px 40px 15px 15px;
 }
 
+.option-box::after {
+    content: "▼";
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    pointer-events: none;
+} */
+ /* 옵션 박스 */
+.option-box {
+    position: relative;
+    width: 100%;
+}
+
+/* select */
+.option-box select {
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 15px 45px 15px 15px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* 화살표 */
 .option-box::after {
     content: "▼";
     position: absolute;

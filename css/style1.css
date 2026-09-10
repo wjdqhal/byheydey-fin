@@ -245,7 +245,7 @@ main{
 
 /* 옵션 */
 
-.option-box {
+/* .option-box {
     margin-top: 30px;
 }
 
@@ -257,6 +257,32 @@ main{
     background: #fff;
     font-size: 11px;
     cursor: pointer;
+} */
+.option-box {
+    position: relative;
+    width: 100%;
+}
+
+/* select */
+.option-box select {
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 15px 45px 15px 15px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* 화살표 */
+.option-box::after {
+    content: "▼";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    pointer-events: none;
 }
 
 
