@@ -48,7 +48,7 @@ let current = 0;
 
 let right = document.querySelector(".next-btn")
 let left = document.querySelector(".prev-btn")
-right.addEventListener("click",()=>{
+right.addEventListener("click", () => {
     current++;
     if (current >= selectContents.length) {
         current = 0;
@@ -57,10 +57,11 @@ right.addEventListener("click",()=>{
     console.log("ddd:")
 })
 
-left.addEventListener("click",()=>{
+left.addEventListener("click", () => {
     current--;
-    if (current==0) {
+    if (current == 0) {
         current = selectContents.length;
     }
     moveBanner(current)
 })
+

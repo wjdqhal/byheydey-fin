@@ -238,11 +238,11 @@ main {
     font-size: 1em;
     line-height: 1.8;
     color: #555;
+    margin-bottom: 20px;
 }
 
 .payment-description p {
     margin-bottom: 3px;
-
 }
 
 .payment-description span {
@@ -250,10 +250,9 @@ main {
 }
 
 
-
 /* 옵션 */
 
-.option-box {
+/* .option-box {
     margin-top: 30px;
 }
 
@@ -265,8 +264,29 @@ main {
     background: #fff;
     font-size: 0.75em;
     cursor: pointer;
+} */
+
+.option-box {
+    position: relative;
 }
 
+.option-box select {
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 15px 40px 15px 15px;
+    cursor: pointer;
+}
+
+.option-box::after {
+    content: "▼";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    cursor: pointer;
+}
 
 /* 수량 */
 

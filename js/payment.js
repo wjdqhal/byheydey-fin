@@ -1,8 +1,4 @@
-
-
 //    상품 이미지
-
-
 const thumbnails = document.querySelectorAll(".thumb");
 const mainImage = document.querySelector(".main-image img");
 const paginationDots = document.querySelectorAll(".image-pagination span");
@@ -35,7 +31,6 @@ function changeImage(index) {
 
 
 // 썸네일 클릭
-
 thumbnails.forEach((thumbnail, index) => {
     thumbnail.addEventListener("click", () => {
         changeImage(index);
@@ -44,11 +39,7 @@ thumbnails.forEach((thumbnail, index) => {
 
 
 
-
-
 //    수량 증가 / 감소
-
-
 const minusBtn = document.querySelector(".minus-btn");
 const plusBtn = document.querySelector(".plus-btn");
 const quantityNumber = document.querySelector(".quantity-number");
@@ -76,22 +67,6 @@ minusBtn.addEventListener("click", () => {
         updatePrice();
     }
 });
-// 수량 증가
-
-// plusBtn.addEventListener("click", () => {
-//     quantity++;
-//     quantityNumber.textContent = quantity;
-// });
-
-
-// 수량 감소
-
-// minusBtn.addEventListener("click", () => {
-//     if (quantity > 0) {
-//         quantity--;
-//         quantityNumber.textContent = quantity;
-//     }
-// });
 
 
 let cartCount = document.querySelector(".cart-count");
@@ -137,3 +112,6 @@ if (heartBtn) {
         }
     });
 }
+
+
+
