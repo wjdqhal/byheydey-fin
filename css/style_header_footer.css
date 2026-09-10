@@ -1052,10 +1052,6 @@ footer {
         font-weight: 700;
     }
 
-    .main-menu>li .sub-list>li:hover .depth {
-        display: flex;
-        opacity: 1;
-    }
 
     .footer-inner .footer-menu {
         gap: 0;
