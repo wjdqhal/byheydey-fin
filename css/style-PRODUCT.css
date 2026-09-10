@@ -70,8 +70,8 @@
 }
 
 .Product-goods-list .goods-left>.goods-name {
-    font-size: 1.06em;
-    font-weight: 500;
+    font-size: 1.18em;
+    font-weight: 400;
 }
 
 .Product-goods-list .goods-left>div>.goods-right {
@@ -83,6 +83,9 @@
     display: flex;
     justify-content: space-between;
     /* font-weight: 300; */
+    font-size: 1.25em;
+    font-weight: 600;
+        /* color: #3D3D3D; */
     padding-top: 0.7em;
 }
 
