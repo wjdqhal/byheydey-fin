@@ -1,6 +1,7 @@
 /* ==================================== main ==================================== */
 .mine-vanner {
-    padding: 5em 0 5.44em;
+    margin: 5em 0 5.44em;
+    position: relative;
 }
 
 .mine-vanner>.m-img-box {
@@ -11,9 +12,21 @@
     width: 100%;
 }
 
+.mine-vanner>.text-box {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    font-size: 2.5em;
+    color: #4A4644;
+}
+.mine-vanner>.text-box>p{
+    font-weight: 800;
+    color: #797674;
+}
+
 .Product-list-wrap>ul {
     display: flex;
-    padding: 1em;
+    padding: 1em 0;
     gap: 1.88em;
     font-size: 1em;
     color: rgba(0, 0, 0, 0.40);
@@ -39,7 +52,6 @@
     display: flex;
     justify-content: space-between;
     gap: 1.88em;
-    padding: 0 1em;
 }
 
 .Product-goods-list .goods-left {
@@ -79,7 +91,7 @@
     justify-content: center;
     gap: 2.31em;
     padding: 6.88em 0;
-    /* font-size: 1.5em; */
+    /* font-size: 1.25em; */
     font-weight: 600;
 }
 
@@ -92,12 +104,20 @@
 
 
 /* 아이패드 */
-@media screen and (max-width:1279px) {}
+@media screen and (max-width:1279px) {
+    .Product-list-wrap {
+        padding-left: 1.88em;
+    }
+
+    .mine-vanner>.text-box {
+        font-size: 2em;
+    }
+}
 
 /* 모바일 */
 @media screen and (max-width:767px) {
     .mine-vanner {
-        padding-top: 3em;
+        margin-top: 3em;
     }
 
     .mine-vanner>.img-box {
@@ -121,14 +141,16 @@
     }
 
     .Product-goods-list {
-        /* padding: 0 1.88em; */
+        padding: 0 1em;
     }
 
     .Product-goods-list img {
         width: 100%;
     }
 
-    .Product-list-wrap {
-        padding-left: 1em;
+    .mine-vanner>.text-box {
+        top: 30%;
+        left: 10%;
+        font-size: 2.5em;
     }
 }
