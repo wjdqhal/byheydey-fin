@@ -1,6 +1,7 @@
 /* ==================================== main ==================================== */
 .mine-vanner {
-    padding: 5em 0 5.44em;
+    margin: 5em 0 5.44em;
+    position: relative;
 }
 
 .mine-vanner>.m-img-box {
@@ -9,6 +10,18 @@
 
 .mine-vanner>.img-box>img {
     width: 100%;
+}
+
+.mine-vanner>.text-box {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    font-size: 2.5em;
+    color: #4A4644;
+}
+.mine-vanner>.text-box>p{
+    font-weight: 800;
+    color: #797674;
 }
 
 .Product-list-wrap>ul {
@@ -95,6 +108,10 @@
     .Product-list-wrap {
         padding-left: 1.88em;
     }
+
+    .mine-vanner>.text-box {
+        font-size: 2em;
+    }
 }
 
 /* 모바일 */
@@ -129,5 +146,11 @@
 
     .Product-goods-list img {
         width: 100%;
+    }
+
+    .mine-vanner>.text-box {
+        top: 30%;
+        left: 10%;
+        font-size: 2.5em;
     }
 }
