@@ -3,14 +3,7 @@ body {
 }
 
 .about_brand{
-    /* background: pink; */
     width: 100%;
-}
-
-.inner {
-    /* width: 100%; */
-    /* margin: 0 auto; */
-    /* background: red; */
 }
 
 .about_brand .img-box {
@@ -75,22 +68,8 @@ body {
     word-break: keep-all;
 }
 
-.last .text-box .detail {
-    padding-bottom: 80px;
-}
 
 @media screen and (max-width:1279px) {
-    .about_brand {
-        padding-top: 70px;
-    }
-
-    .about_brand .text-box {
-        margin: 130px auto 60px;
-    }
-
-    .last .text-box .detail {
-        padding-bottom: 60px;
-    }
 
     .brand_story>div:first-child>.img-box {
         height: 75vw;
@@ -108,6 +87,9 @@ body {
 }
 
 @media screen and (max-width:767px) {
+    .about_brand .text-box {
+        padding: 40px 1em;
+    }
     .about_brand .text-box>.title {
         font-size: 1.5em;
         margin-bottom: 20px;
@@ -117,19 +99,6 @@ body {
         flex-direction: column;
         gap: 16px;
     }
-
-    .about_brand {
-        padding-top: 50px;
-    }
-
-    .about_brand .text-box {
-        margin: 100px auto 50px;
-    }
-
-    .last .text-box .detail {
-        padding-bottom: 50px;
-    }
-
 
     .brand_story>div>.img-box {
         background-attachment: scroll;
