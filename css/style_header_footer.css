@@ -856,6 +856,14 @@ footer {
         font-weight: 600;
     }
 
+    .depth {
+        display: none;
+    }
+
+    .sub-list>li.active>.depth {
+        display: flex;
+    }
+
 
     .depth>li>a {
         line-height: 1.4em;
@@ -911,9 +919,11 @@ footer {
         background: #111;
     }
 
+
     .main-menu>li.active>.sub-list {
         display: block;
         opacity: 1;
+        visibility: visible;
     }
 
     .sub-list>li>a {
