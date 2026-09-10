@@ -1,6 +1,6 @@
 /* ==================================== main ==================================== */
 .mine-vanner {
-    margin: 5em 0 5.44em;
+    padding: 5em 0 5em 0 ;
     position: relative;
 }
 
@@ -12,21 +12,32 @@
     width: 100%;
 }
 
-.mine-vanner>.text-box {
-    position: absolute;
-    top: 15%;
-    left: 20%;
-    font-size: 2.5em;
-    color: #4A4644;
+.inner>.title-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    /* padding: 0 0.63em ; */
 }
-.mine-vanner>.text-box>p{
-    font-weight: 800;
-    color: #797674;
+.inner>.title-box>.title{
+    padding: 0;
+    font-size: 2.75em;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    text-align: center;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
 }
 
 .Product-list-wrap>ul {
     display: flex;
-    padding: 1em 0;
+    padding: 2em 0 1.5em;
     gap: 1.88em;
     font-size: 1em;
     color: rgba(0, 0, 0, 0.40);
@@ -38,7 +49,7 @@
 }
 
 .Product-goods-list {
-    padding-top: 2.31em;
+    /* padding-top: 2.31em; */
     display: flex;
     flex-direction: column;
     gap: 1.88em;
@@ -117,7 +128,7 @@
 /* 모바일 */
 @media screen and (max-width:767px) {
     .mine-vanner {
-        margin-top: 3em;
+        padding-top: 0;
     }
 
     .mine-vanner>.img-box {
